@@ -1,0 +1,9 @@
+@use '../styles/values/colors.scss';
+
+html {
+  background-color: colors.$light;
+}
+
+body {
+  margin: 0;
+}
