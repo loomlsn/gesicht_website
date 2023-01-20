@@ -23,7 +23,7 @@ export const Header = () => {
                 </button>
                 {navOpen && (
                     <nav>
-                        <Link href={"/"}>Hjem</Link>
+                        <Link href={"/"}>Hjem side</Link>
                         <Link href={"/about/about"}>Om</Link>
                         <Link href={"/services/services"}>Behandlinger</Link>
                     </nav>
