@@ -1,4 +1,5 @@
 import React from "react";
+import CardsHero from "../../../components/CardsHero";
 
 type ServicesProps = {
     prop: string;
@@ -6,6 +7,11 @@ type ServicesProps = {
 
 export default function ServicesPage({ prop }: ServicesProps) {
     return (
-        <h1>Services page</h1>
+        <>
+            <CardsHero size={'sm'} title={"Behandlinger"} description={"Alle vores behandlinger foretages af kvalificerede læger"} />
+            <div>
+                <p>Tekst</p>
+            </div>
+        </>
     )
 }

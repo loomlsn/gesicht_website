@@ -8,7 +8,7 @@ type StartPageProps = {
 export default function StartPage({ prop }: StartPageProps) {
     return (
         <>
-            <CardsHero title={"Velkommen til Gesicht"} />
+            <CardsHero size={'lg'} title={"Velkommen til Gesicht"} description={"En nordisk kosmetisk klinik med sans for detaljer."} />
             <div>
                 <p>Forsidetekst</p>
             </div>

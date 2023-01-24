@@ -1,13 +1,93 @@
 @use '../../../styles/values/colors.scss';
 
 .headerContainer {
-    padding: 0.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: -92px;
+
+    .logoContainer {
+        margin-top: 1.5rem;
+
+        img {
+            width: 65px;
+            height: auto;
+        }
+    }
 
     nav {
-        a {
-            margin-right: 1rem;
+        button.navClosed {
+            all: unset;
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+            padding: 0.1rem;
+            position: relative;
+
+            svg {
+                width: 2rem;
+                height: 2rem;
+                stroke: colors.$light;
+            }
+        }
+
+        .navContainer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 4rem;
+            height: 100%;
+            width: 40vw;
+            background-color: colors.$light;
+
+            button {
+                all: unset;
+                cursor: pointer;
+                width: 2rem;
+                height: 2rem;
+                padding: 0.1rem;
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+            }
+
+            .navLinks {
+                margin: 0;
+                display: block;
+                list-style: none;
+                padding-left: 0;
+                margin-top: 7rem;
+
+                a {
+                    font-size: 1.45rem;
+                    margin-right: 1rem;
+                    line-height: 3.5rem;
+                }
+            }
+
+            .location {
+                margin-top: 70px;
+
+                h3 {
+                    font-size: 1.25rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+
+                    li {
+                        font-size: 1.1rem;
+                        line-height: 1.5rem;
+                    }
+
+                    &:last-child {
+                        color: colors.$red-peach;
+
+                    }
+                }
+            }
         }
     }
 }
