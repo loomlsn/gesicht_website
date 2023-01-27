@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { MainLayout } from '../modules/layout/MainLayout';
+import ComingSoon from '../modules/templates/ComingSoonPage';
 import StartPage from '../modules/templates/StartPage';
 
 export default function Home() {
@@ -11,9 +12,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MainLayout>
-        <StartPage prop={"Some text"} />
-      </MainLayout>
+
+      <ComingSoon prop={"Some text"} />
+      {/* <StartPage prop={"Some text"} /> */}
+
     </>
   )
 }

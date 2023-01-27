@@ -1,0 +1,67 @@
+@use '../../../styles/values/colors.scss';
+
+.footerContainer {
+    background-color: colors.$light;
+    padding: 3rem 0;
+    position: relative;
+
+    .footerNav {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    }
+
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        .contact {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            font-size: 1.1rem;
+            line-height: 2rem;
+            color: colors.$peach !important;
+
+            &:hover {
+                color: colors.$red-peach !important;
+            }
+
+        }
+
+    }
+
+    .socials {
+        display: flex;
+        position: absolute;
+        right: 3rem;
+
+        a {
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 0.75rem;
+            }
+        }
+
+    }
+}

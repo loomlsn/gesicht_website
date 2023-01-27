@@ -1,13 +1,125 @@
 @use '../../../styles/values/colors.scss';
 
 .headerContainer {
-    padding: 0.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: -92px;
+
+    .logoContainer {
+        margin-top: 1.5rem;
+
+        img {
+            width: 65px;
+            height: auto;
+        }
+    }
 
     nav {
-        a {
-            margin-right: 1rem;
+        button.navClosed {
+            all: unset;
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+            padding: 0.1rem;
+            position: relative;
+
+            svg {
+                width: 2rem;
+                height: 2rem;
+                stroke: colors.$light;
+            }
+        }
+
+        .navContainer {
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            // transform: translate3d(100vw, 0, 0);
+            // transition: transform .4s ease-in-out;
+            padding: 2.5rem;
+            height: 100vh;
+            width: 0;
+            background-color: colors.$light;
+
+            // @media (min-width: 1000px) {
+            //     width: 60vw;
+            //     padding: 3.5rem;
+            // }
+
+            // @media (min-width: 1200px) {
+            //     width: 30vw;
+            // }
+
+            &.open {
+                width: 100vw;
+                // transform: translate3d(0vw, 0, 0);
+            }
+
+            &.close {
+                // transform: translate3d(100vw, 0, 0);
+            }
+
+            button {
+                all: unset;
+                cursor: pointer;
+                width: 2rem;
+                height: 2rem;
+                padding: 0.1rem;
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+            }
+
+            .navLinks {
+                margin: 0;
+                display: block;
+                list-style: none;
+                padding-left: 0;
+                margin-top: 7rem;
+
+                a {
+                    font-size: 1.45rem;
+                    margin-right: 1rem;
+                    line-height: 3.5rem;
+                }
+            }
+
+            .location {
+                margin-top: 70px;
+
+                h3 {
+                    font-size: 1.25rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+
+                    li {
+                        font-size: 1.1rem;
+                        line-height: 1.5rem;
+                    }
+
+                    &:last-child {
+                        color: colors.$red-peach;
+
+                    }
+                }
+            }
+        }
+
+        .overlay {
+            background-color: black;
+            opacity: 0.5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 99;
         }
     }
 }
