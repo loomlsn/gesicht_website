@@ -29,7 +29,7 @@
     &.xxl {
         background-image: url("/hero/hero_light.jpg");
         background-repeat: no-repeat;
-        background-size: 115%;
+        background-size: cover;
         background-position: center;
         height: 100vh;
         display: flex;
@@ -45,14 +45,18 @@
                 max-width: 100%;
                 margin-left: 1rem;
                 text-transform: uppercase;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 letter-spacing: 0.2rem;
                 margin-top: 50px;
                 cursor: default;
+
+                @media (min-width: 640px) {
+                    font-size: 1rem;
+                }
             }
 
             img {
-                width: 200px;
+                width: 15rem;
             }
         }
     }
