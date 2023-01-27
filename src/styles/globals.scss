@@ -13,6 +13,12 @@ body {
   font-weight: normal;
   overflow-x: hidden;
   overflow: hidden;
+  background-image: url("/hero/hero_light.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 .container {
