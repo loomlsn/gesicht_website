@@ -10,18 +10,19 @@ type IntroSectionProps = {
 export default function IntroSection({ title, colorTheme }: IntroSectionProps) {
     return (
         <div className={`${styles.introOuter} ${colorTheme === "light" ? styles.light : styles.dark}`}>
-            <Link href={"/"}>
-                <div className={styles.bgRight}></div>
-                <div className={`container ${styles.introContainer}`}>
-                    <div className={styles.introImage}>
-                        <img src="/hero/intro.jpg" />
-                    </div>
+            <div className={styles.bgRight}></div>
+            <div className={`container ${styles.introContainer}`}>
+                <div className={styles.introImage}>
+                    <img src="/hero/intro.jpg" />
+                </div>
+                <Link href={"/"}>
                     <div className={styles.introTitle}>
                         <h2>{title}</h2>
                         <p>Læs mere om klinikken</p>
                         <div className={styles.border}></div>
                     </div>
-                </div></Link>
+                </Link>
+            </div>
         </div>
         //     <div className={`container ${styles.introContainer}`}>
         //     <div className={styles.introText}>

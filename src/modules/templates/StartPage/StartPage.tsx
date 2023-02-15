@@ -3,7 +3,7 @@ import Hero from "../../../components/Hero";
 import CTA from "../../../components/CTA";
 import IntroSection from "../../../components/IntroSection";
 import PartnerSection from "../../../components/PartnerSection";
-import Treatments from "../../../components/Treatments";
+import Treatments from "../../../components/TreatmentSlider";
 import { colorTheme } from "../../globals/settings";
 
 
@@ -32,7 +32,7 @@ export default function StartPage({ prop }: StartPageProps) {
             <Hero size={'lg'} title={data.hero.title} description={data.hero.description} colorTheme={colorTheme} />
             <IntroSection title={data.intro.title} colorTheme={colorTheme} />
             <Treatments />
-            <PartnerSection title={data.partner.title} text={data.partner.text} />
+            <PartnerSection title={data.partner.title} />
             {/* <CTA /> */}
         </>
     )

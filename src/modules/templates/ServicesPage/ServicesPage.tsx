@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../../components/Hero";
-import Treatments from "../../../components/Treatments";
+import Treatments from "../../../components/TreatmentSlider";
 import { colorTheme } from "../../globals/settings";
 
 type ServicesProps = {

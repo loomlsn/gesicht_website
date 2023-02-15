@@ -10,7 +10,7 @@ export default function Booking() {
                     <div className={styles.introAbout}>
                         <h2>Vi har god tid</h2>
                         <p>Hos Gesicht sætter vi altid god tid af til hver enkelt forundersøgelse og behandling, så vi og du er sikre på, at du ikke risikerer at forlade klinikken igen med uforløste spørgsmål eller tvivl. Så kom endelig forbi til en uforpligtende forundersøgelse; vi byder altid på en forfriskning, mens vi taler.<br /><br />Gennem vores online bookingsystem kan du bestille tid til forundersøgelse og behandling. <span className="highlighted">Husk, at der skal være foretaget forundersøgelse minimum 48 timer inden din første fillerbehandling hos os.</span> Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt. <br /><br />Hvis det er første gang, du bestiller tid hos os, skal du oprette en bruger. Hvis du har en bruger hos os, skal du blot logge ind og oprette en aftale. Bemærk, at aftaler kan aflyses indtil 24 timer før aftalen. Aftaler der aflyses mindre end 24 timer før aftalen opkræves et gebyr på 500 kr.</p>
-                        <h3>Har du nogle spørgsmål? Kontakt os --></h3>
+                        <h3>Har du nogle spørgsmål? Kontakt os</h3>
                     </div>
                     <div className={styles.iframeContainer}>
                         <iframe src="https://system.easypractice.net/book/lips-by-james-cph"></iframe>
