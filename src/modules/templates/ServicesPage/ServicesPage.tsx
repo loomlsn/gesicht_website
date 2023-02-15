@@ -1,5 +1,7 @@
 import React from "react";
-import CardsHero from "../../../components/CardsHero";
+import Hero from "../../../components/Hero";
+import Treatments from "../../../components/Treatments";
+import { colorTheme } from "../../globals/settings";
 
 type ServicesProps = {
     prop: string;
@@ -8,10 +10,9 @@ type ServicesProps = {
 export default function ServicesPage({ prop }: ServicesProps) {
     return (
         <>
-            <CardsHero size={'sm'} title={"Behandlinger"} description={"Alle vores behandlinger foretages af kvalificerede læger"} />
-            <div>
-                <p>Tekst</p>
-            </div>
+            {/* <SimpleHero title={"Behandlinger"} description={"Alle vores behandlinger foretages af kvalificerede læger"} /> */}
+            <Hero size={'sm'} title={"Behandlinger"} colorTheme={colorTheme} />
+            <Treatments />
         </>
     )
 }

@@ -1,0 +1,115 @@
+@use '../../styles/values/colors.scss';
+@use '../../styles/values/animations.scss';
+@use '../../styles/values/typography.scss';
+
+.treatments {
+    &Intro {
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15rem;
+        position: relative;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            font-size: 20px;
+
+            svg {}
+        }
+    }
+
+    &Divider {
+        width: 100vw;
+        height: 1px;
+        background-color: colors.$dark;
+        position: absolute;
+        left: 0;
+        margin-top: 5rem;
+    }
+}
+
+.splideContainer {
+    padding: 100px 0;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+
+    .splideItem {
+        width: 400px;
+
+        img {
+            width: 400px;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 15px;
+            max-width: 80%;
+        }
+    }
+}
+
+.treatmentsInner {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+    .treatment {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+
+        img {
+            width: 300px;
+        }
+
+        h3 {
+            color: colors.$red-peach;
+            font-size: 1.9rem;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
+
+        button {
+            border: none;
+            margin: 0.5rem 0;
+            background-color: transparent;
+            color: colors.$peach;
+            cursor: pointer;
+
+            svg {
+                width: 50px;
+            }
+
+            &:hover {
+                color: colors.$red-peach;
+            }
+        }
+    }
+
+}
+
+.imageAbout {
+    div {
+        font-size: 1.25rem;
+        font-family: typography.$sans;
+        text-align: left;
+    }
+
+    img {
+        margin-top: -100px;
+        width: 500px;
+    }
+}

@@ -5,10 +5,12 @@
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    margin-bottom: -92px;
+    margin-bottom: -110px;
 
     .logoContainer {
-        margin-top: 1.5rem;
+        position: relative;
+        top: 2rem;
+        // left: 2rem;
 
         img {
             width: 65px;
@@ -16,57 +18,95 @@
         }
     }
 
-    nav {
+    &.light {
+        a {
+            color: colors.$red-peach !important;
+        }
+
+    }
+
+    &.dark {
+        a {
+            color: white !important;
+        }
+    }
+
+    .largeNav {
+        position: relative;
+        top: 2rem;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li:not(:last-child) {
+                margin-right: 2.5rem;
+
+                a {
+                    // color: colors.$red;
+                    font-size: 15px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .mobileNav {
         button.navClosed {
             all: unset;
             cursor: pointer;
-            width: 2rem;
-            height: 2rem;
+            width: 2.25rem;
+            height: 2.25rem;
             padding: 0.1rem;
-            position: relative;
+            display: block;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
 
             svg {
-                width: 2rem;
-                height: 2rem;
-                stroke: colors.$light;
+                width: 2.25rem;
+                height: 2.25rem;
+                stroke: white;
             }
         }
 
         .navContainer {
-            position: absolute;
+            position: fixed;
             z-index: 100;
             top: 0;
             right: 0;
-            // transform: translate3d(100vw, 0, 0);
-            // transition: transform .4s ease-in-out;
+            transition-duration: 0.3s;
+            transform: translateX(100%);
+            opacity: 0;
+            width: 100vw;
             padding: 2.5rem;
             height: 100vh;
-            width: 0;
             background-color: colors.$light;
 
-            // @media (min-width: 1000px) {
-            //     width: 60vw;
-            //     padding: 3.5rem;
-            // }
-
-            // @media (min-width: 1200px) {
-            //     width: 30vw;
-            // }
-
-            &.open {
-                width: 100vw;
-                // transform: translate3d(0vw, 0, 0);
+            @media (min-width: 1000px) {
+                width: 60vw;
+                padding: 3.5rem;
             }
 
-            &.close {
-                // transform: translate3d(100vw, 0, 0);
+            @media (min-width: 1200px) {
+                width: 30vw;
+            }
+
+            &.open {
+                opacity: 1;
+                transform: translate(0%, 0%);
+                overflow-y: scroll;
             }
 
             button {
                 all: unset;
                 cursor: pointer;
-                width: 2rem;
-                height: 2rem;
+                width: 2.25rem;
+                height: 2.25rem;
                 padding: 0.1rem;
                 position: absolute;
                 top: 2rem;

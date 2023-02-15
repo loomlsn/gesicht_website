@@ -25,23 +25,24 @@ export default function CardsHero({ title, description, size, cards }: CardsHero
                 </div>
                 {cards && (
                     <div className={styles.cardsContainer}>
-                        <Link href="/about/about">
+                        <Link href="/services">
                             <div>
+
                                 <img src="/hero/header-3.jpg" />
                                 <div className={styles.cardContent}>
-                                    <h3>Om Gesicht</h3>
-                                    <p>Text</p>
+                                    <h3>Behandlinger</h3>
+                                    <p>Få et overblik over hvad vi tilbyder.</p>
                                 </div>
-                            </div>
-                        </Link>
-                        <Link href="/services/services">
+                            </div></Link>
+                        <Link href="/om">
                             <div>
                                 <img src="/ibsa/aliaxin.jpg" />
                                 <div className={styles.cardContent}>
-                                    <h3>Behandlinger</h3>
-                                    <p>Text</p>
+                                    <h3>Om Gesicht</h3>
+                                    <p>Lær os bedre at kende.</p>
                                 </div>
-                            </div></Link>
+                            </div>
+                        </Link>
 
                     </div>
                 )}

@@ -1,0 +1,74 @@
+@use '../../../styles/values/colors.scss';
+@use '../../../styles/values/typography.scss';
+
+.topbar {
+    // display: flex;
+    // justify-content: space-between;
+    position: relative;
+    // align-items: center;
+
+    &Grid {
+        height: 50px;
+        padding: 0 1.5rem;
+        display: grid;
+        grid-template-columns: 6fr 1fr 1fr 0.5fr;
+    }
+
+    &Overlay {
+        background-color: black;
+        opacity: 0.05;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &Item {
+        text-align: center;
+        opacity: 1;
+        display: flex;
+        font-family: typography.$sans;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child {
+            justify-content: start;
+        }
+
+        p {
+            padding-top: 2px;
+        }
+
+        svg {
+            margin-right: 0.75rem;
+        }
+    }
+}
+
+.light {
+    p {
+        color: colors.$dark !important;
+    }
+}
+
+.dark {
+    p {
+        color: white !important;
+        opacity: 0.8;
+        font-weight: 300;
+    }
+
+    .topbarOverlay {
+        opacity: 0.1 !important;
+    }
+
+    svg {
+        opacity: 0.8;
+
+        path {
+            fill: white;
+        }
+    }
+}

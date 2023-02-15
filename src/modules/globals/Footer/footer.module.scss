@@ -1,22 +1,70 @@
 @use '../../../styles/values/colors.scss';
+@use '../../../styles/values/typography.scss';
 
 .footerContainer {
     background-color: colors.$light;
-    padding: 3rem 0;
+    padding: 5rem 0;
     position: relative;
 
+    a {
+        cursor: pointer;
+    }
+
     .footerNav {
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 640px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 0.75fr;
+            gap: 3rem;
+        }
 
         h3 {
             font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            cursor: default;
         }
 
         ul {
             list-style: none;
             padding-left: 0;
+        }
+
+        .logo {
+            img {
+                height: 120px;
+                margin-top: 2rem;
+                opacity: 0.9
+            }
+        }
+    }
+
+    .footerNavBottom {
+        display: block;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 640px) {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 0.5fr;
+            gap: 12rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            cursor: default;
+        }
+
+        .footerLinks:nth-child(2) {
+            margin-top: 4.2rem;
+        }
+
+        .footerHeading {
+            font-family: 'DM Serif Display';
+            font-size: 1.8rem;
+            line-height: 2rem;
+            margin-bottom: 0.5rem;
         }
     }
 
@@ -25,19 +73,44 @@
         flex-direction: column;
         margin-top: 1rem;
 
+        li {
+            font-size: .9rem;
+            line-height: 1.8rem;
+        }
+
+        .openingHours {
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0.15rem;
+
+                span {
+                    // font-family: '';
+                }
+            }
+        }
+
         .contact {
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
+
+            a {
+                color: colors.$red !important;
+            }
+        }
+
+        h3 {
+            font-family: typography.$sans-medium;
         }
 
         a {
-            font-size: 1.1rem;
-            line-height: 2rem;
-            color: colors.$peach !important;
+            font-size: 1.05rem;
+            line-height: 1.8rem;
+
 
             &:hover {
-                color: colors.$red-peach !important;
+                text-decoration: underline;
             }
 
         }
@@ -45,12 +118,11 @@
     }
 
     .socials {
+        margin-top: 9rem;
         display: flex;
-        position: absolute;
-        right: 3rem;
 
         a {
-            opacity: 0.3;
+            opacity: 0.8;
 
             &:hover {
                 opacity: 1;
@@ -60,6 +132,7 @@
                 width: 1.5rem;
                 height: 1.5rem;
                 margin-right: 0.75rem;
+                fill: colors.$red-peach;
             }
         }
 

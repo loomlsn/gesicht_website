@@ -1,0 +1,164 @@
+@use '../../styles/values/colors.scss';
+@use '../../styles/values/animations.scss';
+
+.heroContainer {
+    color: white;
+
+    &.lg {
+        height: 600px;
+
+        @media (min-width: 768px) {
+            height: 600px;
+        }
+    }
+
+    &.sm {
+        height: 400px;
+
+        @media (min-width: 768px) {
+            height: 500px;
+        }
+    }
+
+    &.light {
+        background-color: colors.$light;
+
+        h1 {
+            color: colors.$red-peach !important;
+        }
+    }
+
+    &.dark {
+        background-color: colors.$forest-green;
+
+        h1,
+        h2 {
+            color: white !important;
+        }
+    }
+
+    .heroContentLg {
+        max-width: 80%;
+        padding-top: 15rem;
+        margin-bottom: 50px;
+
+        @media (min-width: 768px) {
+            padding-top: 15rem;
+            max-width: 40%;
+        }
+
+        @media (min-width: 988px) {
+            max-width: 30%;
+        }
+    }
+
+    .heroContentSm {
+        max-width: 80%;
+        margin-bottom: 50px;
+        padding-top: 15rem;
+
+        @media (min-width: 768px) {
+            padding-top: 15rem;
+            max-width: 30%;
+        }
+    }
+
+    h1 {
+        color: colors.$red-peach;
+        line-height: 3rem;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+
+        @media (min-width: 768px) {
+            line-height: 5rem;
+            margin-bottom: 1.5rem;
+            font-size: 4rem;
+        }
+    }
+
+    h2 {
+        color: colors.$red;
+        max-width: 100%;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+}
+
+.cardsContainer {
+    margin-left: 30%;
+    position: relative;
+    padding: 3rem 0;
+    display: none;
+
+    @media (min-width: 640px) {
+        display: block;
+    }
+
+    a {
+        display: block;
+        width: 300px;
+        background-color: white;
+        height: max-content;
+        position: relative;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .cardContent {
+            padding: 1.3rem 1.75rem;
+        }
+
+        h3 {
+            font-size: 1.45rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    a:first-child {
+        position: absolute;
+        right: 55%;
+        top: -60px;
+        background-color: colors.$dark;
+        color: colors.$gray;
+
+        &:hover {
+            background-color: colors.$dark;
+            color: colors.$gray;
+        }
+
+    }
+
+    a:last-child {
+        width: 350px;
+        position: absolute;
+        right: 10%;
+        top: -150px;
+        background-color: colors.$gray;
+        color: colors.$dark;
+        overflow: hidden;
+
+
+        &:hover {}
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        img {
+            width: 130%;
+            margin-left: -65px;
+        }
+
+    }
+}

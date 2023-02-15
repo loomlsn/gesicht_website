@@ -1,5 +1,7 @@
 import React from "react";
-import CardsHero from "../../../components/CardsHero";
+import Hero from "../../../components/Hero";
+import Prices from "../../../components/Prices";
+import { colorTheme } from "../../globals/settings";
 
 type PricesPageProps = {
 
@@ -8,10 +10,9 @@ type PricesPageProps = {
 export default function PricesPage({ }: PricesPageProps) {
     return (
         <>
-            <CardsHero size={'sm'} title={"Priser"} description={"tekst"} />
-            <div>
-                <p>Tekst</p>
-            </div>
+            <Hero size={'sm'} title={"Priser"} colorTheme={colorTheme} />
+            {/* <CardsHero size={'sm'} title={"Priser"} description={"tekst"} /> */}
+            <Prices />
         </>
     )
-}
+}            

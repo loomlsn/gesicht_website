@@ -1,5 +1,7 @@
 import React from "react";
-import CardsHero from "../../../components/CardsHero";
+import Booking from "../../../components/Booking";
+import Hero from "../../../components/Hero";
+import { colorTheme } from "../../globals/settings";
 
 type BookingPageProps = {
 
@@ -8,10 +10,8 @@ type BookingPageProps = {
 export default function BookingPage({ }: BookingPageProps) {
     return (
         <>
-            <CardsHero size={'sm'} title={"Booking"} description={"tekst"} />
-            <div>
-                <p>Tekst</p>
-            </div>
+            <Hero size={'sm'} title={"Book en tid"} colorTheme={colorTheme} />
+            <Booking />
         </>
     )
 }
