@@ -82,11 +82,15 @@ a {
 
 .splide__arrows {
   position: absolute;
-  left: -15px;
+  left: 1rem;
   top: 2.25rem;
   width: 85px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    left: -15px;
+  }
 }
 
 .splide__arrow {

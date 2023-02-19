@@ -1,0 +1,155 @@
+@use '../../../styles/values/colors.scss';
+@use '../../../styles/values/animations.scss';
+@use '../../../styles/values/typography.scss';
+
+.introOuter {
+    position: relative;
+
+    &.light {
+        .bgRight {
+            background-color: colors.$forest-green;
+        }
+
+        .border {
+            background-color: white;
+        }
+
+        .introContainer {
+            color: white;
+        }
+    }
+
+    &.dark {
+        .bgRight {
+            background-color: colors.$light;
+        }
+
+        .border {
+            background-color: colors.$red-peach;
+        }
+
+        .introContainer {
+            color: colors.$red-peach;
+        }
+    }
+
+    .bgRight {
+
+
+        @media (min-width: 768px) {
+            height: 100%;
+            width: 55vw;
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    &:hover .border {
+        width: 60%;
+    }
+
+    .border {
+        height: 2px;
+        width: 0%;
+        margin-top: 2rem;
+        transition: 0.6s;
+    }
+
+    .introContainer {
+        padding: 0;
+
+        @media (min-width: 768px) {
+            padding: 200px 1.25rem 150px 1.25rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .introTitle {
+            max-width: 400px;
+            padding: 0 1.25rem;
+
+            h2 {
+                font-family: typography.$serif;
+                font-size: 2.5rem;
+                line-height: 2.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-top: 1rem;
+                font-weight: 400;
+            }
+        }
+
+        .introImage {
+            img {
+                position: relative;
+                width: 100%;
+                margin-bottom: 3rem;
+
+                @media (min-width: 768px) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 45%;
+                    height: 100%;
+                    object-fit: cover;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+}
+
+.booking {
+    &.closed {
+        visibility: hidden;
+    }
+
+    &.open {
+        visibility: visible;
+    }
+
+    &Overlay {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    &Inner {
+        background-color: white;
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+
+        iframe {
+            width: 100%;
+            border: none;
+            min-height: 750px;
+        }
+    }
+
+    &Close {
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        svg {
+            display: block;
+            width: 25px;
+        }
+    }
+}

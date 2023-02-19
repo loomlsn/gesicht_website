@@ -1,0 +1,191 @@
+@use '../../../styles/values/colors.scss';
+@use '../../../styles/values/animations.scss';
+@use '../../../styles/values/typography.scss';
+
+.aboutContainer {
+    color: colors.$dark;
+
+    .aboutInner {
+        padding: 50px 1.25rem 100px 1.25rem;
+
+        @media (min-width: 768px) {
+            padding: 100px 1.25rem;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 4rem;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 100px 0 150px 0;
+        }
+    }
+
+    .introAbout {
+        h2 {
+            // color: colors.$red-peach;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+
+            @media (min-width: 768px) {
+                font-size: 1.9rem;
+            }
+        }
+
+        p {
+            margin-top: 1rem;
+            line-height: 25px;
+        }
+    }
+
+    .imageAbout {
+        div {
+            font-size: 1.25rem;
+            font-family: typography.$sans;
+            text-align: left;
+        }
+    }
+
+}
+
+.employeesContainer {
+    // background-color: colors.$dark;
+    // color: white;
+    padding-bottom: 30px;
+    position: relative;
+    overflow-x: hidden;
+
+    @media (min-width: 768px) {
+        padding-bottom: 100px;
+    }
+
+    .divider {
+        height: 1px;
+        width: 200%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: black;
+    }
+
+    .employeeTextContainer {
+        display: block;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 22rem;
+        }
+
+        h2 {
+            padding-top: 3rem;
+            font-family: typography.$serif;
+
+            @media (min-width: 768px) {
+                margin-bottom: 4rem;
+                padding-top: 4rem;
+            }
+        }
+
+        p {
+            margin-bottom: 4rem;
+            padding-top: 4rem;
+            font-size: 1.5rem;
+
+            @media (min-width: 768px) {}
+        }
+    }
+
+    .employeesInner {
+        // padding: 150px 2rem 150px 2rem;
+
+        // @media (min-width: 768px) {
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr 1fr 1fr;
+        //     gap: 4rem;
+        // }
+
+        .employee {
+            margin-bottom: 4rem;
+
+            h3 {
+                font-family: typography.$sans-medium;
+                color: colors.$red-peach;
+                font-size: 1.25rem;
+                margin-bottom: .7rem;
+            }
+
+            .employeeDivider {
+                display: none;
+
+                @media (min-width: 768px) {
+                    display: block;
+                    margin-top: 2rem;
+                    width: 300px;
+                    height: 1px;
+                    background-color: black;
+                }
+            }
+        }
+
+        .employee:nth-child(even) {
+            display: flex;
+            flex-direction: column-reverse;
+
+            @media (min-width: 768px) {
+                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+                gap: 5rem;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 1rem;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                }
+            }
+
+            .info {
+                margin: 0.5rem 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: left;
+
+                @media (min-width: 768px) {
+                    width: max-content;
+                    margin-left: 30%;
+                }
+            }
+        }
+
+        .employee:nth-child(odd) {
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+                gap: 5rem;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 1rem;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                }
+
+            }
+
+            .info {
+                margin: 0.5rem 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: left;
+            }
+        }
+    }
+}

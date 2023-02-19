@@ -1,4 +1,5 @@
 @use '../../../styles/values/colors.scss';
+@use '../../../styles/values/typography.scss';
 
 .headerContainer {
     display: flex;
@@ -72,6 +73,7 @@
                 height: 2.25rem;
                 stroke: white;
             }
+
         }
 
         .navContainer {
@@ -124,6 +126,7 @@
                     font-size: 1.45rem;
                     margin-right: 1rem;
                     line-height: 3.5rem;
+                    color: colors.$red-peach !important;
                 }
             }
 
@@ -132,20 +135,26 @@
 
                 h3 {
                     font-size: 1.25rem;
+                    margin-bottom: 1rem;
                 }
 
                 ul {
                     list-style: none;
                     padding-left: 0;
+                    margin-bottom: 1.5rem;
 
                     li {
                         font-size: 1.1rem;
-                        line-height: 1.5rem;
+                        line-height: 1.8rem;
                     }
 
                     &:last-child {
                         color: colors.$red-peach;
+                        margin-bottom: 1.8rem;
 
+                        li {
+                            font-size: 1.25rem;
+                        }
                     }
                 }
             }
@@ -160,6 +169,16 @@
             width: 100vw;
             height: 100vh;
             z-index: 99;
+        }
+
+        .language a {
+            color: black !important;
+            letter-spacing: 1px;
+        }
+
+        .activeLanguage {
+            text-decoration: underline;
+            font-family: typography.$sans-medium;
         }
     }
 }

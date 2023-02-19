@@ -3,8 +3,12 @@
 
 .footerContainer {
     background-color: colors.$light;
-    padding: 5rem 0;
+    padding: 2rem 0;
     position: relative;
+
+    @media (min-width: 768px) {
+        padding: 5rem 0;
+    }
 
     a {
         cursor: pointer;
@@ -14,7 +18,13 @@
         display: block;
         margin-bottom: 1.5rem;
 
-        @media (min-width: 640px) {
+        @media (min-width: 400px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        @media (min-width: 768px) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 0.75fr;
             gap: 3rem;
@@ -33,9 +43,18 @@
 
         .logo {
             img {
-                height: 120px;
+                height: 80px;
                 margin-top: 2rem;
-                opacity: 0.9
+                opacity: 0.9;
+
+                @media (min-width: 400px) {
+                    margin-top: 5rem;
+                }
+
+                @media (min-width: 768px) {
+                    height: 120px;
+                    margin-top: 2rem;
+                }
             }
         }
     }
@@ -44,7 +63,13 @@
         display: block;
         margin-bottom: 1.5rem;
 
-        @media (min-width: 640px) {
+        // @media (min-width: 400px) {
+        //     display: grid;
+        //     grid-template-columns: 1.5fr 0.5fr;
+        //     // gap: 12rem;
+        // }
+
+        @media (min-width: 768px) {
             display: grid;
             grid-template-columns: 1.5fr 1fr 0.5fr;
             gap: 12rem;
@@ -61,7 +86,7 @@
         }
 
         .footerHeading {
-            font-family: 'DM Serif Display';
+            font-family: typography.$serif;
             font-size: 1.8rem;
             line-height: 2rem;
             margin-bottom: 0.5rem;
@@ -71,7 +96,11 @@
     .footerLinks {
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 2.5rem;
+
+        @media (min-width: 640px) {
+            margin-top: 1rem;
+        }
 
         li {
             font-size: .9rem;
@@ -118,8 +147,13 @@
     }
 
     .socials {
-        margin-top: 9rem;
+        margin-top: -1rem;
         display: flex;
+
+
+        @media (min-width: 768px) {
+            margin-top: 9rem;
+        }
 
         a {
             opacity: 0.8;

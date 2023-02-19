@@ -5,12 +5,24 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 import styles from './header.module.scss'
 import useWindowDimensions, { isDeviceMobile } from "../../../helpers/useWindowDimensions";
+import { getDictionaryValue } from "../../../helpers/getDictionaryValue";
+import { useRouter } from "next/router";
 
 type HeaderProps = {
     colorTheme: 'dark' | 'light';
 }
 
 export const Header = ({ colorTheme }: HeaderProps) => {
+    const data = getDictionaryValue();
+    const { locale, ...router } = useRouter();
+
+    function isLocaleActive(text) {
+        if (text.toLowerCase() == locale) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     const [navOpen, setNavOpen] = useState(false);
 
     const isMobile = isDeviceMobile();
@@ -53,12 +65,9 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                     {!isMobile && (
                         <nav className={styles.largeNav}>
                             <ul>
-                                <li><Link href={"/"}>Hjem</Link></li>
-                                <li><Link href={"/behandlinger"}>Behandlinger</Link></li>
-                                <li><Link href={"/priser"}>Priser</Link></li>
-                                <li><Link href={"/om"}>Om Gesicht</Link></li>
-                                <li><Link href={"/kontakt"}>Kontakt os</Link></li>
-                                <li><Link href={"/booking"}>Book en tid</Link></li>
+                                {data.general.navigation.map((nav, i) => (
+                                    <li key={i}><Link href={nav.link}>{nav.name}</Link></li>
+                                ))}
                             </ul>
                         </nav>
                     )}
@@ -72,18 +81,17 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                                     </svg>
                                 </button>
                                 <ul className={styles.navLinks}>
-                                    <li><Link href={"/"}>Hjem</Link></li>
-                                    <li><Link href={"/behandlinger"}>Behandlinger</Link></li>
-                                    <li><Link href={"/priser"}>Priser</Link></li>
-                                    <li><Link href={"/om"}>Om Gesicht</Link></li>
-                                    <li><Link href={"/booking"}>Booking</Link></li>
-                                    <li><Link href={"/kontakt"}>Kontakt os</Link></li>
+                                    {data.general.navigation.map((nav, i) => {
+                                        return (
+                                            <li key={`nav-${i}`}><Link href={nav.link}>{nav.name}</Link></li>
+                                        )
+                                    })}
                                 </ul>
                                 <div className={styles.location}>
-                                    <h3>Find os</h3>
+                                    <h3>{data.general.mobileNav.findUs}</h3>
                                     <ul>
-                                        <li>Knabostræde 15, st. th</li>
-                                        <li>1210 København K</li>
+                                        <li>{data.general.addressStreet}</li>
+                                        <li>{data.general.addressCity}</li>
                                     </ul>
                                     <ul>
                                         <li>+45 53 63 75 40</li>
@@ -91,7 +99,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                                     </ul>
                                 </div>
                                 <div className={styles.language}>
-                                    DA / EN
+                                    <Link href="" locale={locale === "da" ? "en" : "da"}><span className={isLocaleActive("da") && styles.activeLanguage}>DA</span> / <span className={isLocaleActive("en") && styles.activeLanguage}>EN</span></Link>
                                 </div>
                             </div>
                             <button onClick={toggleNav} className={styles.navClosed}>
