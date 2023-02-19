@@ -2,31 +2,3 @@ $sans: 'DM Sans Regular', DM Sans, Montserrat;
 $sans-medium: 'DM Sans Medium', DM Sans, Montserrat;
 $sans-bold: 'DM Sans Bold', DM Sans, Montserrat;
 $serif: 'DM Serif Display', DM Serif Display, Montserrat;
-
-@font-face {
-    font-family: 'DM Sans Regular';
-    src: url('/fonts/DMSans-Regular.woff') format('woff');
-    src: url('/fonts/DMSans-Regular.woff2') format('woff2');
-    src: url('/fonts/DMSans-Regular.ttf') format('ttf');
-}
-
-@font-face {
-    font-family: 'DM Sans Medium';
-    src: url('/fonts/DMSans-Medium.woff') format('woff');
-    src: url('/fonts/DMSans-Medium.woff2') format('woff2');
-    src: url('/fonts/DMSans-Medium.ttf') format('ttf');
-}
-
-@font-face {
-    font-family: 'DM Sans Bold';
-    src: url('/fonts/DMSans-Bold.woff') format('woff');
-    src: url('/fonts/DMSans-Bold.woff2') format('woff2');
-    src: url('/fonts/DMSans-Bold.ttf') format('ttf');
-}
-
-@font-face {
-    font-family: 'DM Serif Display';
-    src: url('/fonts/DMSerifDisplay-Regular.woff') format('woff');
-    src: url('/fonts/DMSerifDisplay-Regular.woff2') format('woff2');
-    src: url('/fonts/DMSerifDisplay-Regular.ttf') format('ttf');
-}
