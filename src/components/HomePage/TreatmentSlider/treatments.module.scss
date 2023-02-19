@@ -41,6 +41,7 @@
     position: absolute;
     width: 100vw;
     left: 0;
+    display: block;
 
     @media (min-width: 768px) {
         padding: 100px 0;

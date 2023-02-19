@@ -325,12 +325,78 @@ export const textDA = {
     filler: {
         hero: {
             title: "Filler"
-        }
+        },
+        intro: {
+            teaser: "Vi bruger altid Aliaxin til vores fillerbehandlinger, der styrker den naturlige produktion af noget.",
+            title: "Fillerbehandling er en ",
+            secondTitle: "kunstform",
+            text: [
+                {
+                    text: "Hos Gesicht anvender vi ikke-permanente fillers, som består af hyaluronsyre. Hyaluronsyre er et stort molekyle, som findes i kroppens bindevæv, deriblandt huden. Hyaluronsyres funktion i huden er at binde vand og på den måde udfylde rummet mellem bindevævets øvrige strukturgivende molekyler, herunder kollagen og elastiske fibre. Hyaluronsyre er naturens måde at give huden fylde og mekanisk modstandskraft."
+                },
+                {
+                    text: "Med alderen mindskes mængden af hyaluronsyre i huden. Dette skyldes til dels den helt naturlige og uundgåelige aldringsproces, men tabet af hyaluronsyre kan især forværres, hvis huden er blevet udsat for store mængder sol gennem livet. "
+                },
+                {
+                    text: "Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer."
+                },
+            ]
+        },
+        treatments: [
+            {
+                name: "Læber",
+                description: "Fillerbehandling af læberne kan give mere fylde og øge konturen omkring læberne.",
+                link: "/behandlinger/filler"
+            },
+            {
+                name: "Kindben",
+                description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
+                link: "/behandlinger/filler"
+            },
+            {
+                name: "Ansigt",
+                description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
+                link: "/behandlinger/filler"
+            },
+        ],
     },
     profhilo: {
         hero: {
             title: "Profhilo"
-        }
+        },
+        intro: {
+            teaser: "Vi bruger altid Aliaxin til vores fillerbehandlinger, der styrker den naturlige produktion af noget.",
+            title: "Fillerbehandling er en ",
+            secondTitle: "kunstform",
+            text: [
+                {
+                    text: "Hos Gesicht anvender vi ikke-permanente fillers, som består af hyaluronsyre. Hyaluronsyre er et stort molekyle, som findes i kroppens bindevæv, deriblandt huden. Hyaluronsyres funktion i huden er at binde vand og på den måde udfylde rummet mellem bindevævets øvrige strukturgivende molekyler, herunder kollagen og elastiske fibre. Hyaluronsyre er naturens måde at give huden fylde og mekanisk modstandskraft."
+                },
+                {
+                    text: "Med alderen mindskes mængden af hyaluronsyre i huden. Dette skyldes til dels den helt naturlige og uundgåelige aldringsproces, men tabet af hyaluronsyre kan især forværres, hvis huden er blevet udsat for store mængder sol gennem livet. "
+                },
+                {
+                    text: "Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer."
+                },
+            ]
+        },
+        treatments: [
+            {
+                name: "Udglatning af rynker og linjer",
+                description: "Vi bruger Profhilo til at skabe fylde og opstramning til bl.a. ansigt, hals og hænder.",
+                link: "/behandlinger/profhilo"
+            },
+            {
+                name: "Fylde til hængende hud og 'mormorarme'",
+                description: "En Profhilobehandling kan glatte huden ud og stramme op omkring overarmene.",
+                link: "/behandlinger/profhilo"
+            },
+            {
+                name: "Fylde til hængende hud og 'mormorarme'",
+                description: "En Profhilobehandling kan glatte huden ud og stramme op omkring overarmene.",
+                link: "/behandlinger/profhilo"
+            },
+        ],
     },
     about: {
         hero: {
@@ -728,13 +794,79 @@ export const textEN = {
     },
     filler: {
         hero: {
-            title: "Filler"
-        }
+            title: "Fillers"
+        },
+        intro: {
+            teaser: "Vi bruger altid Aliaxin til vores fillerbehandlinger, der styrker den naturlige produktion af noget.",
+            title: "Working with fillers is a ",
+            secondTitle: "form of art",
+            text: [
+                {
+                    text: "Hos Gesicht anvender vi ikke-permanente fillers, som består af hyaluronsyre. Hyaluronsyre er et stort molekyle, som findes i kroppens bindevæv, deriblandt huden. Hyaluronsyres funktion i huden er at binde vand og på den måde udfylde rummet mellem bindevævets øvrige strukturgivende molekyler, herunder kollagen og elastiske fibre. Hyaluronsyre er naturens måde at give huden fylde og mekanisk modstandskraft."
+                },
+                {
+                    text: "Med alderen mindskes mængden af hyaluronsyre i huden. Dette skyldes til dels den helt naturlige og uundgåelige aldringsproces, men tabet af hyaluronsyre kan især forværres, hvis huden er blevet udsat for store mængder sol gennem livet. "
+                },
+                {
+                    text: "Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer."
+                },
+            ]
+        },
+        treatments: [
+            {
+                name: "Lips",
+                description: "Fillerbehandling af læberne kan give mere fylde og øge konturen omkring læberne.",
+                link: "/behandlinger/filler"
+            },
+            {
+                name: "Cheekbones",
+                description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
+                link: "/behandlinger/filler"
+            },
+            {
+                name: "Face",
+                description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
+                link: "/behandlinger/filler"
+            },
+        ],
     },
     profhilo: {
         hero: {
             title: "Profhilo"
-        }
+        },
+        intro: {
+            teaser: "Vi bruger altid Aliaxin til vores fillerbehandlinger, der styrker den naturlige produktion af noget.",
+            title: "Fillerbehandling er en ",
+            secondTitle: "kunstform",
+            text: [
+                {
+                    text: "Hos Gesicht anvender vi ikke-permanente fillers, som består af hyaluronsyre. Hyaluronsyre er et stort molekyle, som findes i kroppens bindevæv, deriblandt huden. Hyaluronsyres funktion i huden er at binde vand og på den måde udfylde rummet mellem bindevævets øvrige strukturgivende molekyler, herunder kollagen og elastiske fibre. Hyaluronsyre er naturens måde at give huden fylde og mekanisk modstandskraft."
+                },
+                {
+                    text: "Med alderen mindskes mængden af hyaluronsyre i huden. Dette skyldes til dels den helt naturlige og uundgåelige aldringsproces, men tabet af hyaluronsyre kan især forværres, hvis huden er blevet udsat for store mængder sol gennem livet. "
+                },
+                {
+                    text: "Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer."
+                },
+            ]
+        },
+        treatments: [
+            {
+                name: "Udglatning af rynker og linjer",
+                description: "Vi bruger Profhilo til at skabe fylde og opstramning til bl.a. ansigt, hals og hænder.",
+                link: "/behandlinger/profhilo"
+            },
+            {
+                name: "Fylde til hængende hud og 'mormorarme'",
+                description: "En Profhilobehandling kan glatte huden ud og stramme op omkring overarmene.",
+                link: "/behandlinger/profhilo"
+            },
+            {
+                name: "Fylde til hængende hud og 'mormorarme'",
+                description: "En Profhilobehandling kan glatte huden ud og stramme op omkring overarmene.",
+                link: "/behandlinger/profhilo"
+            },
+        ],
     },
     about: {
         hero: {

@@ -88,5 +88,19 @@
                 }
             }
         }
+
+        @media (max-width: 1200px) {
+            a:nth-child(4) {
+                display: none;
+            }
+
+            a:nth-child(5) {
+                display: none;
+            }
+
+            a:nth-child(6) {
+                display: none;
+            }
+        }
     }
 }

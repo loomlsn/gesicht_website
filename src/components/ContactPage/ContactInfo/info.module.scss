@@ -6,13 +6,26 @@
     color: colors.$dark;
 
     .aboutInner {
-        padding: 150px 0;
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 16rem;
+        padding: 50px 1.25rem;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 16rem;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 150px 0;
+        }
     }
 
     .contactInfoItem {
+        margin-bottom: 4rem;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+
         h2 {
             font-size: 1.3rem;
             margin-bottom: 1.2rem;
@@ -35,14 +48,22 @@
 
         .phoneMail {
             margin-top: 2.5rem;
-            display: flex;
             font-size: 1.1rem;
             color: colors.$red-peach;
+
+            @media (min-width: 768px) {
+                display: flex;
+            }
 
             div {
                 margin-right: 2rem;
                 display: flex;
                 align-items: center;
+                margin-bottom: 1rem;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                }
 
                 span {
                     margin-right: 1rem;

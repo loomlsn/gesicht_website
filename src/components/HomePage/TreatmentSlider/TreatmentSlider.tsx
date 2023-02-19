@@ -8,9 +8,11 @@ export default function TreatmentSlider() {
 
     const options = {
         type: 'loop',
-        600: {
-            perPage: 2,
-            gap: 5,
+        perPage: 4,
+        breakpoints: {
+            550: {
+                perPage: 1,
+            },
         },
         // speed: 0,
         snap: false,

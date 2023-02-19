@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../../components/Heroes/Hero";
-import IntroSection from "../../../components/TreatmentsPage/IntroSection";
+import IntroSection from "../../../components/TreatmentsPage/IntroSection/IntroSection";
 import Treatments from "../../../components/HomePage/TreatmentSlider";
 import { getDictionaryValue } from "../../../helpers/getDictionaryValue";
 import { colorTheme } from "../../globals/settings";
