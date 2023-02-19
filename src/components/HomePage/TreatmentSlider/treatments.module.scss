@@ -36,14 +36,23 @@
     }
 }
 
+.height {
+    height: 650px;
+
+    @media (min-width: 768px) {
+        height: 800px;
+    }
+}
+
 .splideContainer {
     padding: 100px 1.25rem;
-    position: absolute;
+    position: relative;
     width: 100vw;
     left: 0;
     display: block;
 
     @media (min-width: 768px) {
+        position: absolute;
         padding: 100px 0;
         padding-bottom: 150px;
     }

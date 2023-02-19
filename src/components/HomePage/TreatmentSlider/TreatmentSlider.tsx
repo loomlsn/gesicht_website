@@ -23,6 +23,7 @@ export default function TreatmentSlider() {
             prev: 'splide__arrow--prev arrow-prev',
             next: 'splide__arrow--next arrow-next',
         },
+        navigation: false,
     }
 
     return (
@@ -35,7 +36,7 @@ export default function TreatmentSlider() {
                         <div className={styles.treatmentsDivider}></div>
                     </div>
                 </div>
-                <div className="relative container p-0">
+                <div className={`relative container p-0 ${styles.height}`}>
                     <Splide aria-label="Behandlinger" options={options} className={styles.splideContainer}>
                         <SplideSlide>
                             <Link href={"/behandlinger"}>
