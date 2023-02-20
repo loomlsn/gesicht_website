@@ -7,6 +7,10 @@ import StartPage from '../modules/templates/StartPage';
 export default function Home() {
   const { locale, locales, asPath } = useRouter();
 
+  function getThemeColor() {
+    return "#FF5757";
+  }
+
   return (
     <>
       <Head>
@@ -15,6 +19,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content={getThemeColor()} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
