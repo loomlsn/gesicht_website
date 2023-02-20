@@ -9,9 +9,8 @@
     margin-bottom: -110px;
 
     .logoContainer {
-        position: relative;
+        position: absolute;
         top: 2rem;
-        // left: 2rem;
 
         img {
             width: 65px;
@@ -86,7 +85,8 @@
             opacity: 0;
             width: 100vw;
             padding: 2.5rem;
-            height: 100vh;
+            margin-top: -50px;
+            height: calc(100vh + 50px);
             background-color: colors.$light;
 
             @media (min-width: 1000px) {
@@ -111,7 +111,7 @@
                 height: 2.25rem;
                 padding: 0.1rem;
                 position: absolute;
-                top: 2rem;
+                top: 5rem;
                 right: 2rem;
             }
 
