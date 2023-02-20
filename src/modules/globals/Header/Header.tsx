@@ -72,7 +72,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                         </nav>
                     )}
                     {isMobile && (
-                        <nav className={styles.mobileNav}>
+                        <nav className={styles.mobileNav} data-scroll-theme>
                             <div className={navOpen && styles.overlay} onClick={toggleNav}></div>
                             <div className={`${styles.navContainer} ${navOpen ? styles.open : ""}`}>
                                 <button onClick={toggleNav} className={styles.navOpen}>
