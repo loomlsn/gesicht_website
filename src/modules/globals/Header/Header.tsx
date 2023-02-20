@@ -43,11 +43,13 @@ export const Header = ({ colorTheme }: HeaderProps) => {
             // document.body.style.position = "fixed";
             document.body.style.width = "100%";
             document.body.style.paddingRight = "15px";
+            document.querySelector("meta[name='theme-color']").setAttribute("content", "#F3EAEA");
         } else {
             document.body.style.removeProperty("overflow");
             document.body.style.removeProperty("position");
             document.body.style.removeProperty("width");
             document.body.style.paddingRight = "0";
+            document.querySelector("meta[name='theme-color']").setAttribute("content", "#485742");
         }
     }, [navOpen])
 
