@@ -72,9 +72,9 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                         </nav>
                     )}
                     {isMobile && (
-                        <nav className={styles.mobileNav} data-scroll-theme>
+                        <nav className={styles.mobileNav}>
                             <div className={navOpen && styles.overlay} onClick={toggleNav}></div>
-                            <div className={`${styles.navContainer} ${navOpen ? styles.open : ""}`}>
+                            <div className={`${styles.navContainer} ${navOpen ? styles.open : ""}`} data-scroll-theme>
                                 <button onClick={toggleNav} className={styles.navOpen}>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

@@ -54,7 +54,10 @@ export default function Home() {
     // run every 100ms
   }, 100)
 
-  document.addEventListener('scroll', handleScroll, { passive: true })
+
+  if (typeof window !== 'undefined') {
+    document.addEventListener('scroll', handleScroll, { passive: true })
+  }
 
   return (
     <>
