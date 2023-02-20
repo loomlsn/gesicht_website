@@ -76,8 +76,8 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                             <div className={navOpen && styles.overlay} onClick={toggleNav}></div>
                             <div className={`${styles.navContainer} ${navOpen ? styles.open : ""}`}>
                                 <button onClick={toggleNav} className={styles.navOpen}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path strokeLinecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                 </button>
                                 <ul className={styles.navLinks}>
@@ -103,41 +103,12 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                                 </div>
                             </div>
                             <button onClick={toggleNav} className={styles.navClosed}>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                 </svg>
                             </button>
-
-                            {/* ) : (
-                            <button onClick={toggleNav} className={styles.navClosed}>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>
-                            </button>
-                        )} */}
                         </nav>
                     )}
-
-
-                    {/* 
-                    <button onClick={toggleNav}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
-                    {navOpen && (
-                        <nav>
-                            <button onClick={toggleNav}>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-
-                            </button>
-                            <Link href={"/"}>Hjem på develop</Link>
-                            <Link href={"/about/about"}>Om</Link>
-                            <Link href={"/services/services"}>Behandlinger</Link>
-                        </nav>
-                    )} */}
                 </div>
             </header >
         </div >
