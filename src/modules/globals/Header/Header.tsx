@@ -85,7 +85,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                                 <ul className={styles.navLinks}>
                                     {data.general.navigation.map((nav, i) => {
                                         return (
-                                            <li key={`nav-${i}`}><Link href={nav.link}>{nav.name}</Link></li>
+                                            <li key={`nav-${i}`}><Link href={nav.link} onClick={toggleNav}>{nav.name}</Link></li>
                                         )
                                     })}
                                 </ul>

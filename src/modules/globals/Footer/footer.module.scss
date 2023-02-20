@@ -20,7 +20,7 @@
 
         @media (min-width: 400px) {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr .75fr;
             gap: 3rem;
         }
 
@@ -49,9 +49,11 @@
 
                 @media (min-width: 400px) {
                     margin-top: 5rem;
+                    margin-left: 1rem;
                 }
 
                 @media (min-width: 768px) {
+                    margin-left: 0;
                     height: 120px;
                     margin-top: 2rem;
                 }
@@ -62,6 +64,14 @@
     .footerNavBottom {
         display: block;
         margin-bottom: 1.5rem;
+
+        .footerLinks {
+            margin-top: 4.5rem;
+
+            @media (min-width: 768px) {
+                margin-top: 2rem;
+            }
+        }
 
         // @media (min-width: 400px) {
         //     display: grid;
@@ -98,6 +108,10 @@
         flex-direction: column;
         margin-top: 2.5rem;
 
+        &:nth-child(3) {
+            margin-top: 1rem;
+        }
+
         @media (min-width: 640px) {
             margin-top: 1rem;
         }
@@ -108,6 +122,10 @@
         }
 
         .openingHours {
+            @media (max-width: 640px) {
+                max-width: 90%;
+            }
+
             li {
                 display: flex;
                 justify-content: space-between;

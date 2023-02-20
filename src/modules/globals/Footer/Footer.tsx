@@ -8,17 +8,6 @@ export const Footer = () => {
             <div className="container">
                 <div className={styles.footerNav}>
                     <div className={styles.footerLinks}>
-                        <h3>Find os</h3>
-                        <ul>
-                            <li>Knabrostræde 15, st. th</li>
-                            <li>1210 København K</li>
-                        </ul>
-                        <div className={styles.contact}>
-                            <Link href={'/'}>+45 30 30 30 30 </Link>
-                            <Link href={'/'}>hello@gesicht.dk </Link>
-                        </div>
-                    </div>
-                    <div className={styles.footerLinks}>
                         <h3>Behandlinger</h3>
                         <ul>
                             <Link href={'/'}><li>Fillerbehandling</li></Link>
@@ -48,6 +37,17 @@ export const Footer = () => {
                             <br />
                             <li>CVR: 39328666</li>
                         </ul> */}
+                    </div>
+                    <div className={styles.footerLinks}>
+                        <h3>Find os</h3>
+                        <ul>
+                            <li>Knabrostræde 15, st. th</li>
+                            <li>1210 København K</li>
+                        </ul>
+                        <div className={styles.contact}>
+                            <Link href={'/'}>+45 30 30 30 30 </Link>
+                            <Link href={'/'}>hello@gesicht.dk </Link>
+                        </div>
                     </div>
                     <div className={styles.logo}>
                         <img src="/logo/gesicht_logo_pink_darker.svg"></img>
