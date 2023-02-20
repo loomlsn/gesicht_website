@@ -37,16 +37,20 @@
 
             &:focus {
                 color: colors.$red-peach;
+
+                .treatment::after {
+                    background-color: colors.$red-peach;
+                }
             }
 
             &:hover {
 
                 @media (min-width: 768px) {
                     color: colors.$red-peach;
-                }
 
-                .treatment::after {
-                    background-color: colors.$red-peach;
+                    .treatment::after {
+                        background-color: colors.$red-peach;
+                    }
                 }
             }
         }

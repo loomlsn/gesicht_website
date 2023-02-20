@@ -14,8 +14,10 @@
 
     &.dark {
         .payment {
-            background-color: colors.$light;
-            color: colors.$red-peach;
+            // background-color: colors.$light;
+            // color: colors.$red-peach;
+            background-color: colors.$forest-green;
+            color: white;
         }
     }
 }
@@ -167,8 +169,12 @@
 
     p {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         line-height: 1.5rem;
+
+        @media (min-width: 768px) {
+            margin-bottom: 1rem;
+        }
     }
 }
 
