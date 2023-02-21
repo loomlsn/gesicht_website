@@ -120,7 +120,9 @@ export const textDA = {
         },
         treatments: {
             title: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde.",
-            text: "Vi sætter prikken over i'et.",
+            text: "Vi sætter ",
+            textHighlighted: "prikken",
+            textAfter: " over i'et.",
             slider: [
                 {
                     name: "Korrektioner",
@@ -628,7 +630,9 @@ export const textEN = {
         },
         treatments: {
             title: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde.",
-            text: "Vi sætter prikken over i'et.",
+            text: "Vi sætter ",
+            textHighlighted: "prikken",
+            textAfter: " over i'et.",
             slider: [
                 {
                     name: "Korrektioner",

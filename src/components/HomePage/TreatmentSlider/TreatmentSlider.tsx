@@ -33,7 +33,7 @@ export default function TreatmentSlider() {
                 <div className={`container`}>
                     <div className={styles.titleContainer}>
                         <h2>{data.home.treatments.title}</h2>
-                        <h3>{data.home.treatments.text}</h3>
+                        <h3>{data.home.treatments.text}<span>{data.home.treatments.textHighlighted}</span>{data.home.treatments.textAfter}</h3>
                     </div>
                     <div className={styles.galleryContainer}>
                         {data.home.treatments.images.map((item, i) => {
