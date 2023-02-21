@@ -35,6 +35,8 @@ export const Header = ({ colorTheme }: HeaderProps) => {
         }
     }
 
+    const themeColor = colorTheme === "dark" ? "#485742" : "#F3EAEA";
+
     useEffect(() => {
         if (navOpen) {
             document.body.style.overflow = "hidden";
@@ -47,7 +49,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
             document.body.style.removeProperty("position");
             document.body.style.removeProperty("width");
             document.body.style.paddingRight = "0";
-            document.querySelector("meta[name='theme-color']").setAttribute("content", "#485742");
+            document.querySelector("meta[name='theme-color']").setAttribute("content", themeColor);
         }
     }, [navOpen])
 

@@ -28,7 +28,7 @@
         }
 
         svg {
-            stroke: black !important;
+            stroke: colors.$red-peach !important;
         }
 
     }
@@ -80,7 +80,7 @@
             display: block;
             position: absolute;
             top: 2rem;
-            right: 1.75rem;
+            right: 1.25rem;
 
             svg {
                 width: 2.25rem;

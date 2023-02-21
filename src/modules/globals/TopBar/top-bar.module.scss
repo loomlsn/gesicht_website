@@ -151,5 +151,6 @@
 
 
 .activeLanguage {
-    text-decoration: underline;
+    // text-decoration: underline;
+    font-family: typography.$sans-bold;
 }

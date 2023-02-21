@@ -3,9 +3,10 @@ import React from "react"
 import styles from './treatments.module.scss'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { getDictionaryValue } from "../../../helpers/getDictionaryValue";
 
 export default function TreatmentSlider() {
-
+    const data = getDictionaryValue();
     const options = {
         type: 'loop',
         perPage: 4,
@@ -28,15 +29,23 @@ export default function TreatmentSlider() {
 
     return (
         <>
-            <div className={styles.treatments}>
-                <div className={`container ${styles.treatmentsIntro}`}>
-                    <div>
-                        <h2>Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde.</h2>
-                        <Link href="/behandlinger">Se alle vores behandlinger</Link>
-                        <div className={styles.treatmentsDivider}></div>
+            <div className={styles.gallery}>
+                <div className={`container`}>
+                    <div className={styles.titleContainer}>
+                        <h2>{data.home.treatments.title}</h2>
+                        <h3>{data.home.treatments.text}</h3>
+                    </div>
+                    <div className={styles.galleryContainer}>
+                        {data.home.treatments.images.map((item, i) => {
+                            return (
+                                <div key={`gallery-${i}`}>
+                                    <img src={item.src} alt={item.alt} />
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
-                <div className={`relative container p-0 ${styles.height}`}>
+                {/* <div className={`relative container p-0 ${styles.height}`}>
                     <Splide aria-label="Behandlinger" options={options} className={styles.splideContainer}>
                         <SplideSlide>
                             <Link href={"/behandlinger"}>
@@ -63,7 +72,7 @@ export default function TreatmentSlider() {
                         <SplideSlide>
                             <Link href={"/behandlinger"}>
                                 <div className={styles.splideItem}>
-                                    <img src="/hero/header-3.jpg" alt="Profhilo" />
+                                    <img src="/treatments/profhilo.jpg" alt="Profhilo" />
                                     <div>
                                         <h3>Rynkebehandling</h3>
                                         <p>Med Profhilo kan vi udglatte rynker og skabe et yngre udtryk.</p>
@@ -105,7 +114,7 @@ export default function TreatmentSlider() {
                             </Link>
                         </SplideSlide>
                     </Splide>
-                </div>
+                </div> */}
                 {/* <div className={`container ${styles.treatmentsInner}`}>
                     <div className={styles.treatment}>
                         <img src="/hero/header-3.jpg" />
@@ -159,6 +168,7 @@ export default function TreatmentSlider() {
                         </div>
                     </div>
                 </div> */}
+                <div className={styles.bgBottom}></div>
             </div>
         </>
     )

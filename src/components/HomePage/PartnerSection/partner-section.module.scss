@@ -6,7 +6,7 @@
     background-color: colors.$light;
     color: colors.$dark;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
     .partnerInner {
         padding: 50px 1.25rem 0 1.25rem;
@@ -22,6 +22,7 @@
 
         @media (min-width: 1200px) {
             padding: 100px 0;
+            padding-bottom: 50px;
         }
     }
 
@@ -33,7 +34,6 @@
         h2 {
             font-family: typography.$serif;
             font-size: 2.25rem;
-            max-width: 250px;
             margin-bottom: 25px;
             color: black;
 
@@ -54,11 +54,12 @@
 
     .partnerImage {
         position: relative;
-        height: 500px;
+        height: auto;
         width: 120%;
         margin-left: -2rem;
 
         @media (min-width: 768px) {
+            height: 500px;
             width: 100%;
             margin-left: 0;
             position: unset;
@@ -66,6 +67,7 @@
 
         img {
             width: 110%;
+            height: 120%;
             // position: absolute;
             // bottom: 0px;
             // left: -2rem;
@@ -75,24 +77,45 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: 45%;
                 height: 100%;
+                width: 45%;
                 object-fit: cover;
+            }
+        }
+
+        .ibsaLogo {
+            position: absolute;
+            right: 10%;
+            bottom: 25px;
+            width: 150px;
+            height: auto;
+            opacity: 0.8;
+
+            @media (min-width: 768px) {
+                right: 35px;
+                top: 78%;
             }
         }
     }
 
     .bullets {
         list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         margin: 50px 0;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
 
         li {
             font-size: .9rem;
-            margin: 10px 0;
+            margin: 20px 0;
             display: flex;
             align-items: center;
+
+            @media (min-width: 768px) {
+                margin: 10px 0;
+            }
 
             img {
                 width: 25px;

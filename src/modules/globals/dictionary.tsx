@@ -120,7 +120,7 @@ export const textDA = {
         },
         treatments: {
             title: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde.",
-            text: "Se alle vores behandlinger herunder",
+            text: "Vi sætter prikken over i'et.",
             slider: [
                 {
                     name: "Korrektioner",
@@ -143,6 +143,24 @@ export const textDA = {
                     description: "Vi tilbyder korrektion af fejlbehandlinger, arvæv eller andre udfordringer."
                 }
             ],
+            images: [
+                {
+                    src: "/hero/header-3.jpg",
+                    alt: "",
+                },
+                {
+                    src: "/hero/header-3.jpg",
+                    alt: "",
+                },
+                {
+                    src: "/hero/header-3.jpg",
+                    alt: "",
+                },
+                {
+                    src: "/hero/header-3.jpg",
+                    alt: "",
+                }
+            ]
         },
         partner: {
             title: "I samarbejde med IBSA",
@@ -610,7 +628,7 @@ export const textEN = {
         },
         treatments: {
             title: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde.",
-            text: "Se alle vores behandlinger herunder",
+            text: "Vi sætter prikken over i'et.",
             slider: [
                 {
                     name: "Korrektioner",
@@ -633,6 +651,12 @@ export const textEN = {
                     description: "Vi tilbyder korrektion af fejlbehandlinger, arvæv eller andre udfordringer."
                 }
             ],
+            images: [
+                {
+                    src: "",
+                    alt: "",
+                }
+            ]
         },
         partner: {
             title: "I samarbejde med IBSA",

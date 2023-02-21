@@ -85,11 +85,12 @@
         .introTitle {
             width: 100%;
             padding: 0 1.25rem;
-            padding-top: 5rem;
-            padding-bottom: 3rem;
+            padding-top: 9rem;
+            padding-bottom: 5rem;
 
             @media (min-width: 768px) {
-                max-width: 400px;
+                max-width: 420px;
+                padding-top: 10rem;
                 padding-bottom: 0px;
                 // padding-bottom: 70px;
             }
@@ -101,7 +102,7 @@
                 padding-right: 2rem;
 
                 @media (min-width: 768px) {
-                    font-size: 2.5rem;
+                    font-size: 2.7rem;
                     line-height: 2.8rem;
                     padding-right: 0;
                 }
@@ -111,6 +112,12 @@
                 font-size: 1rem;
                 margin-top: 1rem;
                 font-weight: 400;
+                padding-right: 60px;
+                line-height: 1.5rem;
+
+                @media (min-width: 768px) {
+                    padding-right: 0;
+                }
             }
 
             svg {
@@ -122,7 +129,7 @@
 
                 @media (min-width: 768px) {
                     bottom: 5.5rem;
-                    right: 25%;
+                    right: 5rem;
                 }
 
                 path {
@@ -135,7 +142,6 @@
             img {
                 position: relative;
                 width: 100%;
-                margin-bottom: 3rem;
 
                 @media (min-width: 768px) {
                     position: absolute;
@@ -264,13 +270,22 @@
 
     .introContainer .introImage {
         div {
-            background-color: colors.$light-peach;
+            background-color: colors.$light;
             margin-left: -1.25rem;
             width: 115%;
             min-height: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: black;
+                opacity: 0.05;
+            }
 
             @media (min-width: 768px) {
                 position: absolute;
