@@ -9,9 +9,10 @@ type TreatmentIntroProps = {
 
 export default function TreatmentIntro({ data }: TreatmentIntroProps) {
     const intro = data.profhilo.intro;
+    const info = data.profhilo.info;
 
     return (
-        <div>
+        <>
             <div className={styles.treatmentsOuterContainer}>
                 <div className={`container ${styles.treatmentsContainer}`}>
                     <div className={styles.treatmentsBox}>
@@ -44,7 +45,30 @@ export default function TreatmentIntro({ data }: TreatmentIntroProps) {
                     </div>
                 </div>
             </div>
-        </div>
+            <div className={styles.infoContainer}>
+                <div className={`container ${styles.infoWrapper}`}>
+                    <div>
+                        <h2>{info.title}<span>{info.titlePink}</span>{info.titleAfter}</h2>
+                        <div>
+                            <h3>{info.first.title}</h3>
+                            {info.first.text.map((item, i) => {
+                                return (
+                                    <p key={`paragraph-${i}`}>{item.text}</p>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    <div>
+                        <h3>{info.second.title}</h3>
+                        {info.second.text.map((item, i) => {
+                            return (
+                                <p key={`paragraph-${i}`}>{item.text}</p>
+                            )
+                        })}
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 

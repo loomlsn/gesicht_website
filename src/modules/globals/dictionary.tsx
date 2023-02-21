@@ -349,7 +349,7 @@ export const textDA = {
         intro: {
             teaser: "Vi bruger altid Aliaxin til vores fillerbehandlinger, der styrker den naturlige produktion af noget.",
             title: "Fillerbehandling er en ",
-            secondTitle: "kunstform",
+            secondTitle: "kunstform.",
             text: [
                 {
                     text: "Hos Gesicht anvender vi ikke-permanente fillers, som består af hyaluronsyre. Hyaluronsyre er et stort molekyle, som findes i kroppens bindevæv, deriblandt huden. Hyaluronsyres funktion i huden er at binde vand og på den måde udfylde rummet mellem bindevævets øvrige strukturgivende molekyler, herunder kollagen og elastiske fibre. Hyaluronsyre er naturens måde at give huden fylde og mekanisk modstandskraft."
@@ -379,25 +379,55 @@ export const textDA = {
                 link: "/behandlinger/filler"
             },
         ],
+        info: {
+            title: "Det endelige resultat kan forventes indenfor ",
+            titlePink: "2 uger",
+            titleAfter: ", indtil produktet har taget fuld form i ansigtet.",
+            first: {
+                title: "Bivirkninger",
+                text: [
+                    {
+                        text: "Alvorlige bivirkninger til behandling med ikke-permanente filler er ekstremt sjældne, men der er set enkelte eksempler på allergisk reaktion på produktet; det er derfor vigtigt at informere lægen, hvis du tidligere har haft en allergisk reaktion på behandlingen. "
+                    },
+                    {
+                        text: "Ved 1 ud af 10.000 behandlinger ses en lokal infektion omkring indstiksstedet, som skal behandles med antibiotika. Vi forebygger infektion ved at udføre proceduren sterilt, og du bør efter behandlingen være opmærksom på at holde området rent og tørt."
+                    },
+                ]
+            },
+            second: {
+                title: "Efter behandlingen",
+                text: [
+                    {
+                        text: "Effekten af behandling med ikke-permanenter filler kan ses med det samme. De første tre dage efter behandling må du forvente en smule hævelse omkring behandlingsstedet, og i visse tilfælde diskrete blå mærker."
+                    },
+                    {
+                        text: "Du skal undgå at røre for meget ved området og at bære makeup indtil morgenen efter behandlingen. Undgå i øvrigt motion og andre anstrengende aktiviteter det første døgn, da dette kan forårsage blå mærker."
+                    },
+                    {
+                        text: "Hvis der mod forventning opstår bivirkninger til behandlingen, eller hvis du er utilfreds med det kosmetiske resultat, er du selvfølgelig altid velkommen til at kontakte klinikken, så vi kan aftale en akut og gratis konsultation med en af vores læger. Hvis du mod forventning skulle blive særdeles skuffet over det kosmetiske resultat har vi mulighed for at behandle området med injektion af Hylase, som opløser filleren og dermed fjerner produktet helt. "
+                    }
+                ]
+            }
+        }
     },
     profhilo: {
         hero: {
             title: "Profhilo"
         },
         intro: {
-            teaser: "Vi bruger altid Aliaxin til vores fillerbehandlinger, der styrker den naturlige produktion af noget.",
-            title: "Fillerbehandling er en ",
-            secondTitle: "kunstform",
+            teaser: "Ved at bruge en skinbooster som Profhilo, kan vi effektivt genopfylde og udglatte huden.",
+            title: "Alle har ret til ",
+            secondTitle: "ung hud.",
             text: [
-                {
-                    text: "Hos Gesicht anvender vi ikke-permanente fillers, som består af hyaluronsyre. Hyaluronsyre er et stort molekyle, som findes i kroppens bindevæv, deriblandt huden. Hyaluronsyres funktion i huden er at binde vand og på den måde udfylde rummet mellem bindevævets øvrige strukturgivende molekyler, herunder kollagen og elastiske fibre. Hyaluronsyre er naturens måde at give huden fylde og mekanisk modstandskraft."
-                },
                 {
                     text: "Med alderen mindskes mængden af hyaluronsyre i huden. Dette skyldes til dels den helt naturlige og uundgåelige aldringsproces, men tabet af hyaluronsyre kan især forværres, hvis huden er blevet udsat for store mængder sol gennem livet. "
                 },
                 {
-                    text: "Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer."
+                    text: "Både fillers og Profhilo består af hyaluronsyre. Profhilo adskiller sig fra de traditionelle fillers ved at produktet har en mere flydende konsistens, fordi hyaluronsyren i Profhilo ikke er krydsbundet. Dette bevirker, at Profhilo i modsætning til fillers vil fordele sig jævnt ud i huden og derved udglatte fine linier, rynker og give huden en generelt øget spændstighed."
                 },
+                {
+                    text: "Profhilo har en af markedets højeste koncentrationer af hyaluronsyre, hvilket betyder, at en behandling med Profhilo tilfører huden en ganske høj mængde hyaluronsyre. Profhilo er som alle andre hyaloronsyreprodukter, som vi benytter i klinikken, af den ikke-permanente type, hvilket vil sige, at produktet nedbrydes helt med tiden."
+                }
             ]
         },
         treatments: [
@@ -417,6 +447,33 @@ export const textDA = {
                 link: "/behandlinger/profhilo"
             },
         ],
+        info: {
+            title: "Med Profhilo kan vi udglatte ",
+            titlePink: "rynker, furer og fine linjer",
+            titleAfter: ", samt give en øget fyldighed og spændstighed til huden.",
+            first: {
+                title: "Bivirkninger",
+                text: [
+                    {
+                        text: "De almindelige bivirkninger, som knytter sig til Profhilo, er: rødme, lette smerter ifm behandlingen og ømhed ved indstiksstedet. Sjældent ses hudinfektion eller misfarvning af huden, hvilket kan behandles i klinikken, hvis det mod forventning skulle opstå. Vi tilbyder ikke behandling med Profhilo til gravide eller ammende, da produktet ikke er testet på denne patientgruppe."
+                    },
+                    // {
+                    //     text: "Ved 1 ud af 10.000 behandlinger ses en lokal infektion omkring indstiksstedet, som skal behandles med antibiotika. Vi forebygger infektion ved at udføre proceduren sterilt, og du bør efter behandlingen være opmærksom på at holde området rent og tørt."
+                    // },
+                ]
+            },
+            second: {
+                title: "Hvordan foregår behandlingen?",
+                text: [
+                    {
+                        text: "Ved hjælp af små indstik lægges små doser Profhilo lige under hudniveau, hvor det i løbet af 12-24 timer fordeler sig i underhuden. Profhilo er velegnet til behandling af ansigt, hals, overarme (”mormorarme”) og hænder. Ved opstart i Profhilobehandling udføres to behandlinger med en måneds mellemrum. Det optimale resultat kan ses en måned efter anden behandling. Herefter skal behandlingen vedligeholdes med en enkelt genopfyldningsbehandling hver 7. til 8. måned, afhængigt af dit individuelle behov. Behandlingen er særdeles velegnet til patienter, som oplever alderstegn i form af rynker, linjer, manglende fylde eller hængende hud."
+                    },
+                    {
+                        text: "For at starte behandling med Profhilo skal du til en gratis og uforpligtende forundersøgelse hos en af vores registrerede kosmetiske læger minimum 48 timer inden behandlingen. Her taler vi nærmere om behandlingen, forventning til resultat, og om den optimale mængde Profhilo til lige netop dig. Hvis du tidligere har været til forundersøgelse hos LIPS by James ifm fillerbehandling er denne også dækkende for Profhilobehandling, hvorfor du i dette tilfælde kan booke tid direkte til behandling."
+                    }
+                ]
+            }
+        }
     },
     about: {
         hero: {
@@ -847,7 +904,7 @@ export const textEN = {
         intro: {
             teaser: "Vi bruger altid Aliaxin til vores fillerbehandlinger, der styrker den naturlige produktion af noget.",
             title: "Working with fillers is a ",
-            secondTitle: "form of art",
+            secondTitle: "form of art.",
             text: [
                 {
                     text: "Hos Gesicht anvender vi ikke-permanente fillers, som består af hyaluronsyre. Hyaluronsyre er et stort molekyle, som findes i kroppens bindevæv, deriblandt huden. Hyaluronsyres funktion i huden er at binde vand og på den måde udfylde rummet mellem bindevævets øvrige strukturgivende molekyler, herunder kollagen og elastiske fibre. Hyaluronsyre er naturens måde at give huden fylde og mekanisk modstandskraft."
@@ -877,25 +934,55 @@ export const textEN = {
                 link: "/behandlinger/filler"
             },
         ],
+        info: {
+            title: "Det endelige resultat kan forventes indenfor ",
+            titlePink: "2 uger",
+            titleAfter: ", indtil produktet har taget fuld form i ansigtet.",
+            first: {
+                title: "Bivirkninger",
+                text: [
+                    {
+                        text: "Alvorlige bivirkninger til behandling med ikke-permanente filler er ekstremt sjældne, men der er set enkelte eksempler på allergisk reaktion på produktet; det er derfor vigtigt at informere lægen, hvis du tidligere har haft en allergisk reaktion på behandlingen. "
+                    },
+                    {
+                        text: "Ved 1 ud af 10.000 behandlinger ses en lokal infektion omkring indstiksstedet, som skal behandles med antibiotika. Vi forebygger infektion ved at udføre proceduren sterilt, og du bør efter behandlingen være opmærksom på at holde området rent og tørt."
+                    },
+                ]
+            },
+            second: {
+                title: "Efter behandlingen",
+                text: [
+                    {
+                        text: "Effekten af behandling med ikke-permanenter filler kan ses med det samme. De første tre dage efter behandling må du forvente en smule hævelse omkring behandlingsstedet, og i visse tilfælde diskrete blå mærker."
+                    },
+                    {
+                        text: "Du skal undgå at røre for meget ved området og at bære makeup indtil morgenen efter behandlingen. Undgå i øvrigt motion og andre anstrengende aktiviteter det første døgn, da dette kan forårsage blå mærker."
+                    },
+                    {
+                        text: "Hvis der mod forventning opstår bivirkninger til behandlingen, eller hvis du er utilfreds med det kosmetiske resultat, er du selvfølgelig altid velkommen til at kontakte klinikken, så vi kan aftale en akut og gratis konsultation med en af vores læger. Hvis du mod forventning skulle blive særdeles skuffet over det kosmetiske resultat har vi mulighed for at behandle området med injektion af Hylase, som opløser filleren og dermed fjerner produktet helt. "
+                    }
+                ]
+            }
+        }
     },
     profhilo: {
         hero: {
             title: "Profhilo"
         },
         intro: {
-            teaser: "Vi bruger altid Aliaxin til vores fillerbehandlinger, der styrker den naturlige produktion af noget.",
-            title: "Fillerbehandling er en ",
-            secondTitle: "kunstform",
+            teaser: "Ved at bruge en skinbooster som Profhilo, kan vi effektivt genopfylde og udglatte huden.",
+            title: "Everyone has the right to ",
+            secondTitle: "young skin.",
             text: [
-                {
-                    text: "Hos Gesicht anvender vi ikke-permanente fillers, som består af hyaluronsyre. Hyaluronsyre er et stort molekyle, som findes i kroppens bindevæv, deriblandt huden. Hyaluronsyres funktion i huden er at binde vand og på den måde udfylde rummet mellem bindevævets øvrige strukturgivende molekyler, herunder kollagen og elastiske fibre. Hyaluronsyre er naturens måde at give huden fylde og mekanisk modstandskraft."
-                },
                 {
                     text: "Med alderen mindskes mængden af hyaluronsyre i huden. Dette skyldes til dels den helt naturlige og uundgåelige aldringsproces, men tabet af hyaluronsyre kan især forværres, hvis huden er blevet udsat for store mængder sol gennem livet. "
                 },
                 {
-                    text: "Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer."
+                    text: "Både fillers og Profhilo består af hyaluronsyre. Profhilo adskiller sig fra de traditionelle fillers ved at produktet har en mere flydende konsistens, fordi hyaluronsyren i Profhilo ikke er krydsbundet. Dette bevirker, at Profhilo i modsætning til fillers vil fordele sig jævnt ud i huden og derved udglatte fine linier, rynker og give huden en generelt øget spændstighed."
                 },
+                {
+                    text: "Profhilo har en af markedets højeste koncentrationer af hyaluronsyre, hvilket betyder, at en behandling med Profhilo tilfører huden en ganske høj mængde hyaluronsyre. Profhilo er som alle andre hyaloronsyreprodukter, som vi benytter i klinikken, af den ikke-permanente type, hvilket vil sige, at produktet nedbrydes helt med tiden."
+                }
             ]
         },
         treatments: [
@@ -915,6 +1002,33 @@ export const textEN = {
                 link: "/behandlinger/profhilo"
             },
         ],
+        info: {
+            title: "Med Profhilo kan vi udglatte ",
+            titlePink: "rynker, furer og fine linjer",
+            titleAfter: ", samt give en øget fyldighed og spændstighed til huden.",
+            first: {
+                title: "Bivirkninger",
+                text: [
+                    {
+                        text: "De almindelige bivirkninger, som knytter sig til Profhilo, er: rødme, lette smerter ifm behandlingen og ømhed ved indstiksstedet. Sjældent ses hudinfektion eller misfarvning af huden, hvilket kan behandles i klinikken, hvis det mod forventning skulle opstå. Vi tilbyder ikke behandling med Profhilo til gravide eller ammende, da produktet ikke er testet på denne patientgruppe."
+                    },
+                    // {
+                    //     text: "Ved 1 ud af 10.000 behandlinger ses en lokal infektion omkring indstiksstedet, som skal behandles med antibiotika. Vi forebygger infektion ved at udføre proceduren sterilt, og du bør efter behandlingen være opmærksom på at holde området rent og tørt."
+                    // },
+                ]
+            },
+            second: {
+                title: "Hvordan foregår behandlingen?",
+                text: [
+                    {
+                        text: "Ved hjælp af små indstik lægges små doser Profhilo lige under hudniveau, hvor det i løbet af 12-24 timer fordeler sig i underhuden. Profhilo er velegnet til behandling af ansigt, hals, overarme (”mormorarme”) og hænder. Ved opstart i Profhilobehandling udføres to behandlinger med en måneds mellemrum. Det optimale resultat kan ses en måned efter anden behandling. Herefter skal behandlingen vedligeholdes med en enkelt genopfyldningsbehandling hver 7. til 8. måned, afhængigt af dit individuelle behov. Behandlingen er særdeles velegnet til patienter, som oplever alderstegn i form af rynker, linjer, manglende fylde eller hængende hud."
+                    },
+                    {
+                        text: "For at starte behandling med Profhilo skal du til en gratis og uforpligtende forundersøgelse hos en af vores registrerede kosmetiske læger minimum 48 timer inden behandlingen. Her taler vi nærmere om behandlingen, forventning til resultat, og om den optimale mængde Profhilo til lige netop dig. Hvis du tidligere har været til forundersøgelse hos LIPS by James ifm fillerbehandling er denne også dækkende for Profhilobehandling, hvorfor du i dette tilfælde kan booke tid direkte til behandling."
+                    }
+                ]
+            }
+        }
     },
     about: {
         hero: {
