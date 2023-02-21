@@ -25,7 +25,7 @@
 
         &:last-child {
             @media (min-width: 768px) {
-                margin-top: -500px;
+                margin-top: -560px;
             }
         }
 
@@ -79,6 +79,10 @@
 
         p {
             margin-bottom: 1rem;
+
+            @media (max-width: 768px) {
+                max-width: 80%;
+            }
         }
     }
 
@@ -177,20 +181,24 @@
     position: relative;
     cursor: pointer;
 
+    @media (max-width: 768px) {
+        margin-bottom: 1.5rem;
+    }
+
     &.active {
-        color: colors.$red-peach;
+        color: colors.$red;
 
         &::before {
-            background-color: colors.$red-peach;
+            background-color: colors.$red;
         }
     }
 
     @media (min-width: 768px) {
         &:hover {
-            color: colors.$red-peach;
+            color: colors.$red;
 
             &::before {
-                background-color: colors.$red-peach;
+                background-color: colors.$red;
             }
         }
     }
@@ -207,11 +215,28 @@
     .arrow {
         position: absolute;
         right: 2%;
-        top: 35%;
-        font-size: 1.9rem;
+        top: 55%;
+        font-size: 2rem;
         font-family: typography.$sans;
         font-weight: 100;
         transition: linear 0.1s;
+        border: none;
+        background: transparent;
+        color: unset;
+
+        &:focus {
+            color: colors.$red-peach;
+            outline: none;
+        }
+
+        svg {
+            display: block;
+            width: 35px;
+
+            path {
+                stroke-width: 1px;
+            }
+        }
 
         &.active {
             transform: rotate(45deg);
@@ -272,6 +297,10 @@
 
                 &.active {
                     transform: rotate(90deg);
+
+                    svg path {
+                        fill: colors.$red;
+                    }
                 }
             }
         }
@@ -279,10 +308,21 @@
 }
 
 .accordionContent {
-    margin-top: -0.5rem;
-    margin-bottom: 2.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s linear;
 
     p {
         max-width: none;
+    }
+
+    &.active {
+        // margin-top: -0.5rem;
+        margin-bottom: 2.5rem;
+        max-height: 80px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 3rem;
+        }
     }
 }

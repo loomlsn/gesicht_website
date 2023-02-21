@@ -24,7 +24,11 @@
 
     &.light {
         a {
-            color: colors.$red-peach !important;
+            color: black !important;
+        }
+
+        svg {
+            stroke: black !important;
         }
 
     }
@@ -32,6 +36,10 @@
     &.dark {
         a {
             color: white !important;
+        }
+
+        svg {
+            stroke: white !important;
         }
     }
 
@@ -45,16 +53,19 @@
 
             li:not(:last-child) {
                 margin-right: 2.5rem;
+            }
 
-                a {
-                    // color: colors.$red;
-                    font-size: 15px;
+            a {
+                // color: colors.$red;
+                font-size: 15px;
 
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                &:hover {
+                    text-decoration: underline;
                 }
+            }
 
+            li.active a {
+                font-family: typography.$sans-medium;
             }
         }
     }
@@ -69,7 +80,7 @@
             display: block;
             position: absolute;
             top: 2rem;
-            right: 2rem;
+            right: 1.75rem;
 
             svg {
                 width: 2.25rem;
@@ -89,6 +100,7 @@
             opacity: 0;
             width: 100vw;
             padding: 2.5rem;
+            padding-bottom: 6rem;
             margin-top: -50px;
             height: calc(100vh + 50px);
             background-color: colors.$light;
@@ -130,7 +142,11 @@
                     font-size: 1.45rem;
                     margin-right: 1rem;
                     line-height: 3.5rem;
-                    color: colors.$red-peach !important;
+                    color: black !important;
+
+                    &.active {
+                        color: colors.$red-peach !important;
+                    }
                 }
             }
 
@@ -175,9 +191,13 @@
             z-index: 99;
         }
 
+        .language {
+            margin-top: 4rem;
+        }
+
         .language a {
             color: black !important;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
         }
 
         .activeLanguage {

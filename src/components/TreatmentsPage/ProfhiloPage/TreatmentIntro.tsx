@@ -8,12 +8,7 @@ type TreatmentIntroProps = {
 }
 
 export default function TreatmentIntro({ data }: TreatmentIntroProps) {
-    const { locale } = useRouter();
-    const fillerTreatments = data.prices.prices.filter((item) => item.type === "filler");
-    const profhiloTreatments = data.prices.prices.filter((item) => item.type === "profhilo");
     const intro = data.profhilo.intro;
-
-    const [isActive, setIsActive] = useState(false);
 
     return (
         <div>
@@ -30,10 +25,8 @@ export default function TreatmentIntro({ data }: TreatmentIntroProps) {
                                 <ul className={styles.bullets}>
                                     <li><img src="/hero/icon.svg" className="icon" />Varighed: 6-12 mdr.</li>
                                     <li><img src="/hero/icon.svg" className="icon" />Behandlingstid: 30 min.</li>
-                                    <li>.</li>
                                     <li><img src="/hero/icon.svg" className="icon" />Konsultation: Gratis</li>
                                     <li><img src="/hero/icon.svg" className="icon" />Heletid: 2 uger</li>
-                                    <li></li>
                                 </ul>
                             </div>
                         </div>
@@ -74,15 +67,16 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ item }) => {
                     </div>
                 </div>
                 <p className={styles.description}>{item.description}</p>
-                <div className={`${styles.arrow} ${isActive ? styles.active : ""}`}>
-                    +
-                </div>
+                <button className={`${styles.arrow} ${isActive ? styles.active : ""}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+
+                </button>
             </div>
-            {isActive && (
-                <div className={styles.accordionContent}>
-                    <p>Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer.</p>
-                </div>
-            )}
+            <div className={`${styles.accordionContent} ${isActive ? styles.active : ""}`}>
+                <p>Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer.</p>
+            </div>
         </>
     )
 }

@@ -17,7 +17,7 @@ export default function StartPage({ prop }: StartPageProps) {
     return (
         <>
             <Hero size={'lg'} title={data.home.hero.title} description={data.home.hero.text} colorTheme={colorTheme} />
-            <IntroSection title={data.home.intro.title} text={data.home.intro.text} colorTheme={colorTheme} img={"/hero/intro.jpg"} link={"/om"} />
+            <IntroSection title={data.home.intro.title} text={data.home.intro.text} colorTheme={colorTheme} img={"/hero/header-3.jpg"} link={"/om"} />
             <Treatments />
             <PartnerSection title={data.home.partner.title} />
         </>

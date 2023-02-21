@@ -116,7 +116,7 @@ export const textDA = {
         },
         intro: {
             title: "Altid udført af autoriserede læger.",
-            text: "Læs mere om klinikken"
+            text: "Læs mere om klinikken og vores behandlere her"
         },
         treatments: {
             title: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde.",
@@ -462,8 +462,28 @@ export const textDA = {
             title: "Book en tid"
         },
         intro: {
-            title: "Lad os få dig booket ind.",
-            cta: "Gå til vores booking",
+            title: "Vi har god tid til dig",
+            text: [
+                {
+                    text: "Vi sætter altid god tid af til hver enkelt forundersøgelse og behandling, så vi og du er sikre på, at du ikke risikerer at forlade klinikken igen med uforløste spørgsmål eller tvivl. Så kom endelig forbi til en uforpligtende forundersøgelse; vi byder altid på en forfriskning, mens vi taler."
+                },
+                {
+                    text: "Gennem vores online bookingsystem kan du bestille tid til forundersøgelse og behandling. Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt."
+                }
+            ],
+            cta: "Start bookingsession",
+        },
+        info: {
+            titleBefore: "Bemærk, at der skal være foretaget forundersøgelse minimum ",
+            titleHighlighted: "48 timer ",
+            titleAfter: "før en eventuel behandling.",
+            text:
+            {
+                text: "Hvis det er første gang, du bestiller tid hos os, skal du oprette en bruger. Hvis du har en bruger hos os, skal du blot logge ind og oprette en aftale. Bemærk, at aftaler kan aflyses indtil 24 timer før aftalen. Aftaler der aflyses mindre end 24 timer før aftalen opkræves et gebyr på 500 kr.",
+                textSecond: "Husk at du altid er velkommen til at tage ",
+                textLink: "kontakt til os ",
+                textAfter: "enten på telefon eller mail, før en eventuel booking."
+            }
         }
     },
 }
@@ -932,8 +952,28 @@ export const textEN = {
             title: "Booking"
         },
         intro: {
-            title: "Let's get you booked and hooked.",
-            cta: "Book an appointment at Gesicht",
+            title: "We have the time for you",
+            text: [
+                {
+                    text: "Vi sætter altid god tid af til hver enkelt forundersøgelse og behandling, så vi og du er sikre på, at du ikke risikerer at forlade klinikken igen med uforløste spørgsmål eller tvivl. Så kom endelig forbi til en uforpligtende forundersøgelse; vi byder altid på en forfriskning, mens vi taler."
+                },
+                {
+                    text: "Gennem vores online bookingsystem kan du bestille tid til forundersøgelse og behandling. Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt."
+                }
+            ],
+            cta: "Start bookingsession",
+        },
+        info: {
+            titleBefore: "Bemærk, at der skal være foretaget forundersøgelse minimum ",
+            titleHighlighted: "48 timer ",
+            titleAfter: "før en eventuel behandling.",
+            text:
+            {
+                text: "Hvis det er første gang, du bestiller tid hos os, skal du oprette en bruger. Hvis du har en bruger hos os, skal du blot logge ind og oprette en aftale. Bemærk, at aftaler kan aflyses indtil 24 timer før aftalen. Aftaler der aflyses mindre end 24 timer før aftalen opkræves et gebyr på 500 kr.",
+                textSecond: "Husk at du altid er velkommen til at tage ",
+                textLink: "kontakt til os ",
+                textAfter: "enten på telefon eller mail, før en eventuel booking."
+            }
         }
     },
 }

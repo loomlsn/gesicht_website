@@ -27,8 +27,6 @@ export const Header = ({ colorTheme }: HeaderProps) => {
 
     const isMobile = isDeviceMobile();
 
-    console.log(isMobile)
-
     function toggleNav() {
         if (navOpen) {
             setNavOpen(false)
@@ -67,9 +65,12 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                     {!isMobile && (
                         <nav className={styles.largeNav}>
                             <ul>
-                                {data.general.navigation.map((nav, i) => (
-                                    <li key={i}><Link href={nav.link}>{nav.name}</Link></li>
-                                ))}
+                                {data.general.navigation.map((nav, i) => {
+                                    const activePage = nav.link == router.asPath;
+                                    return (
+                                        <li key={i} className={activePage ? styles.active : ""}><Link href={nav.link}>{nav.name}</Link></li>
+                                    )
+                                })}
                             </ul>
                         </nav>
                     )}
@@ -84,8 +85,9 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                                 </button>
                                 <ul className={styles.navLinks}>
                                     {data.general.navigation.map((nav, i) => {
+                                        const activePage = nav.link == router.asPath;
                                         return (
-                                            <li key={`nav-${i}`}><Link href={nav.link} onClick={toggleNav}>{nav.name}</Link></li>
+                                            <li key={`nav-${i}`}><Link href={nav.link} className={activePage ? styles.active : ""} onClick={toggleNav}>{nav.name}</Link></li>
                                         )
                                     })}
                                 </ul>
