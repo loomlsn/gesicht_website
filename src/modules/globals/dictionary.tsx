@@ -552,10 +552,10 @@ export const textDA = {
             title: "Vi har god tid til dig",
             text: [
                 {
-                    text: "Vi sætter altid god tid af til hver enkelt forundersøgelse og behandling, så vi og du er sikre på, at du ikke risikerer at forlade klinikken igen med uforløste spørgsmål eller tvivl. Så kom endelig forbi til en uforpligtende forundersøgelse; vi byder altid på en forfriskning, mens vi taler."
+                    text: "Vi sætter altid god tid af til hver enkelt forundersøgelse og behandling, så vi og du er sikre på, at du ikke risikerer at forlade klinikken igen med uforløste spørgsmål eller tvivl. "
                 },
                 {
-                    text: "Gennem vores online bookingsystem kan du bestille tid til forundersøgelse og behandling. Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt."
+                    text: "Gennem vores bookingsystem kan du bestille tid til forundersøgelse og behandling. Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt."
                 }
             ],
             cta: "Start bookingsession",
@@ -1117,10 +1117,10 @@ export const textEN = {
             title: "We have the time for you",
             text: [
                 {
-                    text: "Vi sætter altid god tid af til hver enkelt forundersøgelse og behandling, så vi og du er sikre på, at du ikke risikerer at forlade klinikken igen med uforløste spørgsmål eller tvivl. Så kom endelig forbi til en uforpligtende forundersøgelse; vi byder altid på en forfriskning, mens vi taler."
+                    text: "Vi sætter altid god tid af til hver enkelt forundersøgelse og behandling, så vi og du er sikre på, at du ikke risikerer at forlade klinikken igen med uforløste spørgsmål eller tvivl. "
                 },
                 {
-                    text: "Gennem vores online bookingsystem kan du bestille tid til forundersøgelse og behandling. Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt."
+                    text: "Gennem vores bookingsystem kan du bestille tid til forundersøgelse og behandling. Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt."
                 }
             ],
             cta: "Start bookingsession",

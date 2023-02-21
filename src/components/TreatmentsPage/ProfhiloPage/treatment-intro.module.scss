@@ -79,7 +79,6 @@
 
         p {
             margin-bottom: 1rem;
-            max-width: 90%;
 
             @media (min-width: 768px) {
                 max-width: 80%;
@@ -123,6 +122,10 @@
             @media (min-width: 768px) {
                 max-width: none;
             }
+        }
+
+        &+p {
+            max-width: 83%;
         }
     }
 

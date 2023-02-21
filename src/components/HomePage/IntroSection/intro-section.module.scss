@@ -279,12 +279,14 @@
             justify-content: center;
 
             &::after {
-                content: '';
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-color: black;
-                opacity: 0.05;
+                @media (min-width: 768px) {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: black;
+                    opacity: 0.05;
+                }
             }
 
             @media (min-width: 768px) {

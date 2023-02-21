@@ -43,6 +43,7 @@ export default function IntroSection({ title, text, colorTheme, img, link, booki
             document.body.style.paddingRight = "0";
         }
     }, [bookingOpen])
+    console.log(bookingOpen)
 
     return (
         <>
