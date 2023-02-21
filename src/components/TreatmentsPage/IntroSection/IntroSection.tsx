@@ -24,7 +24,6 @@ export default function IntroSection({ data }: IntroProps) {
                     </div>
                     <div className={styles.treatmentsBox}>
                         {data.treatments.treatments.map((item, index) => {
-                            const price = (item.price === 0 && locale === "da") ? "Gratis" : (item.price === 0 && locale === "en") ? "Free" : item.price;
                             return (
                                 <Link href={item.link} className={styles.treatmentLink}>
                                     <div className={styles.treatmentWrapper}>
@@ -32,8 +31,6 @@ export default function IntroSection({ data }: IntroProps) {
                                             <div>
                                                 <h3>{item.name}</h3>
                                             </div>
-                                            <div className={styles.line}></div>
-                                            <div className={styles.price}><span>{price}</span></div>
                                         </div>
                                         <p className={styles.description}>{item.description}</p>
                                         <div className={styles.arrow}>
@@ -50,15 +47,16 @@ export default function IntroSection({ data }: IntroProps) {
                     <div className={styles.treatmentsBox}>
                         <img src="/hero/header-4.jpg" />
                     </div>
-                    <div className={styles.treatmentsBox}></div>
                     <div className={styles.treatmentsBox}>
                         <h2>Vi sætter prikken over i'et.</h2>
                         <p className={styles.infoText}>{intro.firstText}</p>
                         <p>{intro.secondText}</p>
                     </div>
+                    <div className={styles.treatmentsBox}>
+                    </div>
                 </div>
             </div>
-            <div className={styles.beforeAfter}>
+            {/* <div className={styles.beforeAfter}>
                 <div className={`container ${styles.beforeAfterContainer}`}>
                     <div className={styles.beforeAfterBox}>
                         <img src="/treatments/before_after_1.jpg" />
@@ -82,7 +80,7 @@ export default function IntroSection({ data }: IntroProps) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

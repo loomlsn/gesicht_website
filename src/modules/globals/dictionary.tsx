@@ -306,40 +306,50 @@ export const textDA = {
         },
         treatments: [
             {
-                name: "Læbeforstørrelse og konturering",
-                description: "Fillerbehandling af læberne kan give mere fylde og øge konturen omkring læberne.",
+                name: "Filler",
+                description: "Fillerbehandling kan give mere fylde og øge konturen omkring bl.a. læber, kindben.",
                 link: "/behandlinger/filler"
             },
             {
-                name: "Korrektion og symmetri",
-                description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
-                link: "/behandlinger/filler"
-            },
-            {
-                name: "Udglatning af rynker og linjer",
-                description: "Vi bruger Profhilo til at skabe fylde og opstramning til bl.a. ansigt, hals og hænder.",
+                name: "Profhilo",
+                description: "Ønsker du mere fylde og ungdom tilbage til ansigt, hals og hænder?",
                 link: "/behandlinger/profhilo"
             },
-            {
-                name: "Markering af kindben",
-                description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
-                link: "/behandlinger/filler"
-            },
-            {
-                name: "Fylde til hængende hud og 'mormorarme'",
-                description: "En Profhilobehandling kan glatte huden ud og stramme op omkring overarmene.",
-                link: "/behandlinger/profhilo"
-            },
-            {
-                name: "Korrektion og symmetri",
-                description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
-                link: "/behandlinger/filler"
-            },
-            {
-                name: "Markering af kindben",
-                description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
-                link: "/behandlinger/filler"
-            },
+            // {
+            //     name: "Læbeforstørrelse og konturering",
+            //     description: "Fillerbehandling af læberne kan give mere fylde og øge konturen omkring læberne.",
+            //     link: "/behandlinger/filler"
+            // },
+            // {
+            //     name: "Korrektion og symmetri",
+            //     description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
+            //     link: "/behandlinger/filler"
+            // },
+            // {
+            //     name: "Udglatning af rynker og linjer",
+            //     description: "Vi bruger Profhilo til at skabe fylde og opstramning til bl.a. ansigt, hals og hænder.",
+            //     link: "/behandlinger/profhilo"
+            // },
+            // {
+            //     name: "Markering af kindben",
+            //     description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
+            //     link: "/behandlinger/filler"
+            // },
+            // {
+            //     name: "Fylde til hængende hud og 'mormorarme'",
+            //     description: "En Profhilobehandling kan glatte huden ud og stramme op omkring overarmene.",
+            //     link: "/behandlinger/profhilo"
+            // },
+            // {
+            //     name: "Korrektion og symmetri",
+            //     description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
+            //     link: "/behandlinger/filler"
+            // },
+            // {
+            //     name: "Markering af kindben",
+            //     description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
+            //     link: "/behandlinger/filler"
+            // },
         ],
     },
     filler: {
@@ -433,7 +443,7 @@ export const textDA = {
         treatments: [
             {
                 name: "Udglatning af rynker og linjer",
-                description: "Vi bruger Profhilo til at skabe fylde og opstramning til bl.a. ansigt, hals og hænder.",
+                description: "Vi bruger Profhilo til at skabe fylde og opstramme bl.a. ansigt, hals og hænder.",
                 link: "/behandlinger/profhilo"
             },
             {
@@ -469,7 +479,7 @@ export const textDA = {
                         text: "Ved hjælp af små indstik lægges små doser Profhilo lige under hudniveau, hvor det i løbet af 12-24 timer fordeler sig i underhuden. Profhilo er velegnet til behandling af ansigt, hals, overarme (”mormorarme”) og hænder. Ved opstart i Profhilobehandling udføres to behandlinger med en måneds mellemrum. Det optimale resultat kan ses en måned efter anden behandling. Herefter skal behandlingen vedligeholdes med en enkelt genopfyldningsbehandling hver 7. til 8. måned, afhængigt af dit individuelle behov. Behandlingen er særdeles velegnet til patienter, som oplever alderstegn i form af rynker, linjer, manglende fylde eller hængende hud."
                     },
                     {
-                        text: "For at starte behandling med Profhilo skal du til en gratis og uforpligtende forundersøgelse hos en af vores registrerede kosmetiske læger minimum 48 timer inden behandlingen. Her taler vi nærmere om behandlingen, forventning til resultat, og om den optimale mængde Profhilo til lige netop dig. Hvis du tidligere har været til forundersøgelse hos LIPS by James ifm fillerbehandling er denne også dækkende for Profhilobehandling, hvorfor du i dette tilfælde kan booke tid direkte til behandling."
+                        text: "For at starte behandling med Profhilo skal du til en gratis og uforpligtende forundersøgelse hos en af vores registrerede kosmetiske læger minimum 48 timer inden behandlingen. Her taler vi nærmere om behandlingen, forventning til resultat, og om den optimale mængde Profhilo til lige netop dig. Hvis du tidligere har været til forundersøgelse hos Gesicht ifm fillerbehandling er denne også dækkende for Profhilobehandling, hvorfor du i dette tilfælde kan booke tid direkte til behandling."
                     }
                 ]
             }
@@ -861,40 +871,50 @@ export const textEN = {
         },
         treatments: [
             {
-                name: "Læbeforstørrelse og konturering",
-                description: "Fillerbehandling af læberne kan give mere fylde og øge konturen omkring læberne.",
+                name: "Filler",
+                description: "Fillerbehandling kan give mere fylde og øge konturen omkring bl.a. læber, kindben.",
                 link: "/behandlinger/filler"
             },
             {
-                name: "Korrektion og symmetri",
-                description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
-                link: "/behandlinger/filler"
-            },
-            {
-                name: "Udglatning af rynker og linjer",
-                description: "Vi bruger Profhilo til at skabe fylde og opstramning til bl.a. ansigt, hals og hænder.",
+                name: "Profhilo",
+                description: "Ønsker du mere fylde og ungdom tilbage til ansigt, hals og hænder?",
                 link: "/behandlinger/profhilo"
             },
-            {
-                name: "Markering af kindben",
-                description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
-                link: "/behandlinger/filler"
-            },
-            {
-                name: "Fylde til hængende hud og 'mormorarme'",
-                description: "En Profhilobehandling kan glatte huden ud og stramme op omkring overarmene.",
-                link: "/behandlinger/profhilo"
-            },
-            {
-                name: "Korrektion og symmetri",
-                description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
-                link: "/behandlinger/filler"
-            },
-            {
-                name: "Markering af kindben",
-                description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
-                link: "/behandlinger/filler"
-            },
+            // {
+            //     name: "Læbeforstørrelse og konturering",
+            //     description: "Fillerbehandling af læberne kan give mere fylde og øge konturen omkring læberne.",
+            //     link: "/behandlinger/filler"
+            // },
+            // {
+            //     name: "Korrektion og symmetri",
+            //     description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
+            //     link: "/behandlinger/filler"
+            // },
+            // {
+            //     name: "Udglatning af rynker og linjer",
+            //     description: "Vi bruger Profhilo til at skabe fylde og opstramning til bl.a. ansigt, hals og hænder.",
+            //     link: "/behandlinger/profhilo"
+            // },
+            // {
+            //     name: "Markering af kindben",
+            //     description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
+            //     link: "/behandlinger/filler"
+            // },
+            // {
+            //     name: "Fylde til hængende hud og 'mormorarme'",
+            //     description: "En Profhilobehandling kan glatte huden ud og stramme op omkring overarmene.",
+            //     link: "/behandlinger/profhilo"
+            // },
+            // {
+            //     name: "Korrektion og symmetri",
+            //     description: "Med filler kan vi skabe symmetri i læber og ansigt, samt korigere tidligere fejlbehandlinger.",
+            //     link: "/behandlinger/filler"
+            // },
+            // {
+            //     name: "Markering af kindben",
+            //     description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
+            //     link: "/behandlinger/filler"
+            // },
         ],
     },
     filler: {
@@ -1024,7 +1044,7 @@ export const textEN = {
                         text: "Ved hjælp af små indstik lægges små doser Profhilo lige under hudniveau, hvor det i løbet af 12-24 timer fordeler sig i underhuden. Profhilo er velegnet til behandling af ansigt, hals, overarme (”mormorarme”) og hænder. Ved opstart i Profhilobehandling udføres to behandlinger med en måneds mellemrum. Det optimale resultat kan ses en måned efter anden behandling. Herefter skal behandlingen vedligeholdes med en enkelt genopfyldningsbehandling hver 7. til 8. måned, afhængigt af dit individuelle behov. Behandlingen er særdeles velegnet til patienter, som oplever alderstegn i form af rynker, linjer, manglende fylde eller hængende hud."
                     },
                     {
-                        text: "For at starte behandling med Profhilo skal du til en gratis og uforpligtende forundersøgelse hos en af vores registrerede kosmetiske læger minimum 48 timer inden behandlingen. Her taler vi nærmere om behandlingen, forventning til resultat, og om den optimale mængde Profhilo til lige netop dig. Hvis du tidligere har været til forundersøgelse hos LIPS by James ifm fillerbehandling er denne også dækkende for Profhilobehandling, hvorfor du i dette tilfælde kan booke tid direkte til behandling."
+                        text: "For at starte behandling med Profhilo skal du til en gratis og uforpligtende forundersøgelse hos en af vores registrerede kosmetiske læger minimum 48 timer inden behandlingen. Her taler vi nærmere om behandlingen, forventning til resultat, og om den optimale mængde Profhilo til lige netop dig. Hvis du tidligere har været til forundersøgelse hos Gesicht ifm fillerbehandling er denne også dækkende for Profhilobehandling, hvorfor du i dette tilfælde kan booke tid direkte til behandling."
                     }
                 ]
             }

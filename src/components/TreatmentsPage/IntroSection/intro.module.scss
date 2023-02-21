@@ -46,8 +46,11 @@
             top: 450px;
 
             @media (max-width: 768px) {
-                width: 100%;
+                width: 122%;
                 position: relative;
+                top: 0;
+                margin-left: -1.25rem;
+                margin-bottom: -50px;
             }
         }
 
@@ -167,7 +170,7 @@
     .arrow {
         position: absolute;
         right: 2%;
-        top: 30%;
+        top: 55%;
 
         @media (min-width: 768px) {
             right: 2%;
