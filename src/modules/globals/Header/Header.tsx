@@ -39,7 +39,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
 
     useEffect(() => {
         if (navOpen) {
-            // document.body.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
             // document.body.style.position = "fixed";
             document.body.style.width = "100%";
             document.body.style.paddingRight = "15px";
