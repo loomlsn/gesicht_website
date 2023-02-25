@@ -103,9 +103,9 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                                         <li>+45 53 63 75 40</li>
                                         <li>hello@gesicht.dk</li>
                                     </ul>
-                                </div>
-                                <div className={styles.language}>
-                                    <Link href="" locale={locale === "da" ? "en" : "da"}><span className={isLocaleActive("da") && styles.activeLanguage}>DA</span> / <span className={isLocaleActive("en") && styles.activeLanguage}>EN</span></Link>
+                                    <div className={styles.language}>
+                                        <Link href="" locale={locale === "da" ? "en" : "da"}><span className={isLocaleActive("da") && styles.activeLanguage}>DA</span> / <span className={isLocaleActive("en") && styles.activeLanguage}>EN</span></Link>
+                                    </div>
                                 </div>
                             </div>
                             <button onClick={toggleNav} className={styles.navClosed}>
