@@ -58,14 +58,31 @@
             a {
                 // color: colors.$red;
                 font-size: 15px;
+                position: relative;
+                width: 100%;
+
+                &::after {
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    background-color: black;
+                    margin-top: 1.5rem;
+                    visibility: hidden;
+                    position: absolute;
+                    left: 0;
+                }
 
                 &:hover {
-                    text-decoration: underline;
+                    // &::after {
+                    //     visibility: visible;
+                    // }
+                    color: colors.$red-peach !important;
                 }
             }
 
             li.active a {
-                font-family: typography.$sans-medium;
+                font-family: typography.$sans-bold;
+                color: colors.$red-peach !important;
             }
         }
     }

@@ -1,7 +1,7 @@
 export const textDA = {
     general: {
         mail: "hello@gesicht.dk",
-        phone: "+45 3030 3030",
+        phone: "+45 53 63 75 40",
         addressStreet: "Knabrostræde 15, st. th",
         addressCity: "1210 København K, DK",
         openingHours: [
@@ -60,24 +60,24 @@ export const textDA = {
                     category: "Behandlinger",
                     links: [
                         {
-                            name: "Fillerbehandling",
-                            link: "/"
+                            name: "Læbeforstørrelse",
+                            link: "/behandlinger/filler"
                         },
                         {
-                            name: "Profhilobehandling",
-                            link: "/"
+                            name: "Markering af kindben",
+                            link: "/behandlinger/filler"
                         },
                         {
                             name: "Korrektioner",
-                            link: "/"
+                            link: "/behandlinger/filler"
                         },
                         {
                             name: "Rynkebehandling",
-                            link: "/"
+                            link: "/behandlinger/profhilo"
                         },
                         {
-                            name: "Skulpturering",
-                            link: "/"
+                            name: "Opstramning af hud",
+                            link: "/behandlinger/profhilo"
                         }
                     ]
                 },
@@ -86,27 +86,31 @@ export const textDA = {
                     links: [
                         {
                             name: "Om Gesicht",
-                            link: "/om"
+                            link: "/om",
+                            blank: false
                         },
                         {
                             name: "Kontakt os",
-                            link: "/kontakt"
+                            link: "/kontakt",
+                            blank: false
                         },
                         {
                             name: "Tilsynsrapport",
-                            link: "/"
+                            link: "/Tilsynsrapport2019.pdf",
+                            blank: true
                         },
                         {
                             name: "Privatlivspolitik",
-                            link: "/"
-                        },
-                        {
-                            name: "Skulpturering",
-                            link: "/"
+                            link: "/LIPSdatapolitik.pdf",
+                            blank: true
                         }
                     ]
                 },
-            ]
+            ],
+            info: {
+                title: "Find os",
+                openingHours: "Åbningstider"
+            }
         }
     },
     home: {
@@ -120,7 +124,7 @@ export const textDA = {
         },
         treatments: {
             title: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde.",
-            text: "Vi sætter ",
+            text: "Galleri",
             textHighlighted: "prikken",
             textAfter: " over i'et.",
             slider: [
@@ -147,19 +151,35 @@ export const textDA = {
             ],
             images: [
                 {
-                    src: "/hero/header-3.jpg",
+                    src: "/gallery/gesicht_gallery-item.jpg",
                     alt: "",
                 },
                 {
-                    src: "/hero/header-3.jpg",
+                    src: "/gallery/gesicht_gallery-item-6.jpg",
                     alt: "",
                 },
                 {
-                    src: "/hero/header-3.jpg",
+                    src: "/gallery/gesicht_gallery-item-2.jpg",
                     alt: "",
                 },
                 {
-                    src: "/hero/header-3.jpg",
+                    src: "/gallery/gesicht_gallery-item-5.jpg",
+                    alt: "",
+                },
+                {
+                    src: "/gallery/gesicht_gallery-item-7.jpg",
+                    alt: "",
+                },
+                {
+                    src: "/gallery/gesicht_gallery-item-8.jpg",
+                    alt: "",
+                },
+                {
+                    src: "/gallery/gesicht_gallery-item-10.jpg",
+                    alt: "",
+                },
+                {
+                    src: "/gallery/gesicht_gallery-item-15.jpg",
                     alt: "",
                 }
             ]
@@ -300,7 +320,7 @@ export const textDA = {
         },
         intro: {
             title: "Vi tilbyder både fillerbehandlinger i mange former, og Profhilo til dig der ønsker udglatning og fylde tilbage til ansigtet.",
-            secondTitle: "Vi sætter prikken over i'et.",
+            secondTitle: "Dine ønsker i fokus",
             firstText: "Hos os bliver du altid mødt af venligt og kompetent personale, hvis fælles mission er at bringe dine behov som klient i fokus. Hos os findes ingen dumme spørgsmål. Alle behandlere er kvalificerede læger, uddannet og certificerede i behandling med ikke-permanente fillers i international standard.",
             secondText: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde. Klinikkens ansvarshavende læge er Peter James Bruhn. Hos os findes ingen dumme spørgsmål."
         },
@@ -418,7 +438,33 @@ export const textDA = {
                     }
                 ]
             }
-        }
+        },
+        questions: [
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+        ]
     },
     profhilo: {
         hero: {
@@ -483,7 +529,33 @@ export const textDA = {
                     }
                 ]
             }
-        }
+        },
+        questions: [
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+        ]
     },
     about: {
         hero: {
@@ -494,16 +566,22 @@ export const textDA = {
             cta: "Book en tid her",
         },
         info: {
-            title: "Vi sætter prikken over i'et.",
+            title: "Vores faglige stolthed er din garanti, for en sikker og tryg behandling.",
             text: [
                 {
                     text: "Hos os bliver du altid mødt af venligt og kompetent personale, hvis fælles mission er at bringe dine behov som klient i fokus. Hos os findes ingen dumme spørgsmål. Alle behandlere er kvalificerede læger, uddannet og certificerede i behandling med ikke-permanente fillers i international standard. "
                 },
                 {
-                    text: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde. Klinikkens ansvarshavende læge er Peter James Bruhn. Hos os findes ingen dumme spørgsmål."
+                    text: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde. Klinikkens ansvarshavende læge er Peter James Bruhn."
                 },
                 {
-                    text: "Hos os findes ingen dumme spørgsmål. Alle behandlere er kvalificerede læger, uddannet og certificerede."
+                    text: "Hos os findes ingen dumme spørgsmål og du er altid velkommen til at "
+                },
+                {
+                    text: "kontakte os "
+                },
+                {
+                    text: "på tlf. eller mail."
                 }
             ]
         },
@@ -513,8 +591,8 @@ export const textDA = {
             employees: [
                 {
                     name: "Peter James Bruhn",
-                    title: "MD, ansvarshavende læge.",
-                    image: "/employees/employee-example.jpg"
+                    title: "Ansvarshavende læge.",
+                    image: "/employees/gesicht_peter-james-bruhn.jpg"
                 }, {
                     name: "Vibeke Schaffalitzky de Muckadell",
                     title: "MD, ansvarshavende læge.",
@@ -529,6 +607,10 @@ export const textDA = {
                     image: "/employees/employee-example.jpg"
                 }
             ]
+        },
+        extra: {
+            text: "Klinikken er registreret som kosmetisk behandlingssted hos Styrelsen for Patientsikkerhed, og alle behandlende læger er registreret og godkendt til kosmetisk behandling med ikke-permanente fillers.",
+            text2: "Gesicht er registreret og godkendt som behandlingssted hos Sundhedsstyrelsen med registreret ansvarshavende læge."
         }
     },
     contact: {
@@ -536,7 +618,7 @@ export const textDA = {
             title: "Kontakt os"
         },
         intro: {
-            title: "Vi går op i ærlig snak og ren kommunikation.",
+            title: "Vi glæder os til at tage imod dig.",
             cta: "Derfor står vi altid til rådighed for henvendelser på tlf. eller mail.",
         },
         info: {
@@ -558,7 +640,7 @@ export const textDA = {
                     text: "Gennem vores bookingsystem kan du bestille tid til forundersøgelse og behandling. Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt."
                 }
             ],
-            cta: "Start bookingsession",
+            cta: "",
         },
         info: {
             titleBefore: "Bemærk, at der skal være foretaget forundersøgelse minimum ",
@@ -578,7 +660,7 @@ export const textDA = {
 export const textEN = {
     general: {
         mail: "hello@gesicht.dk",
-        phone: "+45 3030 3030",
+        phone: "+45 53 63 75 40",
         addressStreet: "Knabrostræde 15, st. th",
         addressCity: "1210 København K, DK",
         openingHours: [
@@ -637,53 +719,57 @@ export const textEN = {
                     category: "Treatments",
                     links: [
                         {
-                            name: "Fillerbehandling",
-                            link: "/"
+                            name: "Lip enhancement",
+                            link: "/behandlinger/filler"
                         },
                         {
-                            name: "Profhilobehandling",
-                            link: "/"
+                            name: "Cheek filler",
+                            link: "/behandlinger/filler"
                         },
                         {
-                            name: "Korrektioner",
-                            link: "/"
+                            name: "Corrections",
+                            link: "/behandlinger/filler"
                         },
                         {
-                            name: "Rynkebehandling",
-                            link: "/"
+                            name: "Wrinkles and fine lines",
+                            link: "/behandlinger/profhilo"
                         },
                         {
-                            name: "Skulpturering",
-                            link: "/"
+                            name: "Tightening of skin",
+                            link: "/behandlinger/profhilo"
                         }
                     ]
                 },
                 {
-                    category: "Our clinic",
+                    category: "The Clinic",
                     links: [
                         {
-                            name: "Om Gesicht",
-                            link: "/om"
+                            name: "About Gesicht",
+                            link: "/om",
+                            blank: false
                         },
                         {
-                            name: "Kontakt os",
-                            link: "/kontakt"
+                            name: "Contact us",
+                            link: "/kontakt",
+                            blank: false
                         },
                         {
-                            name: "Tilsynsrapport",
-                            link: "/"
+                            name: "Inspection report",
+                            link: "./Tilsynsrapport2019.pdf",
+                            blank: true
                         },
                         {
-                            name: "Privatlivspolitik",
-                            link: "/"
-                        },
-                        {
-                            name: "Skulpturering",
-                            link: "/"
+                            name: "Privacy policy",
+                            link: "./LIPSdatapolitik.pdf",
+                            blank: true
                         }
                     ]
                 },
-            ]
+            ],
+            info: {
+                title: "Find us",
+                openingHours: "Opening hours"
+            }
         }
     },
     home: {
@@ -697,7 +783,7 @@ export const textEN = {
         },
         treatments: {
             title: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde.",
-            text: "Vi sætter ",
+            text: "Gallery",
             textHighlighted: "prikken",
             textAfter: " over i'et.",
             slider: [
@@ -983,7 +1069,33 @@ export const textEN = {
                     }
                 ]
             }
-        }
+        },
+        questions: [
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+        ]
     },
     profhilo: {
         hero: {
@@ -1048,7 +1160,33 @@ export const textEN = {
                     }
                 ]
             }
-        }
+        },
+        questions: [
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+            {
+                question: "Hvor lang tid holder behandlingen?",
+                answer: "Svar her"
+            },
+        ]
     },
     about: {
         hero: {
@@ -1059,16 +1197,22 @@ export const textEN = {
             cta: "That's why we are always available for questions and contact.",
         },
         info: {
-            title: "Vi sætter prikken over i'et.",
+            title: "Vores faglige stolthed er din garanti, for en sikker og tryg behandling.",
             text: [
                 {
                     text: "Hos os bliver du altid mødt af venligt og kompetent personale, hvis fælles mission er at bringe dine behov som klient i fokus. Hos os findes ingen dumme spørgsmål. Alle behandlere er kvalificerede læger, uddannet og certificerede i behandling med ikke-permanente fillers i international standard. "
                 },
                 {
-                    text: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde. Klinikkens ansvarshavende læge er Peter James Bruhn. Hos os findes ingen dumme spørgsmål."
+                    text: "Høj faglighed, æstetisk sans, sikkerhed og et godt forhold til dig som klient er hjørnestenene i vores arbejde. Klinikkens ansvarshavende læge er Peter James Bruhn."
                 },
                 {
-                    text: "Hos os findes ingen dumme spørgsmål. Alle behandlere er kvalificerede læger, uddannet og certificerede."
+                    text: "Hos os findes ingen dumme spørgsmål og du er altid velkommen til at "
+                },
+                {
+                    text: "kontakte os "
+                },
+                {
+                    text: "på tlf. eller mail."
                 }
             ]
         },
@@ -1078,7 +1222,7 @@ export const textEN = {
             employees: [
                 {
                     name: "Peter James Bruhn",
-                    title: "MD, ansvarshavende læge.",
+                    title: "Ansvarshavende læge.",
                     image: "/employees/employee-example.jpg"
                 }, {
                     name: "Vibeke Schaffalitzky de Muckadell",
@@ -1094,6 +1238,10 @@ export const textEN = {
                     image: "/employees/employee-example.jpg"
                 }
             ]
+        },
+        extra: {
+            text: "Klinikken er registreret som kosmetisk behandlingssted hos Styrelsen for Patientsikkerhed, og alle behandlende læger er registreret og godkendt til kosmetisk behandling med ikke-permanente fillers.",
+            text2: "Gesicht er registreret og godkendt som behandlingssted hos Sundhedsstyrelsen med registreret ansvarshavende læge."
         }
     },
     contact: {
@@ -1123,7 +1271,7 @@ export const textEN = {
                     text: "Gennem vores bookingsystem kan du bestille tid til forundersøgelse og behandling. Vælg først, hvilken type aftale, du ønsker, og vælg derefter dato og tidspunkt."
                 }
             ],
-            cta: "Start bookingsession",
+            cta: "",
         },
         info: {
             titleBefore: "Bemærk, at der skal være foretaget forundersøgelse minimum ",

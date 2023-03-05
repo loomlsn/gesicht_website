@@ -6,45 +6,139 @@
     color: colors.$dark;
 
     .aboutInner {
-        padding: 50px 1.25rem 100px 1.25rem;
+        padding: 50px 1.25rem 0 1.25rem;
 
         @media (min-width: 768px) {
             padding: 100px 1.25rem;
             display: grid;
             grid-template-columns: 1.5fr 1fr;
-            gap: 4rem;
+            gap: 15rem;
         }
 
         @media (min-width: 1200px) {
-            padding: 100px 0 150px 0;
+            padding: 100px 0 100px 0;
         }
     }
 
     .introAbout {
+        padding-bottom: 50px;
+
         h2 {
             // color: colors.$red-peach;
             font-size: 1.4rem;
             margin-bottom: 2rem;
 
             @media (min-width: 768px) {
-                font-size: 1.9rem;
+                font-size: 1.5rem;
+                max-width: 80%;
             }
         }
 
         p {
             margin-top: 1rem;
             line-height: 25px;
+
+            a {
+                color: colors.$red-peach;
+            }
         }
     }
 
     .imageAbout {
+        position: relative;
+
+        @media (min-width: 1200px) {
+            margin-top: -195px;
+        }
+
+        .imageOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .3) 100%);
+            z-index: 1;
+
+            @media (min-width: 768px) {
+                width: 450px;
+                height: 550px;
+                margin-bottom: 25px;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+
+            @media (min-width: 768px) {
+                width: 450px;
+                height: 550px;
+                margin-bottom: 25px;
+            }
+        }
+
         div {
             font-size: 1.25rem;
             font-family: typography.$sans;
             text-align: left;
         }
+
+        h3 {
+            color: black;
+            font-family: typography.$sans-medium;
+        }
+
+        .employee {
+            position: relative;
+            z-index: 2;
+            margin-top: 25px;
+
+            @media (min-width: 768px) {
+                margin-top: -120px;
+                margin-left: 35px;
+            }
+
+            h3 {
+                margin-bottom: 5px;
+                letter-spacing: 0.5px;
+                color: black;
+
+                @media (min-width: 768px) {
+                    color: white;
+                }
+            }
+
+            p {
+                color: black;
+
+                @media (min-width: 768px) {
+                    color: white;
+                }
+            }
+        }
     }
 
+}
+
+.employee {
+    margin-bottom: 4rem;
+
+    h3 {
+        font-family: typography.$sans-medium;
+        color: colors.$red-peach;
+        font-size: 1.1rem;
+        margin-bottom: .7rem;
+    }
+
+    .employeeDivider {
+        display: block;
+        margin-top: 2rem;
+        width: 300px;
+        height: 1px;
+        background-color: white;
+    }
 }
 
 .employeesContainer {
@@ -53,18 +147,28 @@
     padding-bottom: 30px;
     position: relative;
     overflow-x: hidden;
+    color: white;
 
-    @media (min-width: 768px) {
-        padding-bottom: 100px;
+    .employeeBG {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: colors.$forest-green;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            height: 100%;
+            width: 55vw;
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
     }
 
-    .divider {
-        height: 1px;
-        width: 200%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: black;
+    @media (min-width: 768px) {
+        padding-bottom: 50px;
     }
 
     .employeeTextContainer {
@@ -98,94 +202,144 @@
     .employeesInner {
         // padding: 150px 2rem 150px 2rem;
 
-        // @media (min-width: 768px) {
-        //     display: grid;
-        //     grid-template-columns: 1fr 1fr 1fr 1fr;
-        //     gap: 4rem;
-        // }
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 11rem;
+        }
 
-        .employee {
-            margin-bottom: 4rem;
+        .imgContainer {
+            min-width: 500px;
 
-            h3 {
-                font-family: typography.$sans-medium;
-                color: colors.$red-peach;
-                font-size: 1.25rem;
-                margin-bottom: .7rem;
-            }
-
-            .employeeDivider {
+            img {
                 display: none;
 
                 @media (min-width: 768px) {
                     display: block;
-                    margin-top: 2rem;
-                    width: 300px;
-                    height: 1px;
-                    background-color: black;
+                    position: absolute;
+                    left: 0;
+                    width: 47%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
         }
 
-        .employee:nth-child(even) {
-            display: flex;
-            flex-direction: column-reverse;
+        .certified {
+            margin: 50px 0;
 
             @media (min-width: 768px) {
-                flex-direction: column;
-                display: grid;
-                grid-template-columns: 1.5fr 1fr;
-                gap: 5rem;
+                margin-top: 7rem;
+                max-width: 70%;
             }
 
-            img {
-                width: 100%;
+            p {
                 margin-bottom: 1rem;
-
-                @media (min-width: 768px) {
-                    margin-bottom: 0;
-                }
-            }
-
-            .info {
-                margin: 0.5rem 0;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                text-align: left;
-
-                @media (min-width: 768px) {
-                    width: max-content;
-                    margin-left: 30%;
-                }
             }
         }
 
-        .employee:nth-child(odd) {
-
+        .employeesRight {
             @media (min-width: 768px) {
-                display: grid;
-                grid-template-columns: 1fr 1.5fr;
-                gap: 5rem;
+                padding: 50px 0;
             }
 
-            img {
-                width: 100%;
-                margin-bottom: 1rem;
+            h2 {
+                margin-bottom: 4rem;
+                margin-top: 6rem;
+                font-family: typography.$sans-medium;
+                font-size: .78rem;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .employees {
+            user-select: none;
+
+            div {
+                margin-bottom: 35px;
 
                 @media (min-width: 768px) {
                     margin-bottom: 0;
                 }
 
+                h3 {
+                    color: white;
+
+                    @media (max-width: 768px) {
+                        font-size: 1.3rem;
+                    }
+                }
             }
 
-            .info {
-                margin: 0.5rem 0;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                text-align: left;
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 5rem;
+                row-gap: 2rem !important;
             }
         }
+
+        // .employee:nth-child(even) {
+        //     display: flex;
+        //     flex-direction: column-reverse;
+
+        //     @media (min-width: 768px) {
+        //         flex-direction: column;
+        //         display: grid;
+        //         grid-template-columns: 1.5fr 1fr;
+        //         gap: 5rem;
+        //     }
+
+        //     img {
+        //         width: 100%;
+        //         margin-bottom: 1rem;
+
+        //         @media (min-width: 768px) {
+        //             margin-bottom: 0;
+        //         }
+        //     }
+
+        //     .info {
+        //         margin: 0.5rem 0;
+        //         display: flex;
+        //         justify-content: center;
+        //         flex-direction: column;
+        //         text-align: left;
+
+        //         @media (min-width: 768px) {
+        //             width: max-content;
+        //             margin-left: 30%;
+        //         }
+        //     }
+        // }
+
+        // .employee:nth-child(odd) {
+
+        //     @media (min-width: 768px) {
+        //         display: grid;
+        //         grid-template-columns: 1fr 1.5fr;
+        //         gap: 5rem;
+        //     }
+
+        //     img {
+        //         width: 100%;
+        //         margin-bottom: 1rem;
+
+        //         @media (min-width: 768px) {
+        //             margin-bottom: 0;
+        //         }
+
+        //     }
+
+        //     .info {
+        //         margin: 0.5rem 0;
+        //         display: flex;
+        //         justify-content: center;
+        //         flex-direction: column;
+        //         text-align: left;
+        //     }
+        // }
     }
 }

@@ -4,6 +4,7 @@ import IntroSection from "../../../components/TreatmentsPage/IntroSection/IntroS
 import Treatments from "../../../components/HomePage/TreatmentSlider";
 import { getDictionaryValue } from "../../../helpers/getDictionaryValue";
 import { colorTheme } from "../../globals/settings";
+import FAQ from "../../../components/TreatmentsPage/FAQ/FAQ";
 
 type ServicesProps = {
     prop: string;

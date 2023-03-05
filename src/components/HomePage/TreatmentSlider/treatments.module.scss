@@ -158,6 +158,8 @@
     }
 
     .titleContainer {
+        position: relative;
+
         h2 {
             margin-bottom: 3rem;
 
@@ -170,6 +172,25 @@
         h3 {
             font-family: typography.$serif;
             font-size: 1.5rem;
+            font-family: "DM Sans Medium", DM Sans, Montserrat;
+            font-size: 0.78rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            @media (min-width: 768px) {
+                margin-right: 10px;
+                margin-top: 8px;
+
+                &::before {
+                    content: "";
+                    background-color: black;
+                    width: 55%;
+                    height: 1px;
+                    position: absolute;
+                    right: 9%;
+                    top: 15px;
+                }
+            }
 
             span {
                 color: colors.$red-peach;
@@ -196,8 +217,18 @@
             img {
                 width: 100%;
                 margin-bottom: 1rem;
+                -webkit-filter: grayscale(100%);
 
                 @media (min-width: 1200px) {
+                    filter: grayscale(100%);
+
+                    &:hover {
+                        -webkit-filter: none;
+                        filter: none;
+                    }
+                }
+
+                @media (min-width: 768px) {
                     margin-bottom: 0;
                 }
             }

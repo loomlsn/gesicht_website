@@ -4,6 +4,7 @@
 
 .introOuter {
     position: relative;
+    cursor: default;
 
     &.light {
         .bgRight {
@@ -51,9 +52,9 @@
         }
     }
 
-    &:hover .border {
-        width: 60%;
-    }
+    // &:hover .border {
+    //     width: 60%;
+    // }
 
     .border {
         height: 2px;
@@ -103,7 +104,7 @@
 
                 @media (min-width: 768px) {
                     font-size: 2.7rem;
-                    line-height: 2.8rem;
+                    line-height: 3rem;
                     padding-right: 0;
                 }
             }
@@ -112,7 +113,6 @@
                 font-size: 1rem;
                 margin-top: 1rem;
                 font-weight: 400;
-                padding-right: 60px;
                 line-height: 1.5rem;
 
                 @media (min-width: 768px) {
@@ -181,16 +181,17 @@
     .introContainer {
         padding: 100px 1.25rem;
         padding-bottom: 0;
+        overflow: hidden;
 
         @media (min-width: 1200px) {
-            padding: 100px 0rem;
+            padding: 200px 0rem;
         }
     }
 
     .introContainer .introTitle {
         padding: 0;
         padding-top: 0rem;
-        padding-bottom: 3rem;
+        padding-bottom: 100px;
 
         h2 {
             font-family: typography.$sans;
@@ -269,14 +270,19 @@
     }
 
     .introContainer .introImage {
-        div {
+        div:first-child {
             background-color: colors.$light;
             margin-left: -1.25rem;
             width: 115%;
-            min-height: 450px;
+            min-height: 850px;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
+
+            @media (min-width: 768px) {
+                min-height: 550px;
+            }
 
             &::after {
                 @media (min-width: 768px) {
@@ -305,7 +311,28 @@
             width: 20%;
             height: 100%;
             object-fit: contain;
-            z-index: 100;
+            z-index: 30;
+        }
+
+        .iframeContainer {
+            width: 95%;
+            height: 100%;
+            position: relative;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            z-index: 50;
+
+            @media (min-width: 768px) {
+                width: 100%;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
         }
     }
 }
@@ -351,6 +378,10 @@
 
             a {
                 color: colors.$red-peach;
+
+                &:hover {
+                    color: colors.$red;
+                }
             }
         }
 

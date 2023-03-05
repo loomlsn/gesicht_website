@@ -11,55 +11,61 @@ export default function AboutSection() {
                 <div className={`container ${styles.aboutInner}`}>
                     <div className={styles.introAbout}>
                         <h2>{data.about.info.title}</h2>
-                        {data.about.info.text.map((text) => (
-                            <p>{text.text}</p>
-                        ))}
+                        <p>{data.about.info.text[0].text}</p>
+                        <p>{data.about.info.text[1].text}</p>
+                        <p>{data.about.info.text[2].text}<Link href={`/kontakt`} >{data.about.info.text[3].text}</Link>{data.about.info.text[4].text}</p>
                     </div>
                     <div className={styles.imageAbout}>
-                        {/* 
-                        <img src="/hero/header-3.jpg" /> */}
+                        <div className={styles.imageOverlay}></div>
+                        <img src={data.about.employees.employees[0].image} />
+                        <div className={styles.employee}>
+                            <h3>{data.about.employees.employees[0].name}</h3>
+                            <p>{data.about.employees.employees[0].title}</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className={styles.employeesContainer}>
-                <div className="container relative">
-                    <div className={styles.divider}></div>
-                    <div className={styles.employeeTextContainer}>
-                        <h2>{data.about.employees.title}</h2>
-                        <p>{data.about.employees.text}</p>
-                    </div>
+                <div className={styles.employeeBG}></div>
+                <div className="container">
                     <div className={styles.employeesInner}>
-                        <div className={styles.employee}>
-                            <img src={data.about.employees.employees[0].image} />
-                            <div className={styles.info}>
-                                <h3>{data.about.employees.employees[0].name}</h3>
-                                <p>{data.about.employees.employees[0].title}</p>
-                                <div className={styles.employeeDivider}></div>
+                        <div className={styles.imgContainer}><img src="/hero/clinic.jpg" /></div>
+                        <div className={styles.employeesRight}>
+                            <h2>{data.about.employees.title}</h2>
+                            <div className={styles.employees}>
+                                <div className={styles.employee}>
+                                    <div className={styles.info}>
+                                        <h3>{data.about.employees.employees[0].name}</h3>
+                                        <p>{data.about.employees.employees[0].title}</p>
+                                        <div className={styles.employeeDivider}></div>
+                                    </div>
+                                </div>
+                                <div className={styles.employee}>
+                                    <div className={styles.info}>
+                                        <h3>{data.about.employees.employees[1].name}</h3>
+                                        <p>{data.about.employees.employees[1].title}</p>
+                                        <div className={styles.employeeDivider}></div>
+                                    </div>
+                                </div>
+                                <div className={styles.employee}>
+                                    <div className={styles.info}>
+                                        <h3>{data.about.employees.employees[2].name}</h3>
+                                        <p>{data.about.employees.employees[2].title}</p>
+                                        <div className={styles.employeeDivider}></div>
+                                    </div>
+                                </div>
+                                <div className={styles.employee}>
+                                    <div className={styles.info}>
+                                        <h3>{data.about.employees.employees[3].name}</h3>
+                                        <p>{data.about.employees.employees[3].title}</p>
+                                        <div className={styles.employeeDivider}></div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className={styles.employee}>
-                            <div className={styles.info}>
-                                <h3>{data.about.employees.employees[1].name}</h3>
-                                <p>{data.about.employees.employees[1].title}</p>
-                                <div className={styles.employeeDivider}></div>
+                            <div className={styles.certified}>
+                                <p>{data.about.extra.text}</p>
+                                <p>{data.about.extra.text2}</p>
                             </div>
-                            <img src={data.about.employees.employees[1].image} />
-                        </div>
-                        <div className={styles.employee}>
-                            <img src={data.about.employees.employees[2].image} />
-                            <div className={styles.info}>
-                                <h3>{data.about.employees.employees[2].name}</h3>
-                                <p>{data.about.employees.employees[2].title}</p>
-                                <div className={styles.employeeDivider}></div>
-                            </div>
-                        </div>
-                        <div className={styles.employee}>
-                            <div className={styles.info}>
-                                <h3>{data.about.employees.employees[3].name}</h3>
-                                <p>{data.about.employees.employees[3].title}</p>
-                                <div className={styles.employeeDivider}></div>
-                            </div>
-                            <img src={data.about.employees.employees[3].image} />
                         </div>
                     </div>
                 </div>

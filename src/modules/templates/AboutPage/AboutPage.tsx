@@ -14,8 +14,8 @@ export default function AboutPage({ }: AboutPageProps) {
     return (
         <>
             <Hero size={'sm'} title={data.about.hero.title} colorTheme={colorTheme} />
-            <IntroSection colorTheme={colorTheme} title={data.about.intro.title} text={data.about.intro.cta} img={"/hero/header-3.jpg"} link={"/booking"} />
             <AboutSection />
+            {/* <IntroSection colorTheme={colorTheme} title={data.about.intro.title} text={data.about.intro.cta} img={"/hero/header-3.jpg"} link={"/booking"} /> */}
         </>
     )
 }

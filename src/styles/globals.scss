@@ -110,6 +110,15 @@ a {
   }
 }
 
+p {
+  font-size: .9rem !important;
+  line-height: 25px !important;
+
+  @media (min-width: 768px) {
+    font-size: .95rem !important;
+  }
+}
+
 .splide__arrows {
   position: absolute;
   left: 1rem;

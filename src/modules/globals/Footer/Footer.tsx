@@ -1,20 +1,22 @@
 import Link from "next/link"
 import React from "react"
+import { getDictionaryValue } from "../../../helpers/getDictionaryValue";
 import styles from './footer.module.scss'
 
 export const Footer = () => {
+    const data = getDictionaryValue();
     return (
         <footer className={styles.footerContainer}>
             <div className="container">
                 <div className={styles.footerNav}>
                     <div className={styles.footerLinks}>
-                        <h3>Behandlinger</h3>
+                        <h3>{data.general.footer.links[0].category}</h3>
                         <ul>
-                            <Link href={'/'}><li>Fillerbehandling</li></Link>
-                            <Link href={'/'}><li>Profhilobehandling</li></Link>
-                            <Link href={'/'}><li>Korrektioner</li></Link>
-                            <Link href={'/'}><li>Rynkebehandling</li></Link>
-                            <Link href={'/'}><li>Skulpturering</li></Link>
+                            {data.general.footer.links[0].links.map((item, i) => {
+                                return (
+                                    <li><Link key={`footer-link-${i}`} href={item.link}>{item.name}</Link></li>
+                                )
+                            })}
                         </ul>
                         {/* <ul>
                             <li>Tilsynsrapport </li>
@@ -24,29 +26,25 @@ export const Footer = () => {
                         </ul> */}
                     </div>
                     <div className={styles.footerLinks}>
-                        <h3>Klinikken</h3>
+                        <h3>{data.general.footer.links[1].category}</h3>
                         <ul>
-                            <Link href={'/'}><li>Om Gesicht</li></Link>
-                            <Link href={'/'}><li>Kontakt os</li></Link>
-                            <Link href={'/'}><li>Tilsynsrapport</li></Link>
-                            <Link href={'/'}><li>Privatlivspolitik</li></Link>
+                            {data.general.footer.links[1].links.map((item, i) => {
+                                const isFileLink = item.blank;
+                                return (
+                                    <li><Link key={`footer-link-${i}`} href={item.link} target={isFileLink ? "_blank" : "_self"}>{item.name}</Link></li>
+                                )
+                            })}
                         </ul>
-                        {/* <ul>
-                            <li>Tilsynsrapport </li>
-                            <li>Privatlivspolitik </li>
-                            <br />
-                            <li>CVR: 39328666</li>
-                        </ul> */}
                     </div>
                     <div className={styles.footerLinks}>
-                        <h3>Find os</h3>
+                        <h3>{data.general.footer.info.title}</h3>
                         <ul>
                             <li>Knabrostræde 15, st. th</li>
                             <li>1210 København K</li>
                         </ul>
                         <div className={styles.contact}>
-                            <Link href={'/'}>+45 30 30 30 30 </Link>
-                            <Link href={'/'}>hello@gesicht.dk </Link>
+                            <Link href={`tel:${data.general.phone}`}>{data.general.phone}</Link>
+                            <Link href={`mailto:${data.general.mail}`}>{data.general.mail}</Link>
                         </div>
                     </div>
                     <div className={styles.logo}>
@@ -55,12 +53,13 @@ export const Footer = () => {
                 </div>
                 <div className={styles.footerNavBottom}>
                     <div className={styles.footerLinks}>
-                        <h3>Åbningstider</h3>
+                        <h3>{data.general.footer.info.openingHours}</h3>
                         <ul className={styles.openingHours}>
-                            <li>Mandag - torsdag:<span>11.00 - 20.00</span></li>
-                            <li>Fredag:<span>11.00 - 17.30</span></li>
-                            <li>Lørdag:<span>12.00 - 17.00</span></li>
-                            <li>Søndag:<span>12.00 - 17.00</span></li>
+                            {data.general.openingHours.map((line, i) => {
+                                return (
+                                    <li>{line.day}<span>{line.hours}</span></li>
+                                )
+                            })}
                         </ul>
                     </div>
                     <div className={styles.footerLinks}>
@@ -68,10 +67,10 @@ export const Footer = () => {
                         <p>Vi glæder os til at tage imod dig.</p> */}
                     </div>
                     <div className={styles.socials}>
-                        <Link href={'/'}>
+                        <Link href={'https://www.facebook.com/lipsbyjames/'} target="_blank">
                             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
                         </Link>
-                        <Link href={'/'}>
+                        <Link href={'https://www.instagram.com/lipsbyjames/'} target="_blank">
                             <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0' />
 
 

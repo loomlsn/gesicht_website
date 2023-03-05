@@ -3,6 +3,7 @@
 @use '../../../styles/values/typography.scss';
 
 .contactContainer {
+    background-color: colors.$light;
     color: colors.$dark;
 
     .aboutInner {
@@ -55,7 +56,7 @@
                 display: flex;
             }
 
-            div {
+            a {
                 margin-right: 2rem;
                 display: flex;
                 align-items: center;

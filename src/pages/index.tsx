@@ -1,16 +1,11 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 import { MainLayout } from '../modules/layout/MainLayout';
 import ComingSoon from '../modules/templates/ComingSoonPage';
 import StartPage from '../modules/templates/StartPage';
 
 export default function Home() {
-  const { locale, locales, asPath } = useRouter();
-
-  function getThemeColor() {
-    return "#FF5757";
-  }
-
   return (
     <>
       <Head>

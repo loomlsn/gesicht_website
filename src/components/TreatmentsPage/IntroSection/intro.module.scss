@@ -43,14 +43,15 @@
             object-fit: cover;
             left: 0;
             position: absolute;
-            top: 450px;
+            top: 470px;
+            margin-bottom: -50px;
 
             @media (max-width: 768px) {
                 width: 122%;
                 position: relative;
                 top: 0;
                 margin-left: -1.25rem;
-                margin-bottom: -50px;
+                margin-bottom: -85px;
             }
         }
 

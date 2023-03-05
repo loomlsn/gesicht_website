@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../../components/Heroes/Hero";
+import FAQ from "../../../components/TreatmentsPage/FAQ/FAQ";
 import TreatmentIntro from "../../../components/TreatmentsPage/FillerPage/TreatmentIntro";
 import { getDictionaryValue } from "../../../helpers/getDictionaryValue";
 import { colorTheme } from "../../globals/settings";
@@ -14,6 +15,7 @@ export default function FillerPage({ prop }: FillerProps) {
         <>
             <Hero size={'sm'} title={data.filler.hero.title} colorTheme={colorTheme} />
             <TreatmentIntro data={data} />
+            <FAQ data={data} />
         </>
     )
 }

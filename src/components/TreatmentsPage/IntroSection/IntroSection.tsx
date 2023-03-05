@@ -48,7 +48,7 @@ export default function IntroSection({ data }: IntroProps) {
                         <img src="/hero/header-4.jpg" />
                     </div>
                     <div className={styles.treatmentsBox}>
-                        <h2>Vi sætter prikken over i'et.</h2>
+                        <h2>{intro.secondTitle}</h2>
                         <p className={styles.infoText}>{intro.firstText}</p>
                         <p>{intro.secondText}</p>
                     </div>
