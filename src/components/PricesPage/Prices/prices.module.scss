@@ -9,6 +9,10 @@
         .payment {
             background-color: colors.$forest-green;
             color: white;
+
+            @media (min-width: 768px) {
+                border-radius: 5px 0 0 5px;
+            }
         }
     }
 

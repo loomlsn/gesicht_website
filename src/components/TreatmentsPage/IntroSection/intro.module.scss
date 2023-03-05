@@ -45,6 +45,7 @@
             position: absolute;
             top: 470px;
             margin-bottom: -50px;
+            border-radius: 0 5px 0 0;
 
             @media (max-width: 768px) {
                 width: 122%;
@@ -52,6 +53,7 @@
                 top: 0;
                 margin-left: -1.25rem;
                 margin-bottom: -85px;
+                border-radius: 0;
             }
         }
 
