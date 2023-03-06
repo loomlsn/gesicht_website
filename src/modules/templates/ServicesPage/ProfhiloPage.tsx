@@ -18,7 +18,7 @@ export default function ProfhiloPage({ prop }: ProfhiloProps) {
             {/* <SimpleHero title={"Behandlinger"} description={"Alle vores behandlinger foretages af kvalificerede læger"} /> */}
             <Hero size={'sm'} title={data.profhilo.hero.title} colorTheme={colorTheme} />
             <TreatmentIntro data={data} />
-            <FAQ data={data} />
+            {/* <FAQ data={data} /> */}
         </>
     )
 }

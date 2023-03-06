@@ -404,8 +404,8 @@ export const textDA = {
                 link: "/behandlinger/filler"
             },
             {
-                name: "Ansigt",
-                description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
+                name: "Ozempic face",
+                description: "Det er et mærkeligt ord der garanteret betyder noget.",
                 link: "/behandlinger/filler"
             },
         ],
@@ -1035,8 +1035,8 @@ export const textEN = {
                 link: "/behandlinger/filler"
             },
             {
-                name: "Face",
-                description: "Ønsker du mere fylde og form til kindbenene, kan vi med filler opnå dine ønsker.",
+                name: "Ozempic face",
+                description: "Det er et mærkeligt ord der garanteret betyder noget.",
                 link: "/behandlinger/filler"
             },
         ],

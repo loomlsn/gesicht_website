@@ -15,7 +15,7 @@ export default function FillerPage({ prop }: FillerProps) {
         <>
             <Hero size={'sm'} title={data.filler.hero.title} colorTheme={colorTheme} />
             <TreatmentIntro data={data} />
-            <FAQ data={data} />
+            {/* <FAQ data={data} /> */}
         </>
     )
 }
