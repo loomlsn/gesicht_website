@@ -22,7 +22,8 @@
         @media (min-width: 400px) {
             display: grid;
             grid-template-columns: 1fr .75fr;
-            gap: 3rem;
+            gap: 25%;
+            row-gap: 3rem;
         }
 
         @media (min-width: 768px) {
@@ -50,7 +51,6 @@
 
                 @media (min-width: 400px) {
                     margin-top: 5rem;
-                    margin-left: 1rem;
                 }
 
                 @media (min-width: 768px) {
@@ -129,6 +129,10 @@
 
         .openingHours {
             @media (max-width: 640px) {
+                max-width: 90%;
+            }
+
+            @media (max-width: 450px) {
                 max-width: 100%;
             }
 
