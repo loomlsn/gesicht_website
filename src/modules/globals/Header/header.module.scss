@@ -11,9 +11,11 @@
     .logoContainer {
         position: absolute;
         top: 2rem;
+        left: 1rem;
 
         @media (min-width: 768px) {
             position: relative;
+            left: 0;
         }
 
         img {
@@ -224,5 +226,21 @@
             // text-decoration: underline;
             font-family: typography.$sans-medium;
         }
+    }
+}
+
+.firstDiv {
+    max-width: 95vw;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1300px;
+        margin: 0 auto;
     }
 }

@@ -52,9 +52,9 @@ export const Header = ({ colorTheme }: HeaderProps) => {
             document.querySelector("meta[name='theme-color']").setAttribute("content", themeColor);
         }
     }, [navOpen])
-
+    console.log(isMobile)
     return (
-        <div className="container">
+        <div className={styles.firstDiv}>
             <header className={`${styles.headerContainer} ${colorTheme === 'light' ? styles.light : styles.dark}`}>
                 <Link href={'/'} className={styles.logoContainer}>
                     {colorTheme === "dark" ? (

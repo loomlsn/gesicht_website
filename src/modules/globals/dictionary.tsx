@@ -24,6 +24,7 @@ export const textDA = {
         ],
         topbar: {
             license: "Registreret og godkendt hos Styrelsen for Patientsikkerhed",
+            hours: "Vi har åbent alle ugens dage - også aften og weekend."
         },
         navigation: [
             {
@@ -683,6 +684,7 @@ export const textEN = {
         ],
         topbar: {
             license: "Licensed and approved by Danish Patient Safety Authority",
+            hours: "Open all days of the week - also weekend and evenings."
         },
         navigation: [
             {
