@@ -39,7 +39,11 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: .8rem;
-                font-size: 1rem;
+                font-size: .9rem;
+
+                @media (min-width: 768px) {
+                    font-size: 1rem;
+                }
             }
         }
 

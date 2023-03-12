@@ -9,7 +9,7 @@ export default function TreatmentsList() {
     return (
         <div className={styles.lightBG}>
             <div className={`container ${styles.treatments}`}>
-                <h2>Bliv klogere på hvilke behandlinger vi tilbyder.</h2>
+                <h2>{data.prices.treatmentList.title}</h2>
                 <div className={styles.treatmentContainer}>
                     {data.prices.treatmentList.treatments.map((treatment, i) => {
                         return (

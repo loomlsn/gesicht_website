@@ -1,7 +1,6 @@
 import Link from "next/link"
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { getDictionaryValue } from "../../../helpers/getDictionaryValue"
-import { isDeviceMobile } from "../../../helpers/useWindowDimensions"
 import styles from './intro-section.module.scss'
 
 type IntroSectionProps = {
@@ -15,8 +14,6 @@ type IntroSectionProps = {
 
 export default function IntroSection({ title, text, colorTheme, img, link, booking }: IntroSectionProps) {
     const data = getDictionaryValue();
-    const [bookingOpen, setBookingOpen] = useState(false);
-    const isMobile = isDeviceMobile();
 
     return (
         <>

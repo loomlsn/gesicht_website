@@ -24,10 +24,9 @@ export default function TreatmentIntro({ data }: TreatmentIntroProps) {
                             ))}
                             <div>
                                 <ul className={styles.bullets}>
-                                    <li><img src="/hero/icon.svg" className="icon" />Varighed: 6-12 mdr.</li>
-                                    <li><img src="/hero/icon.svg" className="icon" />Behandlingstid: 30 min.</li>
-                                    <li><img src="/hero/icon.svg" className="icon" />Konsultation: Gratis</li>
-                                    <li><img src="/hero/icon.svg" className="icon" />Heletid: 2 uger</li>
+                                    {data.filler.bullets.map((item, i) => (
+                                        <li key={`bullet-${i}`}><img src="/hero/icon.svg" className="icon" />{item.text}</li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
@@ -76,6 +75,7 @@ type AccordionItemProps = {
     item: {
         name: string
         description: string
+        longDescription: string
         link: string
     }
 }
@@ -99,7 +99,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ item }) => {
                 </button>
             </div>
             <div className={`${styles.accordionContent} ${isActive ? styles.active : ""}`}>
-                <p>Herudover forårsager tobaksrygning en reduceret mængde hyaluronsyre i huden. Dette resulterer i, at huden får mindre fylde og elasticitet, og der opstår rynker, furer og forandrede ansigtskonturer.</p>
+                <p>{item.longDescription}</p>
             </div>
         </>
     )

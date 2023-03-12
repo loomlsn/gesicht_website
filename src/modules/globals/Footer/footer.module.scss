@@ -3,12 +3,39 @@
 
 .footerContainer {
     background-color: colors.$light;
-    padding: 2rem 0;
+    padding-top: 2rem;
     position: relative;
+    padding-top: 2rem;
 
     @media (min-width: 768px) {
         padding: 5rem 0;
-        padding-top: 6rem;
+        padding-top: 7rem;
+    }
+
+    .bottomBar {
+        font-size: .9rem;
+        padding-top: 4rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: max-content;
+        align-self: flex-end;
+
+        @media (min-width: 768px) {
+            margin-right: 5.5rem;
+        }
+
+        .copyright {
+            user-select: none;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 8px;
+                opacity: 0.9;
+            }
+        }
     }
 
     a {
@@ -82,8 +109,8 @@
 
         @media (min-width: 768px) {
             display: grid;
-            grid-template-columns: 1.5fr 1fr 0.5fr;
-            gap: 12rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 8rem;
         }
 
         h3 {
@@ -175,13 +202,13 @@
     }
 
     .socials {
-        margin-top: -1rem;
+        // margin-top: -1rem;
         display: flex;
 
 
-        @media (min-width: 768px) {
-            margin-top: 9rem;
-        }
+        // @media (min-width: 768px) {
+        //     margin-top: 9rem;
+        // }
 
         a {
             opacity: 0.8;
@@ -195,6 +222,7 @@
                 height: 1.5rem;
                 margin-right: 0.75rem;
                 fill: colors.$red-peach;
+                display: block;
             }
         }
 

@@ -11,9 +11,9 @@ export default function AboutSection() {
                 <div className={`container ${styles.aboutInner}`}>
                     <div className={styles.introAbout}>
                         <h2>{data.about.info.title}</h2>
-                        <p>{data.about.info.text[0].text}</p>
-                        <p>{data.about.info.text[1].text}</p>
-                        <p>{data.about.info.text[2].text}<Link href={`/kontakt`} >{data.about.info.text[3].text}</Link>{data.about.info.text[4].text}</p>
+                        <p>{data.about.info.text[0].text} {data.about.info.text[1].text}</p>
+                        <p>{data.about.info.text[2].text}</p>
+                        <p>{data.about.info.text[3].text}<Link href={`/kontakt`} >{data.about.info.text[4].text}</Link>{data.about.info.text[5].text}</p>
                     </div>
                     <div className={styles.imageAbout}>
                         <div className={styles.imageOverlay}></div>

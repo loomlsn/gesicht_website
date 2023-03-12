@@ -37,6 +37,26 @@
         }
     }
 
+    a {
+        color: colors.$red-peach;
+        // text-transform: uppercase;
+        // letter-spacing: 0.7px;
+        font-size: .95rem;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: colors.$red;
+        }
+
+        svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+        }
+    }
+
     .heroContentLg {
         max-width: 80%;
         padding-top: 19rem;

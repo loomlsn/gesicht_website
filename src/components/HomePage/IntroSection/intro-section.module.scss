@@ -90,7 +90,7 @@
             padding-bottom: 5rem;
 
             @media (min-width: 768px) {
-                max-width: 420px;
+                max-width: 500px;
                 padding-top: 10rem;
                 padding-bottom: 0px;
                 // padding-bottom: 70px;
@@ -179,7 +179,7 @@
     }
 
     .introContainer {
-        padding: 100px 1.25rem;
+        padding: 80px 1.25rem;
         padding-bottom: 0;
         overflow: hidden;
 
@@ -216,7 +216,7 @@
             height: 50px;
             position: absolute;
             z-index: 100;
-            top: 28%;
+            top: 30%;
             left: 45%;
 
             @media (min-width: 768px) {
@@ -329,7 +329,7 @@
         }
 
         .iframeContainer {
-            width: 95%;
+            width: 105%;
             height: 100%;
             position: relative;
             position: absolute;
