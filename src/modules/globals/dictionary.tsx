@@ -93,7 +93,7 @@ export const textDA = {
                         },
                         {
                             name: "Tilsynsrapport",
-                            link: "/Tilsynsrapport2019.pdf",
+                            link: "/TIlsynsrapport2019.pdf",
                             blank: true
                         },
                         {
@@ -797,7 +797,7 @@ export const textEN = {
                         },
                         {
                             name: "Inspection report",
-                            link: "./Tilsynsrapport2019.pdf",
+                            link: "./TIlsynsrapport2019.pdf",
                             blank: true
                         },
                         {
