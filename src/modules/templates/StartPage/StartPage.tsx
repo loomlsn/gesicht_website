@@ -16,7 +16,7 @@ export default function StartPage({ prop }: StartPageProps) {
     const data = getDictionaryValue();
     return (
         <>
-            <Hero size={'lg'} title={data.home.hero.title} description={data.home.hero.text} colorTheme={colorTheme} />
+            <Hero frontpage={data.home.hero.extra} size={'lg'} title={data.home.hero.title} description={data.home.hero.text} colorTheme={colorTheme} />
             <IntroSection title={data.home.intro.title} text={data.home.intro.text} colorTheme={colorTheme} img={"/hero/header-3.jpg"} link={"/om"} />
             <Treatments />
             <PartnerSection title={data.home.partner.title} />

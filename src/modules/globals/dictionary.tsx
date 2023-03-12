@@ -113,7 +113,8 @@ export const textDA = {
     home: {
         hero: {
             title: "Velkommen til Gesicht",
-            text: "Prikken over i'et."
+            text: "Prikken over i'et.",
+            extra: "Tidligere kendt som"
         },
         intro: {
             title: "Altid udført af autoriserede læger.",
@@ -816,7 +817,8 @@ export const textEN = {
     home: {
         hero: {
             title: "Welcome to Gesicht",
-            text: "It's all in the details. "
+            text: "It's all in the details. ",
+            extra: "The artists formerly known as"
         },
         intro: {
             title: "All procedures are performed by certified medical doctors.",

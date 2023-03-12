@@ -100,8 +100,8 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                                         <li>{data.general.addressCity}</li>
                                     </ul>
                                     <ul>
-                                        <li>+45 53 63 75 40</li>
-                                        <li>hello@gesicht.dk</li>
+                                        <Link href={`tel:${data.general.phone}`}><li>{data.general.phone}</li></Link>
+                                        <Link href={`mailto:${data.general.mail}`}><li>{data.general.mail}</li></Link>
                                     </ul>
                                     <div className={styles.language}>
                                         <Link href="" locale={locale === "da" ? "en" : "da"}><span className={isLocaleActive("da") && styles.activeLanguage}>DA</span> / <span className={isLocaleActive("en") && styles.activeLanguage}>EN</span></Link>
