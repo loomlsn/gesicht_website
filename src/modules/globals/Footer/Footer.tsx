@@ -31,7 +31,7 @@ export const Footer = () => {
                             {data.general.footer.links[1].links.map((item, i) => {
                                 const isFileLink = item.blank;
                                 return (
-                                    <li><Link key={`footer-link-${i}`} href={item.link} target={isFileLink ? "_blank" : "_self"}>{item.name}</Link></li>
+                                    <li><Link locale={false} key={`footer-link-${i}`} href={item.link} target={isFileLink ? "_blank" : "_self"}>{item.name}</Link></li>
                                 )
                             })}
                         </ul>
