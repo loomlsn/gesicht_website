@@ -13,7 +13,7 @@ export default function FillerPage({ prop }: FillerProps) {
     const data = getDictionaryValue();
     return (
         <>
-            <Hero size={'sm'} title={data.filler.hero.title} colorTheme={colorTheme} link={data.filler.hero.description} />
+            <Hero size={'md'} title={data.filler.hero.title} colorTheme={colorTheme} link={data.filler.hero.description} />
             <TreatmentIntro data={data} />
             {/* <FAQ data={data} /> */}
         </>

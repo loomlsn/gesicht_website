@@ -13,6 +13,14 @@
     }
 
     &.sm {
+        height: 400px;
+
+        @media (min-width: 768px) {
+            height: 450px;
+        }
+    }
+
+    &.md {
         height: 450px;
 
         @media (min-width: 768px) {

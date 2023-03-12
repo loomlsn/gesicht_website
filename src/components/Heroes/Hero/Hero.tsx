@@ -5,7 +5,7 @@ import styles from './hero.module.scss'
 type HeroProps = {
     title?: string
     description?: string
-    size?: 'lg' | 'sm' | 'xxl'
+    size?: 'lg' | 'sm' | 'xxl' | 'md'
     colorTheme: 'light' | 'dark'
     link?: string
     frontpage?: string
@@ -13,7 +13,7 @@ type HeroProps = {
 
 export default function Hero({ title, description, size, colorTheme, link, frontpage }: HeroProps) {
     return (
-        <div className={`${styles.heroContainer} ${size === 'lg' ? styles.lg : styles.sm} ${colorTheme === "light" ? styles.light : styles.dark}`}>
+        <div className={`${styles.heroContainer} ${size === 'lg' ? styles.lg : size === "sm" ? styles.sm : styles.md} ${colorTheme === "light" ? styles.light : styles.dark}`}>
             <div className="container relative full">
                 <div className={size === 'lg' ? styles.heroContentLg : styles.heroContentSm}>
                     {title && <h1>{title}</h1>}
