@@ -126,12 +126,12 @@
                 transition: transform 0.3s ease-out;
                 width: 45px;
                 position: absolute;
-                bottom: 2rem;
-                right: 12%;
+                bottom: 4rem;
+                right: 10%;
 
                 @media (min-width: 768px) {
-                    bottom: 5.5rem;
-                    right: 5rem;
+                    bottom: 2.5rem;
+                    right: 3rem;
                 }
 
                 path {

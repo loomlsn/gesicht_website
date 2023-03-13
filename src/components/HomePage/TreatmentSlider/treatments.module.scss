@@ -138,6 +138,10 @@
     padding-bottom: 0;
     position: relative;
 
+    @media (min-width: 768px) {
+        padding: 100px 0;
+    }
+
     .bgBottom {
         width: 100vw;
         height: 300px;
@@ -184,11 +188,21 @@
                 &::before {
                     content: "";
                     background-color: black;
-                    width: 45%;
+                    width: 10%;
                     height: 1px;
                     position: absolute;
-                    right: 9%;
+                    right: 13%;
                     top: 15px;
+
+                    @media (min-width: 900px) {
+                        width: 20%;
+                        right: 12%;
+                    }
+
+                    @media (min-width: 1400px) {
+                        width: 40%;
+                        right: 12%;
+                    }
                 }
             }
 
@@ -205,20 +219,57 @@
 
     .galleryContainer {
         padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+
+
+        @media (min-width: 600px) {
+            padding-top: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         @media (min-width: 768px) {
             padding-top: 100px;
-            display: grid;
+        }
+
+        @media (min-width: 1200px) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 3rem;
+            gap: 5rem;
         }
 
         div {
+
+            @media (max-width: 599px) {
+
+                &:nth-child(5),
+                &:nth-child(6) &:nth-child(7),
+                &:nth-child(8) {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 600px) {
+
+                &:last-child,
+                &:nth-child(7) {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 1200px) {
+
+                &:last-child,
+                &:nth-child(7) {
+                    display: block;
+                }
+            }
+
             img {
                 width: 100%;
-                margin-bottom: 1rem;
 
                 @media (min-width: 768px) {
+                    margin-bottom: 1rem;
                     -webkit-filter: grayscale(100%);
                     filter: grayscale(100%);
                     border-radius: 5px;

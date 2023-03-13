@@ -118,7 +118,7 @@ export const textDA = {
         },
         intro: {
             title: "Altid udført af autoriserede læger.",
-            text: "Læs mere om klinikken og vores behandlere her"
+            text: "Læs mere om klinikken og vores behandlere"
         },
         treatments: {
             title: "Den højeste faglige standard inden for produkter, æstetik, sikkerhed og vores tætte samarbejde med dig som patient er hjørnestenen i vores arbejde.",
@@ -608,7 +608,7 @@ export const textDA = {
             cta: "Book en tid her",
         },
         info: {
-            title: "Vores faglige stolthed er din garanti, for en sikker og tryg behandling.",
+            title: "Vores faglige stolthed er din garanti for en sikker og tryg behandling.",
             text: [
                 {
                     text: "Hos os bliver du altid mødt af venligt og kompetent personale, hvis fælles mission er at bringe dine behov som patient i fokus. Alle behandlere er kvalificerede læger, uddannede og certificerede i behandling med ikke-permanente fillers af højeste standard."
