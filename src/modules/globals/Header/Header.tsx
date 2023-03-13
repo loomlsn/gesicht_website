@@ -38,21 +38,21 @@ export const Header = ({ colorTheme }: HeaderProps) => {
     const themeColor = colorTheme === "dark" ? "#485742" : "#F3EAEA";
 
     useEffect(() => {
-        if (navOpen) {
-            document.body.style.overflow = "hidden";
+        if (navOpen && isMobile) {
+            // document.body.style.overflow = "hidden";
             // document.body.style.position = "fixed";
-            document.body.style.width = "100%";
-            document.body.style.paddingRight = "15px";
+            // document.body.style.width = "100%";
+            // document.body.style.paddingRight = "15px";
             document.querySelector("meta[name='theme-color']").setAttribute("content", "#F3EAEA");
         } else {
-            document.body.style.removeProperty("overflow");
-            document.body.style.removeProperty("position");
-            document.body.style.removeProperty("width");
-            document.body.style.paddingRight = "0";
+            // document.body.style.removeProperty("overflow");
+            // document.body.style.removeProperty("position");
+            // document.body.style.removeProperty("width");
+            // document.body.style.paddingRight = "0";
             document.querySelector("meta[name='theme-color']").setAttribute("content", themeColor);
         }
     }, [navOpen])
-    console.log(isMobile)
+
     return (
         <div className={styles.firstDiv}>
             <header className={`${styles.headerContainer} ${colorTheme === 'light' ? styles.light : styles.dark}`}>
@@ -78,7 +78,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
                     )}
                     {isMobile && (
                         <nav className={styles.mobileNav}>
-                            <div className={navOpen && styles.overlay} onClick={toggleNav}></div>
+                            {/* <div className={navOpen && styles.overlay} onClick={toggleNav}></div> */}
                             <div className={`${styles.navContainer} ${navOpen ? styles.open : ""}`} data-scroll-theme>
                                 <button onClick={toggleNav} className={styles.navOpen}>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">

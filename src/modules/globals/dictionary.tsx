@@ -114,7 +114,7 @@ export const textDA = {
         hero: {
             title: "Velkommen til Gesicht",
             text: "Prikken over i'et.",
-            extra: "Tidligere kendt som"
+            extra: "The artists formerly known as"
         },
         intro: {
             title: "Altid udført af autoriserede læger.",
