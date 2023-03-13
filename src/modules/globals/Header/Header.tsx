@@ -24,8 +24,9 @@ export const Header = ({ colorTheme }: HeaderProps) => {
         }
     }
     const [navOpen, setNavOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(true);
 
-    const isMobile = isDeviceMobile();
+    const isThisMobile = isDeviceMobile();
 
     function toggleNav() {
         if (navOpen) {
@@ -38,6 +39,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
     const themeColor = colorTheme === "dark" ? "#485742" : "#F3EAEA";
 
     useEffect(() => {
+        setIsMobile(isThisMobile)
         if (navOpen && isMobile) {
             // document.body.style.overflow = "hidden";
             // document.body.style.position = "fixed";
@@ -51,7 +53,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
             // document.body.style.paddingRight = "0";
             document.querySelector("meta[name='theme-color']").setAttribute("content", themeColor);
         }
-    }, [navOpen])
+    }, [navOpen, isThisMobile])
 
     return (
         <div className={styles.firstDiv}>

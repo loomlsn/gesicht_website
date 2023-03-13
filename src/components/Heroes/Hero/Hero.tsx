@@ -24,14 +24,17 @@ export default function Hero({ title, description, size, colorTheme, link, front
                         </svg>
                         {link}
                     </Link>}
-                    {frontpage && (
-                        <div className={styles.extra}>
-                            <h3>{frontpage}</h3>
-                            <img src="/logo/lips_by_james-logo.png" />
-                        </div>
-                    )}
                 </div>
             </div>
+            {frontpage && (
+                <div className={styles.extra}>
+                    <div className={styles.overlay}></div>
+                    <div className={styles.content}>
+                        <h3>{frontpage}</h3>
+                        <img src="/logo/lips_by_james-logo.png" />
+                    </div>
+                </div>
+            )}
         </div >
     )
 }

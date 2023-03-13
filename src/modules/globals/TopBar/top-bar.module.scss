@@ -5,18 +5,25 @@
     // display: flex;
     // justify-content: space-between;
     position: relative;
-    display: none;
+    // display: none;
     // align-items: center;
 
     @media (min-width: 768px) {
         display: block;
     }
 
+    @media (max-width: 354px) {
+        display: none;
+    }
+
+
     &Grid {
+        padding: 0 .75rem;
         height: 50px;
-        padding: 0 1.5rem;
         display: grid;
         grid-template-columns: 6fr 1fr 1fr 0.5fr;
+        position: relative;
+        z-index: 2;
 
         @media (max-width: 1200px) {
             grid-template-columns: 3fr 1fr 1fr 0.5fr;
@@ -24,6 +31,10 @@
 
         @media (max-width: 768px) {
             display: flex;
+        }
+
+        @media (min-width: 768px) {
+            padding: 0 1.5rem;
         }
     }
 
@@ -36,16 +47,20 @@
         height: 100%;
         width: 100%;
         pointer-events: none;
+        z-index: 1;
     }
 
     &Item {
-        text-align: center;
         opacity: 1;
         display: flex;
         font-family: typography.$sans;
         font-size: 12px;
         align-items: center;
         justify-content: center;
+
+        @media (min-width: 768px) {
+            text-align: center;
+        }
 
         &:first-child {
             justify-content: start;
@@ -73,7 +88,9 @@
         }
 
         p {
-            padding-top: 2px;
+            @media (min-width: 768px) {
+                padding-top: 2px;
+            }
         }
 
         svg {
@@ -123,12 +140,12 @@
         color: colors.$dark !important;
     }
 
-    .topbarOverlay {
-        @media (max-width: 768px) {
-            background-color: colors.$forest-green;
-            opacity: 1 !important;
-        }
-    }
+    // .topbarOverlay {
+    //     @media (max-width: 768px) {
+    //         background-color: colors.$forest-green;
+    //         opacity: 1 !important;
+    //     }
+    // }
 }
 
 .dark {
