@@ -36,7 +36,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
         }
     }
 
-    const themeColor = colorTheme === "dark" ? "#485742" : "#F3EAEA";
+    const themeColor = colorTheme === "dark" ? "#485742" : "#E7DEDE";
 
     useEffect(() => {
         setIsMobile(isThisMobile)
@@ -45,7 +45,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
             // document.body.style.position = "fixed";
             // document.body.style.width = "100%";
             // document.body.style.paddingRight = "15px";
-            document.querySelector("meta[name='theme-color']").setAttribute("content", "#F3EAEA");
+            document.querySelector("meta[name='theme-color']").setAttribute("content", "#E7DEDE");
         } else {
             // document.body.style.removeProperty("overflow");
             // document.body.style.removeProperty("position");
