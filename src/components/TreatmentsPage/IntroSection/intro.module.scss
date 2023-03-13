@@ -141,9 +141,11 @@
 }
 
 .treatmentLink {
-    &:hover {
-        .treatmentWrapper::before {
-            background-color: colors.$red-peach;
+    @media (min-width: 768px) {
+        &:hover {
+            .treatmentWrapper::before {
+                background-color: colors.$red-peach;
+            }
         }
     }
 

@@ -110,8 +110,14 @@ a {
   text-decoration: none;
   color: unset;
 
-  &:hover {
+  &:active {
     color: colors.$red-peach;
+  }
+
+  @media (min-width: 768px) {
+    &:hover {
+      color: colors.$red-peach;
+    }
   }
 }
 

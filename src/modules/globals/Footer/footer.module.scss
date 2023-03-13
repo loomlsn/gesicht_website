@@ -46,7 +46,7 @@
         display: block;
         margin-bottom: 1.5rem;
 
-        @media (min-width: 400px) {
+        @media (min-width: 600px) {
             display: grid;
             grid-template-columns: 1fr .75fr;
             gap: 25%;
@@ -144,6 +144,12 @@
             margin-top: 1rem;
         }
 
+        @media (max-width: 600px) {
+            &:nth-child(3) {
+                margin-top: 2.5rem;
+            }
+        }
+
         li a {
             font-size: .9rem;
             line-height: 1.8rem;
@@ -157,6 +163,10 @@
         .openingHours {
             @media (max-width: 640px) {
                 max-width: 90%;
+            }
+
+            @media (max-width: 768px) {
+                max-width: 85%;
             }
 
             @media (max-width: 450px) {
