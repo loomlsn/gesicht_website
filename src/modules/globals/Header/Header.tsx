@@ -38,21 +38,30 @@ export const Header = ({ colorTheme }: HeaderProps) => {
 
     const themeColor = colorTheme === "dark" ? "#485742" : "#F3EAEA";
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
+
     useEffect(() => {
-        setIsMobile(isThisMobile)
-        if (navOpen && isMobile) {
-            // document.body.style.overflow = "hidden";
-            // document.body.style.position = "fixed";
-            // document.body.style.width = "100%";
-            // document.body.style.paddingRight = "15px";
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (scrollPosition < 50) {
             document.querySelector("meta[name='theme-color']").setAttribute("content", "#F3EAEA");
         } else {
-            // document.body.style.removeProperty("overflow");
-            // document.body.style.removeProperty("position");
-            // document.body.style.removeProperty("width");
-            // document.body.style.paddingRight = "0";
-            document.querySelector("meta[name='theme-color']").setAttribute("content", themeColor);
+            document.querySelector("meta[name='theme-color']").setAttribute("content", "#E7DEDE");
         }
+    }, [scrollPosition])
+
+    useEffect(() => {
+        setIsMobile(isThisMobile)
     }, [navOpen, isThisMobile])
 
     return (

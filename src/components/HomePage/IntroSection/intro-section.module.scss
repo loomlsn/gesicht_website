@@ -63,6 +63,11 @@
         transition: 0.6s;
     }
 
+    a {
+        width: 120%;
+        height: 120%;
+    }
+
     a:hover {
         color: #fff;
 
@@ -133,6 +138,16 @@
                 @media (min-width: 768px) {
                     bottom: 2.5rem;
                     right: 3rem;
+                }
+
+                @media (min-width: 1300px) {
+                    bottom: 5rem;
+                    right: 5rem;
+                }
+
+                @media (min-width: 1500px) {
+                    bottom: 5rem;
+                    right: 8rem;
                 }
 
                 path {

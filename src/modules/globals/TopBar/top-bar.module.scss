@@ -88,12 +88,6 @@
             }
         }
 
-        p {
-            @media (min-width: 768px) {
-                padding-top: 2px;
-            }
-        }
-
         svg {
             margin-right: 0.75rem;
             color: colors.$dark;
