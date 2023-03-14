@@ -58,7 +58,7 @@ export const Header = ({ colorTheme }: HeaderProps) => {
         } else {
             document.querySelector("meta[name='theme-color']").setAttribute("content", "#F3EAEA");
         }
-    }, [scrollPosition])
+    }, [scrollPosition, navOpen])
 
     useEffect(() => {
         setIsMobile(isThisMobile)
