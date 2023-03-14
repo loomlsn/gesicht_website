@@ -53,10 +53,10 @@ export const Header = ({ colorTheme }: HeaderProps) => {
     }, []);
 
     useEffect(() => {
-        if (scrollPosition > 50) {
-            document.querySelector("meta[name='theme-color']").setAttribute("content", "#E7DEDE");
-        } else {
+        if (scrollPosition > 50 && !navOpen) {
             document.querySelector("meta[name='theme-color']").setAttribute("content", "#F3EAEA");
+        } else {
+            document.querySelector("meta[name='theme-color']").setAttribute("content", "#E7DEDE");
         }
     }, [scrollPosition])
 
