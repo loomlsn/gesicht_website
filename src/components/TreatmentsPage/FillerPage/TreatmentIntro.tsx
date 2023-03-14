@@ -1,6 +1,4 @@
-import Link from "next/link"
-import { useRouter } from "next/router";
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import styles from './treatment-intro.module.scss'
 
 type TreatmentIntroProps = {
@@ -82,9 +80,24 @@ type AccordionItemProps = {
 
 const AccordionItem: React.FC<AccordionItemProps> = ({ item }) => {
     const [isActive, setIsActive] = useState(false);
+    const [url, setUrl] = useState("");
+    const id = item.name.toLowerCase();
+    const idTrimmed = id.replace(/\s/g, '');
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const activeUrl = window ? window.location.href : "";
+            setUrl(activeUrl)
+        }
+        const isIdCalled = url.includes(idTrimmed)
+        if (isIdCalled) {
+            setIsActive(true)
+        }
+    }, [url])
+
     return (
         <>
-            <div className={`${styles.treatmentWrapper} ${isActive ? styles.active : ""}`} onClick={() => setIsActive(!isActive)}>
+            <div id={idTrimmed} className={`${styles.treatmentWrapper} ${isActive ? styles.active : ""}`} onClick={() => setIsActive(!isActive)}>
                 <div className={styles.treatmentItem}>
                     <div>
                         <h3>{item.name}</h3>

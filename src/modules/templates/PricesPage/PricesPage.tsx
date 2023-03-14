@@ -15,7 +15,7 @@ export default function PricesPage({ }: PricesPageProps) {
         <>
             <Hero size={'sm'} title={data.prices.hero.title} colorTheme={colorTheme} />
             <Prices data={data} colorTheme={colorTheme} />
-            <TreatmentList />
+            {/* <TreatmentList /> */}
         </>
     )
 }            

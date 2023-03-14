@@ -62,19 +62,19 @@ export const textDA = {
                     links: [
                         {
                             name: "Læbeforstørrelse",
-                            link: "/behandlinger/filler"
+                            link: "/behandlinger/filler#læber"
                         },
                         {
                             name: "Anti-age",
-                            link: "/behandlinger/filler"
+                            link: "/behandlinger/filler#anti-age"
                         },
                         {
                             name: "Rekonstruktion",
-                            link: "/behandlinger/filler"
+                            link: "/behandlinger/filler#rekonstruktionogkorrektion"
                         },
                         {
                             name: "Hænder og hals",
-                            link: "/behandlinger/profhilo"
+                            link: "/behandlinger/profhilo#haender"
                         },
                     ]
                 },
@@ -113,7 +113,7 @@ export const textDA = {
     home: {
         hero: {
             title: "Velkommen til Gesicht",
-            text: "Prikken over i'et.",
+            text: "Fill it, shape it, own it!",
             extra: "The artists formerly known as"
         },
         intro: {
@@ -294,32 +294,32 @@ export const textDA = {
                 {
                     name: "Læber",
                     description: "Mere fylde, konturering og symmetri til dine læber",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#læber"
                 },
                 {
                     name: "Anti-age",
                     description: "Har alderen sat sine aftryk lidt for tidligt?",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#anti-age"
                 },
                 {
                     name: "Rekonstruktion",
                     description: "Har dit ansigt været udsat for en ulykke eller kirurgi?",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#rekonstruktionogkorrektion"
                 },
                 {
                     name: "Mid-face",
                     description: "Tindingeområdet, kindben og kinder",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#mid-face"
                 },
                 {
                     name: "Hals og hænder",
                     description: "Med Profhilo øges hudens fylde og fugtighed",
-                    link: "/behandlinger/profhilo"
+                    link: "/behandlinger/profhilo#haender"
                 },
                 {
                     name: "Underansigtet",
                     description: "En skarp kæbelinie og en harmonisk hageregion",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#underansigtet"
                 },
             ]
         }
@@ -766,19 +766,19 @@ export const textEN = {
                     links: [
                         {
                             name: "Lip enhancement",
-                            link: "/behandlinger/filler"
+                            link: "/behandlinger/filler#lips"
                         },
                         {
                             name: "Anti-age",
-                            link: "/behandlinger/filler"
+                            link: "/behandlinger/filler#anti-age"
                         },
                         {
                             name: "Reconstruction",
-                            link: "/behandlinger/filler"
+                            link: "/behandlinger/filler#reconstructionandcorrection"
                         },
                         {
                             name: "Hands and neck",
-                            link: "/behandlinger/profhilo"
+                            link: "/behandlinger/profhilo#hands"
                         },
                     ]
                 },
@@ -998,32 +998,32 @@ export const textEN = {
                 {
                     name: "Lips",
                     description: "More volume, contouring and symmetry to your lips",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#lips"
                 },
                 {
                     name: "Anti-age",
                     description: "Has time taken its toll a bit too early?",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#anti-age"
                 },
                 {
                     name: "Reconstruction",
                     description: "Have you experienced facial tissue trauma or surgery?",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#reconstructionandcorrection"
                 },
                 {
                     name: "Mid-face",
                     description: "Brow lift, temple lift and sharper cheekbones",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#mid-face"
                 },
                 {
                     name: "Neck and hands",
                     description: "Profhilo improves hydration and elasticity in the skin",
-                    link: "/behandlinger/profhilo"
+                    link: "/behandlinger/profhilo#neckandhands"
                 },
                 {
                     name: "Lower face",
                     description: "A sharp jaw-line and a harmonious chin",
-                    link: "/behandlinger/filler"
+                    link: "/behandlinger/filler#lowerface"
                 },
             ]
         }

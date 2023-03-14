@@ -45,7 +45,6 @@
             left: 0;
             position: absolute;
             top: 470px;
-            margin-bottom: -50px;
             border-radius: 0 5px 0 0;
 
             @media (max-width: 768px) {
@@ -53,8 +52,12 @@
                 position: relative;
                 top: 0;
                 margin-left: -1.25rem;
-                margin-bottom: -85px;
+                margin-bottom: 0;
                 border-radius: 0;
+            }
+
+            @media (min-width: 768px) {
+                max-height: 600px;
             }
         }
 
@@ -80,7 +83,7 @@
     }
 
     .treatmentsBox:last-child {
-        margin-top: -350px;
+        // margin-top: -350px;
         padding-top: 0;
     }
 
