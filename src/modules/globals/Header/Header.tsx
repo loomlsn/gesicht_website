@@ -60,9 +60,9 @@ export const Header = ({ colorTheme }: HeaderProps) => {
         }
 
         if (navOpen) {
-            document.querySelector("body").style.position = "fixed"
+            document.querySelector("body").setAttribute('position', "fixed");
         } else {
-            document.querySelector("body").style.position = "unset"
+            document.querySelector("body").removeAttribute("position")
         }
     }, [scrollPosition, navOpen])
 
