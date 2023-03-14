@@ -655,7 +655,7 @@ export const textDA = {
         },
         extra: {
             text: "Vi er registreret som kosmetisk behandlingssted hos Styrelsen for Patientsikkerhed, og alle behandlende læger er registreret og godkendt til kosmetisk behandling med ikke-permanente fillers.",
-            text2: "Gesicht er registreret og godkendt som kosmetisk behandlingssted hos Sundhedsstyrelsen med registreret ansvarshavende læge.”"
+            text2: "Gesicht er registreret og godkendt som kosmetisk behandlingssted hos Sundhedsstyrelsen med registreret ansvarshavende læge."
         }
     },
     contact: {

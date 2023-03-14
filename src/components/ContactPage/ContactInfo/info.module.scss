@@ -12,11 +12,12 @@
         @media (min-width: 768px) {
             display: grid;
             grid-template-columns: 1fr 1.5fr;
-            gap: 16rem;
+            gap: 5rem;
         }
 
         @media (min-width: 1200px) {
             padding: 150px 0;
+            gap: 16rem;
         }
     }
 
