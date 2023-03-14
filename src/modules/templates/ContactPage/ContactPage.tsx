@@ -1,17 +1,23 @@
 import React from "react";
-import CardsHero from "../../../components/CardsHero";
+import ContactInfo from "../../../components/ContactPage/ContactInfo";
+import Hero from "../../../components/Heroes/Hero";
+import IntroSection from "../../../components/HomePage/IntroSection";
+import TreatmentList from "../../../components/PricesPage/TreatmentList";
+import { getDictionaryValue } from "../../../helpers/getDictionaryValue";
+import { colorTheme } from "../../globals/settings";
 
 type ContactPageProps = {
 
 }
 
 export default function ContactPage({ }: ContactPageProps) {
+    const data = getDictionaryValue();
     return (
         <>
-            <CardsHero size={'sm'} title={"Kontakt os"} description={"tekst"} />
-            <div>
-                <p>Tekst</p>
-            </div>
+            <Hero size={'sm'} title={data.contact.hero.title} colorTheme={colorTheme} />
+            <ContactInfo titleContact={data.contact.info.titleContact} titleOpeningHours={data.contact.info.titleOpeningHours} openingHours={data.general.openingHours} addressLine={data.general.addressStreet} addressLine2={data.general.addressCity} phone={data.general.phone} mail={data.general.mail} />
+            <IntroSection colorTheme={colorTheme} title={data.contact.intro.title} text={data.booking.intro.cta} img={"/hero/gesicht_hero-5.jpg"} link={null} />
+            {/* <TreatmentList /> */}
         </>
     )
 }

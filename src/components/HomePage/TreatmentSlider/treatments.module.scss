@@ -1,0 +1,289 @@
+@use '../../../styles/values/colors.scss';
+@use '../../../styles/values/animations.scss';
+@use '../../../styles/values/typography.scss';
+
+.treatments {
+    &Intro {
+        padding: 100px 1.25rem;
+        position: relative;
+
+        @media (min-width: 768px) {
+            padding: 100px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15rem;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            font-size: 20px;
+
+            svg {}
+        }
+    }
+
+    &Divider {
+        width: 100vw;
+        height: 1px;
+        background-color: colors.$dark;
+        position: absolute;
+        left: 0;
+        margin-top: 5rem;
+    }
+}
+
+.height {
+    height: 650px;
+
+    @media (min-width: 768px) {
+        height: 800px;
+    }
+}
+
+.splideContainer {
+    padding: 100px 1.25rem;
+    position: relative;
+    width: 100vw;
+    left: 0;
+    display: block;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        padding: 100px 0;
+        padding-bottom: 150px;
+    }
+
+    .splideItem {
+        width: 400px;
+
+        img {
+            width: 400px;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 15px;
+            max-width: 80%;
+        }
+    }
+}
+
+.treatmentsInner {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+    .treatment {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+
+        img {
+            width: 300px;
+        }
+
+        h3 {
+            color: colors.$red-peach;
+            font-size: 1.9rem;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
+
+        button {
+            border: none;
+            margin: 0.5rem 0;
+            background-color: transparent;
+            color: colors.$peach;
+            cursor: pointer;
+
+            svg {
+                width: 50px;
+            }
+
+            &:hover {
+                color: colors.$red-peach;
+            }
+        }
+    }
+
+}
+
+.imageAbout {
+    div {
+        font-size: 1.25rem;
+        font-family: typography.$sans;
+        text-align: left;
+    }
+
+    img {
+        margin-top: -100px;
+        width: 500px;
+    }
+}
+
+.gallery {
+    padding: 50px 0;
+    padding-bottom: 0;
+    position: relative;
+
+    @media (min-width: 768px) {
+        padding: 100px 0;
+    }
+
+    .bgBottom {
+        width: 100vw;
+        height: 300px;
+        background-color: colors.$light;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding: 150px 0;
+    }
+
+    .titleContainer {
+        position: relative;
+
+        h2 {
+            margin-bottom: 3rem;
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+                max-width: 580px;
+            }
+        }
+
+        h3 {
+            font-family: typography.$serif;
+            font-size: 1.5rem;
+            font-family: "DM Sans Medium", DM Sans, Montserrat;
+            font-size: 0.78rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            @media (min-width: 768px) {
+                margin-right: 10px;
+                margin-top: 8px;
+
+                &::before {
+                    content: "";
+                    background-color: black;
+                    width: 10%;
+                    height: 1px;
+                    position: absolute;
+                    right: 13%;
+                    top: 15px;
+
+                    @media (min-width: 900px) {
+                        width: 20%;
+                        right: 12%;
+                    }
+
+                    @media (min-width: 1400px) {
+                        width: 40%;
+                        right: 12%;
+                    }
+                }
+            }
+
+            span {
+                color: colors.$red-peach;
+            }
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .galleryContainer {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+
+
+        @media (min-width: 600px) {
+            padding-top: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (min-width: 768px) {
+            padding-top: 100px;
+        }
+
+        @media (min-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 5rem;
+        }
+
+        div {
+
+            @media (max-width: 599px) {
+
+                &:nth-child(5),
+                &:nth-child(6) &:nth-child(7),
+                &:nth-child(8) {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 600px) {
+
+                &:last-child,
+                &:nth-child(7) {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 1200px) {
+
+                &:last-child,
+                &:nth-child(7) {
+                    display: block;
+                }
+            }
+
+            img {
+                width: 100%;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 1rem;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    border-radius: 5px;
+
+                    &:hover {
+                        -webkit-filter: none;
+                        filter: none;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import CardsHero from "../../../components/CardsHero";
+// import CardsHero from "../../../components/CardsHero";
 
 type ComingSoonProps = {
     prop: string;
@@ -8,7 +8,7 @@ type ComingSoonProps = {
 export default function ComingSoon({ prop }: ComingSoonProps) {
     return (
         <>
-            <CardsHero size={'xxl'} description={"Coming soon"} />
+            {/* <CardsHero size={'xxl'} description={"Coming soon"} /> */}
         </>
     )
 }

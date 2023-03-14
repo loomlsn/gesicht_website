@@ -12,23 +12,65 @@ body {
   font-family: typography.$sans;
   font-weight: normal;
   overflow-x: hidden;
-  overflow: hidden;
-  background-image: url("/hero/hero_light.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: -webkit-fill-available;
-  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'DM Sans Regular';
+  src: url('/fonts/DMSans-Regular.woff') format('woff');
+  src: url('/fonts/DMSans-Regular.woff2') format('woff2');
+  src: url('/fonts/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DM Sans Medium';
+  src: url('/fonts/DMSans-Medium.woff') format('woff');
+  src: url('/fonts/DMSans-Medium.woff2') format('woff2');
+  src: url('/fonts/DMSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DM Sans Bold';
+  src: url('/fonts/DMSans-Bold.woff') format('woff');
+  src: url('/fonts/DMSans-Bold.woff2') format('woff2');
+  src: url('/fonts/DMSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('/fonts/DMSerifDisplay-Regular.woff') format('woff');
+  src: url('/fonts/DMSerifDisplay-Regular.woff2') format('woff2');
+  src: url('/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
 }
 
 .container {
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 1.25rem;
+  overflow-x: hidden;
 
-  @media (min-width: 1100px) {
-    max-width: 1100px;
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: visible;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1300px;
     margin: 0 auto;
   }
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 h1 {
@@ -41,9 +83,6 @@ h1 {
     font-size: 4rem;
   }
 
-  @media (min-width: 768px) {
-    font-size: 5rem;
-  }
 }
 
 h2 {
@@ -71,7 +110,50 @@ a {
   text-decoration: none;
   color: unset;
 
-  &:hover {
+  &:active {
     color: colors.$red-peach;
   }
+
+  @media (min-width: 768px) {
+    &:hover {
+      color: colors.$red-peach;
+    }
+  }
+}
+
+p {
+  font-size: .9rem !important;
+  line-height: 25px !important;
+
+  @media (min-width: 768px) {
+    font-size: .95rem !important;
+  }
+}
+
+.splide__arrows {
+  position: absolute;
+  left: 1rem;
+  top: 2.25rem;
+  width: 85px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    left: -15px;
+  }
+}
+
+.splide__arrow {
+  position: relative !important;
+  top: 0 !important;
+  transform: none !important;
+  background-color: transparent !important;
+}
+
+.splide__arrow--prev {
+  left: 0;
+}
+
+.splide__arrow--next {
+  right: 0;
 }
