@@ -61,6 +61,8 @@ export const Header = ({ colorTheme }: HeaderProps) => {
 
         if (navOpen) {
             document.querySelector("body").style.position = "fixed"
+        } else {
+            document.querySelector("body").style.position = "unset"
         }
     }, [scrollPosition, navOpen])
 
