@@ -16,7 +16,7 @@ export default function ContactPage({ }: ContactPageProps) {
         <>
             <Hero size={'sm'} title={data.contact.hero.title} colorTheme={colorTheme} />
             <ContactInfo titleContact={data.contact.info.titleContact} titleOpeningHours={data.contact.info.titleOpeningHours} openingHours={data.general.openingHours} addressLine={data.general.addressStreet} addressLine2={data.general.addressCity} phone={data.general.phone} mail={data.general.mail} />
-            <IntroSection colorTheme={colorTheme} title={data.contact.intro.title} text={data.booking.intro.cta} img={"/hero/header-3.jpg"} link={null} />
+            <IntroSection colorTheme={colorTheme} title={data.contact.intro.title} text={data.booking.intro.cta} img={"/hero/gesicht_hero-5.jpg"} link={null} />
             {/* <TreatmentList /> */}
         </>
     )

@@ -31,7 +31,7 @@ export default function TreatmentIntro({ data }: TreatmentIntroProps) {
                         </div>
                     </div>
                     <div className={styles.treatmentsBox}>
-                        <img src="/hero/header-4.jpg" className={styles.intro} />
+                        <img src="/hero/gesicht_hero-2.jpg" className={styles.intro} />
                     </div>
                     <div className={styles.treatmentsBox}></div>
                     <div className={styles.treatmentsBox}>

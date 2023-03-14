@@ -24,7 +24,7 @@ export default function PartnerSection({ title }: PartnerSectionProps) {
                     </ul>
                 </div>
                 <div className={styles.partnerImage}>
-                    <img src="/hero/header-4.jpg" />
+                    <img src="/hero/gesicht_hero-2.jpg" />
                     <img src="/logo/ibsa_white.png" className={styles.ibsaLogo} />
                 </div>
             </div>

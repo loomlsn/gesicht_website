@@ -8,7 +8,7 @@ export default function CTA() {
         <div className={styles.ctaContainer}>
             <div className="container">
                 <div className={styles.ctaSection}>
-                    <img src="/hero/header-3.jpg" />
+                    <img src="/hero/gesicht_hero-1.jpg" />
                 </div>
                 <div className={styles.ctaSection}>
                     <h2>Kom indenfor til en gratis konsultation</h2>

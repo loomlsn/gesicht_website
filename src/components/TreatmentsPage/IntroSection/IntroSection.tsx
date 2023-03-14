@@ -45,7 +45,7 @@ export default function IntroSection({ data }: IntroProps) {
                         })}
                     </div>
                     <div className={styles.treatmentsBox}>
-                        <img src="/hero/header-4.jpg" />
+                        <img src="/hero/gesicht_hero-2.jpg" />
                     </div>
                     <div className={styles.treatmentsBox}>
                         <h2>{intro.secondTitle}</h2>
