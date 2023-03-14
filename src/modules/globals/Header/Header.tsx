@@ -58,6 +58,10 @@ export const Header = ({ colorTheme }: HeaderProps) => {
         } else {
             document.querySelector("meta[name='theme-color']").setAttribute("content", "#F3EAEA");
         }
+
+        if (navOpen) {
+            document.querySelector("body").style.position = "fixed"
+        }
     }, [scrollPosition, navOpen])
 
     useEffect(() => {
