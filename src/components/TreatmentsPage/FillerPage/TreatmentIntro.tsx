@@ -84,10 +84,14 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ item }) => {
     const id = item.name.toLowerCase();
     const idTrimmed = id.replace(/\s/g, '');
 
+    console.log(isActive)
+
     useEffect(() => {
         if (typeof window !== "undefined") {
             const activeUrl = window ? window.location.href : "";
             setUrl(activeUrl)
+        } else {
+            setIsActive(false)
         }
         const isIdCalled = url.includes(idTrimmed)
         if (isIdCalled) {

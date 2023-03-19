@@ -11,11 +11,16 @@
     padding-top: 25px;
     padding-bottom: 25px;
 
-    @media (min-width: 1002px) {
+    @media (min-width: 900px) {
         padding-top: 50px;
         padding-bottom: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        row-gap: 0;
+    }
+
+    @media (min-width: 991px) {
         gap: 8rem;
         row-gap: 0;
     }
@@ -23,13 +28,31 @@
     .treatmentsBox {
         color: black;
 
+
+
         &:last-child {
-            @media (min-width: 768px) {
-                margin-top: -712px;
+            @media (min-width: 900px) {
+                margin-top: -950px;
+            }
+
+            @media (min-width: 991px) {
+                margin-top: -900px;
+            }
+
+            @media (min-width: 1050px) {
+                margin-top: -875px;
+            }
+
+            @media (min-width: 1200px) {
+                margin-top: -775px;
+            }
+
+            @media (min-width: 1400px) {
+                margin-top: -700px;
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 900px) {
             padding: 50px 0;
         }
 
@@ -40,8 +63,8 @@
             position: relative;
             z-index: 10;
 
-            @media (min-width: 1000px) {
-                width: 50%;
+            @media (min-width: 900px) {
+                width: 400px;
                 margin-left: 0;
                 max-height: 500px;
                 object-fit: cover;
@@ -49,6 +72,10 @@
                 position: absolute;
                 top: 0px;
                 border-radius: 0 0 0 5px;
+            }
+
+            @media (min-width: 991px) {
+                width: 50%;
             }
 
         }
@@ -138,6 +165,10 @@
         font-family: typography.$sans;
         max-width: 450px;
         line-height: 1.35rem;
+
+        @media (max-width: 768px) {
+            max-width: none;
+        }
     }
 
     // .description {

@@ -32,12 +32,15 @@
         @media (min-width: 768px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 5rem;
+            gap: 3rem;
+            row-gap: 1rem;
             grid-auto-rows: 1fr;
         }
 
         @media (min-width: 991px) {
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 5rem;
+            row-gap: 1rem;
         }
 
         a {
@@ -102,10 +105,10 @@
             }
         }
 
-        @media (max-width: 768px) {
-            a:nth-child(4) {
-                display: none;
-            }
+        @media (max-width: 800px) {
+            // a:nth-child(4) {
+            //     display: none;
+            // }
 
             a:nth-child(5) {
                 display: none;
