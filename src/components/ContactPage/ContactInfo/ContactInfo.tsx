@@ -18,16 +18,6 @@ export default function ContactInfo({ titleOpeningHours, titleContact, openingHo
             <div className={styles.contactContainer}>
                 <div className={`container ${styles.aboutInner}`}>
                     <div className={styles.contactInfoItem}>
-                        <h2>{titleOpeningHours}</h2>
-                        <ul>
-                            {openingHours.map((line, i) => {
-                                return (
-                                    <li>{line.day}<span>{line.hours}</span></li>
-                                )
-                            })}
-                        </ul>
-                    </div>
-                    <div className={styles.contactInfoItem}>
                         <h2>{titleContact}</h2>
                         <div className={styles.address}>
                             <p>{addressLine}</p>
@@ -51,6 +41,16 @@ export default function ContactInfo({ titleOpeningHours, titleContact, openingHo
                                 {mail}
                             </a>
                         </div>
+                    </div>
+                    <div className={styles.contactInfoItem}>
+                        <h2>{titleOpeningHours}</h2>
+                        <ul>
+                            {openingHours.map((line, i) => {
+                                return (
+                                    <li>{line.day}<span>{line.hours}</span></li>
+                                )
+                            })}
+                        </ul>
                     </div>
                 </div>
             </div>

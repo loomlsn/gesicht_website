@@ -11,7 +11,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
 
-    @media (min-width: 1002px) {
+    @media (min-width: 900px) {
         padding-top: 50px;
         padding-bottom: 0px;
         display: grid;
@@ -23,8 +23,30 @@
     .treatmentsBox {
         color: black;
 
+        &:nth-child(3) {
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+
         &:last-child {
-            @media (min-width: 768px) {
+            @media (min-width: 991px) {
+                margin-top: -950px;
+            }
+
+            @media (min-width: 991px) {
+                margin-top: -750px;
+            }
+
+            @media (min-width: 1050px) {
+                margin-top: -700px;
+            }
+
+            @media (min-width: 1150px) {
+                margin-top: -600px;
+            }
+
+            @media (min-width: 1400px) {
                 margin-top: -525px;
             }
         }
@@ -40,8 +62,8 @@
             position: relative;
             z-index: 10;
 
-            @media (min-width: 1000px) {
-                width: 50%;
+            @media (min-width: 991px) {
+                width: 400px;
                 margin-left: 0;
                 max-height: 550px;
                 object-fit: cover;
@@ -49,6 +71,10 @@
                 position: absolute;
                 top: 0px;
                 border-radius: 0 0 0 5px;
+            }
+
+            @media (min-width: 991px) {
+                width: 50%;
             }
 
         }
@@ -138,6 +164,10 @@
         font-family: typography.$sans;
         max-width: 450px;
         line-height: 1.35rem;
+
+        @media (max-width: 768px) {
+            max-width: none;
+        }
     }
 
     // .description {

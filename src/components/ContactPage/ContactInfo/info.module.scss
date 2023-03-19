@@ -11,13 +11,14 @@
 
         @media (min-width: 768px) {
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
+            grid-template-columns: 1.5fr 1fr;
             gap: 5rem;
         }
 
         @media (min-width: 1200px) {
             padding: 150px 0;
             gap: 16rem;
+            padding-top: 50px;
         }
     }
 
