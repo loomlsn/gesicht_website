@@ -12,6 +12,7 @@ export default function Prices({ data, colorTheme }: PricesProps) {
     const { locale } = useRouter();
     const fillerTreatments = data.prices.prices.filter((item) => item.type === "filler");
     const profhiloTreatments = data.prices.prices.filter((item) => item.type === "profhilo");
+    const hydroboosterTreatments = data.prices.prices.filter((item) => item.type === "hydrobooster");
     const intro = data.prices.intro;
 
     return (
@@ -36,6 +37,26 @@ export default function Prices({ data, colorTheme }: PricesProps) {
                                     </div>
                                     <p className={styles.description}>{item.description}</p>
                                 </div>
+                            )
+                        })}
+                        <h2>Hydrobooster</h2>
+                        {hydroboosterTreatments.map((item, i) => {
+                            const price = (item.price === 0 && locale === "da") ? "Gratis" : (item.price === 0 && locale === "en") ? "Free" : item.price;
+                            return (
+                                <>
+                                    <div className={styles.treatmentItem}>
+                                        <div className={styles.priceLabel}>
+                                            <h3>{item.name}</h3>
+                                            <span>NEW</span>
+                                        </div>
+                                        {/* <div>
+                                    <h3>Viscoderm Hydrobooster</h3>
+                                </div> */}
+                                        <div className={styles.line}></div>
+                                        <div className={styles.price}><span>{item.price}</span></div>
+                                    </div>
+                                    <p className={styles.description}>{item.description}</p>
+                                </>
                             )
                         })}
                     </div>

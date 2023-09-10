@@ -227,7 +227,7 @@ export const textDA = {
                 amount: null,
                 price: 0,
                 name: "Forundersøgelse",
-                description: "Skal foretages minimum 48 timer inden behandling"
+                description: "Skal foretages minimum 48 timer inden behandling."
             }, {
                 type: "filler",
                 amount: 0.5,
@@ -255,7 +255,7 @@ export const textDA = {
             }, {
                 type: "filler",
                 name: "Tear trough",
-                description: "Mørke rande under øjnene",
+                description: "Mørke rande under øjnene.",
                 amount: null,
                 price: "3.000,-",
             },
@@ -270,7 +270,7 @@ export const textDA = {
                 amount: null,
                 price: 0,
                 name: "Forundersøgelse",
-                description: "Skal foretages minimum 48 timer inden behandling"
+                description: "Skal foretages minimum 48 timer inden behandling."
             }, {
                 type: "profhilo",
                 amount: 2,
@@ -281,6 +281,13 @@ export const textDA = {
                 amount: 4,
                 price: "7.000,-",
                 name: "Profhilo 4 ml",
+            },
+            {
+                type: "hydrobooster",
+                amount: null,
+                price: "3.800,-",
+                name: "Viscoderm Hydrobooster",
+                description: "2 behandlinger med 4 ugers mellemrum."
             }
         ],
         finance: {
@@ -985,6 +992,13 @@ export const textEN = {
                 amount: 4,
                 price: "7.000 DKK",
                 name: "Profhilo 4 ml",
+            },
+            {
+                type: "hydrobooster",
+                amount: null,
+                price: "3.800 DKK",
+                name: "Viscoderm Hydrobooster",
+                description: "2 treatments with 4 weeks interval."
             }
         ],
         finance: {
