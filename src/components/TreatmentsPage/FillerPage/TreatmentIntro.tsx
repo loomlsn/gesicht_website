@@ -78,8 +78,6 @@ type AccordionItemProps = {
     }
 }
 
-// added comment
-
 const AccordionItem: React.FC<AccordionItemProps> = ({ item }) => {
     const [isActive, setIsActive] = useState(false);
     const [url, setUrl] = useState("");
