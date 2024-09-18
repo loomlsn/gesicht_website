@@ -8,6 +8,7 @@
 
     &.light {
         .payment {
+            display: none;
             background-color: colors.$forest-green;
             color: white;
 
