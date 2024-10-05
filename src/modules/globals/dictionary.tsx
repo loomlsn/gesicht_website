@@ -942,25 +942,25 @@ export const textEN = {
             }, {
                 type: "filler",
                 amount: 0.5,
-                price: "1.800 DKK",
+                price: "1.500 DKK",
                 name: "Fillertreatment 0.5 ml",
                 description: "Aliaxin",
             }, {
                 type: "filler",
                 amount: 0.75,
-                price: "2.400 DKK",
+                price: "2.000 DKK",
                 name: "Fillertreatment 0.75 ml",
                 description: "Aliaxin",
             }, {
                 type: "filler",
                 amount: 1,
-                price: "2.800 DKK",
+                price: "2.400 DKK",
                 name: "Fillertreatment 1 ml",
                 description: "Aliaxin"
             }, {
                 type: "filler",
                 amount: 2,
-                price: "5.000 DKK",
+                price: "4.500 DKK",
                 name: "Fillertreatment 2 ml",
                 description: "Aliaxin",
             }, {
@@ -985,12 +985,12 @@ export const textEN = {
             }, {
                 type: "profhilo",
                 amount: 2,
-                price: "3.500 DKK",
+                price: "2.700 DKK",
                 name: "Profhilo 2 ml",
             }, {
                 type: "profhilo",
                 amount: 4,
-                price: "7.000 DKK",
+                price: "5.000 DKK",
                 name: "Profhilo 4 ml",
             },
             {
