@@ -10,6 +10,7 @@ type PricesProps = {
 
 export default function Prices({ data, colorTheme }: PricesProps) {
     const { locale } = useRouter();
+    console.log(data)
     const fillerTreatments = data.prices.prices.filter((item) => item.type === "filler");
     const profhiloTreatments = data.prices.prices.filter((item) => item.type === "profhilo");
     const hydroboosterTreatments = data.prices.prices.filter((item) => item.type === "hydrobooster");

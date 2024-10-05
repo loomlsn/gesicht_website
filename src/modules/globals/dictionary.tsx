@@ -231,25 +231,25 @@ export const textDA = {
             }, {
                 type: "filler",
                 amount: 0.5,
-                price: "1.800,-",
+                price: "1.500,-",
                 name: "Fillerbehandling 0.5 ml",
                 description: "Aliaxin",
             }, {
                 type: "filler",
                 amount: 0.75,
-                price: "2.400,-",
+                price: "2.000,-",
                 name: "Fillerbehandling 0.75 ml",
                 description: "Aliaxin",
             }, {
                 type: "filler",
                 amount: 1,
-                price: "2.800,-",
+                price: "2.400,-",
                 name: "Fillerbehandling 1 ml",
                 description: "Aliaxin"
             }, {
                 type: "filler",
                 amount: 2,
-                price: "5.000,-",
+                price: "4.500,-",
                 name: "Fillerbehandling 2 ml",
                 description: "Aliaxin",
             }, {
@@ -257,7 +257,7 @@ export const textDA = {
                 name: "Tear trough",
                 description: "Mørke rande under øjnene.",
                 amount: null,
-                price: "3.000,-",
+                price: "2.800,-",
             },
             {
                 type: "filler",
@@ -274,12 +274,12 @@ export const textDA = {
             }, {
                 type: "profhilo",
                 amount: 2,
-                price: "3.500,-",
+                price: "2.700,-",
                 name: "Profhilo 2 ml",
             }, {
                 type: "profhilo",
                 amount: 4,
-                price: "7.000,-",
+                price: "5.000,-",
                 name: "Profhilo 4 ml",
             },
             {
